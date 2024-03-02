@@ -1,0 +1,2030 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel='shortcut icon' href="../assets/images/favic.ico" type='image/x-icon' />
+  <title>Ai template</title>
+  <!-- Required Css -->
+  <link rel="stylesheet" href="../assets/plugin/jquery-ui/jquery-ui.min.css" />
+  <link rel="stylesheet" href="../assets/plugin/jquery-ui/jquery-ui-theme.min.css" />
+  <link rel="stylesheet" href="../assets/css/custom.css">
+  <link rel="stylesheet" href="../../dist/output.css">
+  <link rel="stylesheet" href="../assets/plugin/tom-select/tom-select.min.css" />
+  <link rel="stylesheet" href="../assets/css/site_custom.css">
+  <link rel="stylesheet" href="../assets/plugin/wow-js-animation/animation.min.css">
+  <link rel="stylesheet" href="../assets/plugin/swiper/swiper-bundle.min.css">
+  <script src="../assets/js/flashesh-dark.min.js"></script> <!-- Don't remove from here. This script for onload flickering issues -->
+</head>
+<body>
+  <section>
+    <header id="top" class="absolute pt-scroll md:pt-[74px] pt-14">
+      <nav id="top-menu" class="flex nav-sticky header-bound md:flex-row flex-col justify-between w-full py-3.5 md:py-3 9xl:px-[310px] 8xl:px-40 lg:px-20 md:px-10 px-5 text-white Request::url() == url('/') ? 'md:dark:bg-transparent md:bg-transparent' : 'bg-color-14' }}">
+        <div class="flex justify-between">
+          <div>
+              <a href="javaScript:void(0);">
+                  <img class="w-[104px] h-7 md:w-[157px] md:h-[42px] artifism-logo dark:block" src="../assets/images/artifism-logo.svg" alt="Image">
+              </a>
+              <a href="javaScript:void(0);">
+                  <img class="w-[104px] h-7 md:w-[157px] md:h-[42px] artifism-logo-black hidden dark:hidden" src="../assets/images/artifism-logo-black.svg" alt="Image">
+              </a>
+          </div>
+          <button id="menuBtn" class="block md:hidden focus:outline-none" type="button" onclick="navToggle();">
+              <svg id="icon" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
+                  <path d="M22 13H4M22 7H4M22 19H10" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              <svg id="cross_icon" class="hidden" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M5.36612 6.36612C5.85427 5.87796 6.64573 5.87796 7.13388 6.36612L12.5 11.7322L17.8661 6.36612C18.3543 5.87796 19.1457 5.87796 19.6339 6.36612C20.122 6.85427 20.122 7.64573 19.6339 8.13388L14.2678 13.5L19.6339 18.8661C20.122 19.3543 20.122 20.1457 19.6339 20.6339C19.1457 21.122 18.3543 21.122 17.8661 20.6339L12.5 15.2678L7.13388 20.6339C6.64573 21.122 5.85427 21.122 5.36612 20.6339C4.87796 20.1457 4.87796 19.3543 5.36612 18.8661L10.7322 13.5L5.36612 8.13388C4.87796 7.64573 4.87796 6.85427 5.36612 6.36612Z" fill="white"/>
+              </svg>
+          </button>
+        </div>
+          <div class="hidden w-full md:flex md:items-center text-center justify-center md:w-auto" id="menu">
+              <ul class="pt-[54px] pb-6 flex md:flex-row flex-col md:justify-between items-center gap-9 md:pt-0 md:pb-0">
+                  
+                  <li>
+                      <a class=" text-16 font-normal font-Figtree bg-color-FF9" href="javaScript:void(0);">Use Cases</a>
+                  </li>
+                  <li>
+                      <a class=" text-16 font-normal font-Figtree" href="javaScript:void(0);">Digital Art</a>
+                  </li>
+                  <li>
+                      <a class=" text-16 font-normal font-Figtree" href="javaScript:void(0);">Pricing</a>
+                  </li>
+                  <li>
+                      <a class=" text-16 font-normal font-Figtree" href="javaScript:void(0);">News</a>
+                  </li>
+                  <li class="cursor-pointer relative">
+                    <a
+                        class="text-white text-16 cursor-pointer font-normal dropdown-click font-Figtree flex text-center items-center justify-center rounded-full h-11 w-11 sign-in-button sign-in">
+                        <img class="rounded-full cursor-pointer" src="../assets/images/profile-pic.png"
+                            alt="">
+                    </a>
+                    <div
+                        class="hidden origin-top-right top-[67px] absolute right-0 mx-auto mt-2 w-[270px] border border-color-89 rounded-lg bg-white z-50 drop-down dropdown-shadow landing-header-dropdown">
+                        <div>
+                            <a href="">
+                                <div
+                                    class="flex gap-3 rounded-lg items-center justify-start magic-bg w-full px-[18px] py-5">
+                                        <img class="rounded-full h-11 w-11 cursor-pointer"
+                                            src="../assets/images/profile-pic.png" alt="">
+                                        <div class="text-left">
+                                            <p class="text-white text-16 font-semibold font-Figtree">
+                                                Agatha William</p>
+                                            <p class="text-white text-14 font-normal font-Figtree">
+                                                agatha@gmail.com</p>
+                                        </div>
+                                </div>
+                            </a>
+                            <a href=""
+                                class="flex justify-start items-center gap-1.5 text-14 font-normal text-color-14 font-Figtree px-[18px] pt-4 pb-2">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_2465_1852)">
+                                        <path
+                                            d="M2 8.66667H7.33333V2H2V8.66667ZM2 14H7.33333V10H2V14ZM8.66667 14H14V7.33333H8.66667V14ZM8.66667 2V6H14V2H8.66667Z"
+                                            fill="black" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_2465_1852">
+                                            <rect width="16" height="16" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <p>Dashboard
+                                </p>
+                            </a>
+                            <a href=""
+                                class="flex justify-start items-center gap-1.5 text-14 font-normal text-color-14 font-Figtree px-[18px] py-2">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_2465_1858)">
+                                        <path
+                                            d="M12.7597 8.62667C12.7864 8.42667 12.7997 8.22001 12.7997 8.00001C12.7997 7.78667 12.7864 7.57334 12.7531 7.37334L14.1064 6.32001C14.2264 6.22667 14.2597 6.04667 14.1864 5.91334L12.9064 3.70001C12.8264 3.55334 12.6597 3.50667 12.5131 3.55334L10.9197 4.19334C10.5864 3.94001 10.2331 3.72667 9.83975 3.56667L9.59975 1.87334C9.57308 1.71334 9.43975 1.60001 9.27975 1.60001H6.71975C6.55975 1.60001 6.43308 1.71334 6.40641 1.87334L6.16641 3.56667C5.77308 3.72667 5.41308 3.94667 5.08641 4.19334L3.49308 3.55334C3.34641 3.50001 3.17975 3.55334 3.09975 3.70001L1.82641 5.91334C1.74641 6.05334 1.77308 6.22667 1.90641 6.32001L3.25975 7.37334C3.22641 7.57334 3.19975 7.79334 3.19975 8.00001C3.19975 8.20667 3.21308 8.42667 3.24641 8.62667L1.89308 9.68001C1.77308 9.77334 1.73975 9.95334 1.81308 10.0867L3.09308 12.3C3.17308 12.4467 3.33975 12.4933 3.48641 12.4467L5.07975 11.8067C5.41308 12.06 5.76641 12.2733 6.15975 12.4333L6.39975 14.1267C6.43308 14.2867 6.55975 14.4 6.71975 14.4H9.27975C9.43975 14.4 9.57308 14.2867 9.59308 14.1267L9.83308 12.4333C10.2264 12.2733 10.5864 12.06 10.9131 11.8067L12.5064 12.4467C12.6531 12.5 12.8197 12.4467 12.8997 12.3L14.1797 10.0867C14.2597 9.94001 14.2264 9.77334 14.0997 9.68001L12.7597 8.62667ZM7.99975 10.4C6.67975 10.4 5.59975 9.32001 5.59975 8.00001C5.59975 6.68001 6.67975 5.60001 7.99975 5.60001C9.31975 5.60001 10.3997 6.68001 10.3997 8.00001C10.3997 9.32001 9.31975 10.4 7.99975 10.4Z"
+                                            fill="black" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_2465_1858">
+                                            <rect width="16" height="16" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <p>Account Settings</p>
+                            </a>
+                            <a href=""
+                                class="flex justify-start items-center gap-1.5 text-14 font-normal text-color-14 font-Figtree px-[18px] pt-2 pb-4">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M11 2.5C11 1.9475 10.5525 1.5 10 1.5H7.75C7.612 1.5 7.5 1.612 7.5 1.75V2.25C7.5 2.388 7.612 2.5 7.75 2.5H10V4.25C10 4.388 10.112 4.5 10.25 4.5H10.75C10.888 4.5 11 4.388 11 4.25V2.5Z"
+                                        fill="#141414" />
+                                    <path
+                                        d="M10 11.75V13.5H7.75C7.612 13.5 7.5 13.612 7.5 13.75V14.25C7.5 14.388 7.612 14.5 7.75 14.5H10C10.5525 14.5 11 14.0525 11 13.5V11.75C11 11.612 10.888 11.5 10.75 11.5H10.25C10.112 11.5 10 11.612 10 11.75Z"
+                                        fill="#141414" />
+                                    <path
+                                        d="M7.49992 8.49999C7.49992 8.63799 7.61192 8.74999 7.74992 8.74999H12.4999V10.323C12.4999 10.3885 12.5789 10.421 12.6249 10.375L14.9439 8.05599C14.9744 8.02549 14.9744 7.97549 14.9439 7.94499L12.6249 5.62499C12.5789 5.57899 12.4999 5.61149 12.4999 5.67699V7.24999H7.74992C7.61192 7.24999 7.49992 7.36199 7.49992 7.49999V8.49999Z"fill="#141414" />
+                                    <path
+                                        d="M1.39 2.427L6.146 1.0115C6.322 0.958998 6.5 1.088 6.5 1.268V14.7275C6.5 14.91 6.32 15.0405 6.1415 14.9875L1.39 13.573C1.1585 13.504 1 13.295 1 13.058V2.942C1 2.705 1.1585 2.496 1.39 2.427ZM4.5 8.5C4.5 8.7765 4.7235 9 5 9C5.2765 9 5.5 8.7765 5.5 8.5V7.5C5.5 7.224 5.2765 7 5 7C4.7235 7 4.5 7.224 4.5 7.5V8.5Z"
+                                        fill="#141414" />
+                                </svg>
+                                <p>Logout</p>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+              </ul>
+          </div>
+      </nav>
+  </header>
+
+    <div id="landing-page" class="dark:bg-color-14">
+      <div class="relative">
+        <img class="absolute h-full w-full dark:bg-color-14 sm:block hidden" src="../assets/images/main-bg.png" alt="">
+        <span>
+              <img class="absolute h-full w-full dark:bg-color-14 sm:hidden" src="../assets/images/mobile-hero-bg.svg" alt="">
+        </span>
+        <div class=" relative text-center content px-5 md:px-0">
+            <p class="font-Figtree pt-[187px] 5xl:text-20 text-18 font-medium text-color-F6 wow fadeInUp"  data-wow-offset="10">Create Better Content with Less Effort.</p>
+            <p class=" text-white 5xl:text-80 text-[52px] leading-[64px] font-bold font-RedHat mt-5 wow fadeInUp" data-wow-delay="200ms" data-wow-offset="10">AI Powered</p>
+            <div class="swiper slider3 2xl:w-[900px] m-auto wow fadeInUp" data-wow-delay="400ms" data-wow-offset="10">
+                <div class="swiper-wrapper md:mt-4 mt-3">
+                    <div class="swiper-slide w-full h-full">
+                        <div class="flex justify-center">
+                            <p class="5xl:text-80 text-[52px] leading-[64px] font-bold font-RedHat heading-3">Social Media Marketing
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide w-full h-full">
+                        <div class="relative flex justify-center">
+                            <p class="5xl:text-80 text-[52px] leading-[64px] font-bold font-RedHat heading-3">Content Improver
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide w-full h-full">
+                        <div class="relative flex justify-center">
+                            <p class="5xl:text-80 text-[52px] leading-[64px] font-bold font-RedHat heading-3">Video Script Writing
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide w-full h-full">
+                        <div class="relative flex justify-center">
+                            <p class="5xl:text-80 text-[52px] leading-[64px] font-bold font-RedHat heading-3">Landing Page Copy
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide w-full h-full">
+                        <div class="relative flex justify-center">
+                            <p class="5xl:text-80 text-[52px] leading-[64px] font-bold font-RedHat heading-3">Business Strategies
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide w-full h-full">
+                        <div class="relative flex justify-center">
+                            <p class="5xl:text-80 text-[52px] leading-[64px] font-bold font-RedHat heading-3">Blog & Email Writing
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide w-full h-full">
+                        <div class="relative flex justify-center">
+                            <p class="5xl:text-80 text-[52px] leading-[64px] font-bold font-RedHat heading-3">And So Much More!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="text-color-F6 font-Figtree font-medium 5xl:text-[26px] 5xl:leading-[44px] text-lg leading-[31px] md:mt-7 mt-6 wow fadeInUp" data-wow-delay="600ms" data-wow-offset="10">Write 10x faster, engage  your audience & never struggle with the blank page again. <br> The number #1 AI collaborative software you
+                ever need.
+            </p>
+            <div class="5xl:mt-[52px] mt-9 flex flex-col items-center md:gap-8 gap-7 justify-center wow fadeInUp" data-wow-delay="1000ms">
+                <a href="javaScript:void(0);"
+                    class="text-color-14 rounded-lg bg-white px-9 py-[13px] font-Figtree text-20 font-semibold">Get
+                    Started for Free</a>
+                <a href="javaScript:void(0);" class="text-white underline font-Figtree text-18 6xl:mb-[133px] xl:mb-36 lg:mb-[188px] mb-[290px] font-normal">Learn More</a>
+                <a href="#button-to-top" class="hidden button-to-bottom xl:block pb-[88px]">
+                    <div class="mouse m-1"></div>
+                </a>
+            </div>
+    
+           <span class="wow fadeInUp absolute bottom-[-84px] lg:bottom-[-52px] 9xl:right-[199px] 5xl:right-[73px] 3xl:right-20 md:right-16 right-[75px]" data-wow-delay="1500ms" data-wow-offset="10">
+                <img class="up-down-animation 4xl:w-[589px] md:h-[406px] xl:w-[549px] lg:w-[445px] w-[421px] h-[399px] object-contain"src="../assets/images/floating-robot.png" alt="Image">
+           </span>
+        </div>
+      </div>
+      <div class="md:mt-[122px] mt-[97px] dark:bg-color-14">
+          <div class="relative flex justify-center items-center">
+              <p class="uppercase absolute font-Figtree text-center heading-1 tracking-[0.2em] text-base leading-6 font-bold">Artificial Intelligence</p>
+          </div>
+          <p class="mt-[18px] font-RedHat 6xl:text-48 text-36 font-bold text-center text-color-14 dark:text-white">Generate Quality Content Effortlessly
+          </p>
+          <p class="mt-3 font-Figtree text-color-14 dark:text-white font-normal text-center 6xl:text-18 text-16 px-5 md:px-0 dark:bg-color-14"> Artifism is the ultimate AI-powered content generating tool to help you quickly create
+              <br> high-quality content that requires minimal effort, time, and cost.
+          </p>
+          <div class="5xl:pt-2.5 pt-0 5xl:mt-11 mt-8">
+            <div class="relative background-one">
+              <img class="absolute w-full h-full sm:block hidden" src="../assets/images/background-one.png"
+                  alt="Image">
+              <span>
+                  <img class="absolute w-full sm:hidden top-[490px]" src="../assets/images/mobile-bg-1.svg" alt="">
+              </span>
+              <div class="9xl:px-[310px] 8xl:px-40 lg:px-20 md:px-10 px-5 relative overflow-hidden">
+                  <div class="grid lg:grid-cols-2 lg:gap-6 gap-5">
+                      <div class="flex flex-col md:flex-row lg:flex-col lg:gap-6 gap-5">
+                          <div class="rounded-[30px] bg-color-76 w-full 6xl:px-10 px-[26px] 6xl:pt-8 py-[26px] lg:pb-0">
+                              <p class="font-RedHat text-white 6xl:text-36 text-28 font-bold">Let AI do all the magic for you</p>
+                              <div class="flex 2xl:flex-row md:flex-col-reverse gap-[26px] 6xl:mt-6 mt-5 items-center 2xl:items-start">
+                                  <img class="w-[215px] h-[292px] hidden lg:block bottom-0"
+                                      src="../assets/images/robot-hand.png"
+                                      alt="Image">
+                                  <div class="6xl:mt-1 mt-0">
+                                      <p class="text-18 text-white font-Figtree font-normal">Unlock the power of AI with our cutting-edge technology that help you generate well-crafted and joyfully original content effortlessly.</p>
+                                      <p class="text-18 text-white font-Figtree font-normal 6xl:mt-7 mt-5">Our AI knows what converts and how to create content that resonates with your audience.</p>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="rounded-[30px] bg-color-14 dark:bg-color-29 w-full text-white 6xl:px-10 p-[26px] 6xl:py-8 h-max">
+                              <p class="font-RedHat text-28 font-bold">Save Time & Money</p>
+                              <p class="mt-3 font-Figtree text-18 font-normal ">Save time and money with our automated system that empowers you to cut down your expenses while still getting great results.</p>
+                          </div>
+                      </div>
+                      <div class="border border-color-89 bg-white dark:bg-color-14 dark:border-color-47 rounded-[30px] 6xl:pl-10 px-[26px] 6xl:pr-9 6xl:pt-8 py-[26px] 6xl:pb-[48px] w-full">
+                          <p class="text-36 text-color-14 dark:text-white font-bold font-RedHat">The <span class="text-color-E2 pl-1">Only</span> Artificial Intelligence Service you ever need</p>
+                          <p class="mt-7 text-color-14 dark:text-white text-18 font-normal font-Figtree">Intuitive interface and minimal
+                              learning curve makes Artifism the ideal choice for anyone who needs to write content quickly
+                              without sacrificing quality and reach your milestones 10X faster!</p>
+                          <div class="flex md:flex-row lg:flex-col 7xl:flex-row flex-col gap-[15px] 6xl:mt-7 mt-5">
+                              <div>
+                                  <p class="font-Figtree text-color-14 dark:text-white text-18 font-normal"> Artifism is built to focus and create human-like content that helps you generate engaging content and ideas for blogs, applications, social media, videos, digital art, SEO and much more.</p>
+                                  <a class="6xl:mt-[35px] mt-[26px] flex text-color-14 dark:text-white text-20 font-Figtree font-medium items-center gap-2.5"
+                                      href="javaScript:void(0);"> <span>Learn more about us</span>
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="12" viewBox="0 0 14 12"
+                                          fill="none">
+                                          <path d="M13.707 6.70597C14.0977 6.3155 14.0977 5.68137 13.707 5.2909L8.70674 0.292854C8.31609 -0.0976181 7.68168 -0.0976181 7.29103 0.292854C6.90039 0.683327 6.90039 1.31745 7.29103 1.70793L10.5881 5.00039H1.00006C0.4469 5.00039 0 5.44709 0 6C0 6.55291 0.4469 6.99961 1.00006 6.99961H10.585L7.29416 10.2921C6.90351 10.6825 6.90351 11.3167 7.29416 11.7071C7.6848 12.0976 8.31921 12.0976 8.70986 11.7071L13.7101 6.7091L13.707 6.70597Z" fill="#E22861" />
+                                      </svg>
+                                  </a>
+                              </div>
+                              <img class="w-full h-[270px] px-[15px] md:px-0 object-contain" src="../assets/images/robot.png" alt="">
+                          </div>
+                      </div>
+                  </div>
+                  <div>
+                      <div class="relative flex justify-center items-center 6xl:mt-[172px] mt-[102px]">
+                          <p class="uppercase absolute heading-1 tracking-[0.2em] text-center font-bold text-16 font-Figtree">Ready made templates
+                          </p>
+                      </div>
+                      <p class="mt-[18px] font-RedHat 6xl:text-48 text-36 font-bold text-center text-color-14 dark:text-white">Think Less. Save Time. Use Cases.
+                      </p>
+                      <p class="mt-3 font-Figtree text-color-14 dark:text-white font-normal text-center 6xl:text-18 text-16">Our use case templates saves up your time and makes your work much more easier.
+                      </p>
+                      <div class="grid lg:grid-cols-2 lg:gap-6 gap-5 6xl:mt-16 mt-8">
+                          <div class="rounded-[30px] 6xl:pt-8 pt-[26px] 6xl:pb-9 pb-8 bg-color-F6 dark:bg-color-29 h-max">
+                              <p class="text-36 6xl:px-10 px-5 text-color-14 dark:text-white font-bold font-RedHat">Over <span class="text-color-E2">35+</span>
+                                  Use Case Templates</p>
+                                  <p class="6xl:mt-6 mt-5 6xl:px-10 px-5 text-color-14 dark:text-white text-lg leading-[30px] font-normal font-Figtree">
+                                      Our Use Cases help you quickly and easily create high-efficiency, human-friendly content for applications and social media,
+                                      scripts for videos, boost SEO, and generate digital art – all at the fraction :x of the cost and in one place!', ['x' => '<br>']) }}  </p>
+                              <p class="6xl:mt-6 mt-5 6xl:px-10 px-5 text-color-14 dark:text-white text-lg leading-[30px] font-normal font-Figtree">You can also create custom use case of your preferences and save it for future use.</p>
+                              <div class="mt-8 relative">
+                                  <img class="w-full h-full max-w-none dark:hidden" src="../assets/images/image-use-cases.png" alt="">
+                                  <img class="w-full h-full max-w-none dark:block hidden" src="../assets/images/dark-image-use-cases.png" alt="">
+                                  <span class="absolute top-0 9xl:-right-[178px] 8xl:-right-[187px] 7xl:-right-[200px] 6xl:-right-[176px] 5xl:-right-[170px] 3xl:-right-[165px] 2xl:-right-[155px] xl:-right-[137px] lg:-right-[118px] z-10 -right-28 max-w-none hidden xs:block sm:hidden lg:block">
+                                      <img class="9xl:w-full 8xl:w-[315px] 7xl:w-[336px] 6xl:w-[297px] 5xl:w-[288px] 3xl:w-[280px] 2xl:w-[261px] xl:w-[230px] lg:w-[198px] md:h-full h-[185px] dark:hidden" src="../assets/images/image-floating.png" alt="">
+                                      <img class="9xl:w-full 8xl:w-[315px] 7xl:w-[336px] 6xl:w-[297px] 5xl:w-[288px] 3xl:w-[280px] 2xl:w-[261px] xl:w-[230px] lg:w-[198px] md:h-full h-[185px] dark:block hidden" src="../assets/images/dark-image-floating.png" alt="">
+                                  </span>
+                              </div>
+                              <a class="6xl:mt-9 mt-8 flex text-color-14 dark:text-white font-Figtree text-20 font-medium justify-center items-center gap-2.5"
+                                  href="javaScript:void(0);"> <span>See all use cases</span>
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="12" viewBox="0 0 14 12" fill="none">
+                                      <path d="M13.707 6.70597C14.0977 6.3155 14.0977 5.68137 13.707 5.2909L8.70674 0.292854C8.31609 -0.0976181 7.68168 -0.0976181 7.29103 0.292854C6.90039 0.683327 6.90039 1.31745 7.29103 1.70793L10.5881 5.00039H1.00006C0.4469 5.00039 0 5.44709 0 6C0 6.55291 0.4469 6.99961 1.00006 6.99961H10.585L7.29416 10.2921C6.90351 10.6825 6.90351 11.3167 7.29416 11.7071C7.6848 12.0976 8.31921 12.0976 8.70986 11.7071L13.7101 6.7091L13.707 6.70597Z" fill="#E22861" />
+                                  </svg>
+                              </a>
+                          </div>
+                          <div class="flex flex-col lg:gap-6 gap-5">
+                              <div class="rounded-[30px]  flex sm:flex-row flex-col gap-5 md:gap-4 2xl:gap-5 sm:pt-3.5 pt-0 6xl:pl-10 6xl:pr-[47px] px-[26px] text-color-14 dark:text-white items-center lg:items-start border border-color-89 dark:border-color-47 h-max">
+                                  <div class="mt-[25px]">
+                                      <p class="font-RedHat text-28 2xl:text-28 lg:text-lg leading-[39px] font-bold">Be the King of Content.</p>
+                                      <p class="mt-3 font-Figtree text-18 2xl:text-18 md:text-sm leading-[30px] font-normal">You give few instructions and our trained AI will do all the hassle for you.</p>
+                                  </div>
+                                  <img class="w-[177px] h-[177px]" src="../assets/images/robot-image-2.png" alt="Image">
+                              </div>
+                              <div class="rounded-br-[38px] rounded-[30px] background-gradient-two 6xl:pl-[153px] sm:pl-24 p-[26px] pr-0 pb-0 pt-10 h-max">
+                                  <div>
+                                      <div class="flex">
+                                          <span class="relative">
+                                              <svg xmlns="http://www.w3.org/2000/svg" width="6" height="6" viewBox="0 0 6 6" fill="none">
+                                                  <circle cx="3" cy="3" r="3" fill="white" />
+                                              </svg>
+                                          </span>
+                                          <div class="border-l -ml-[3px] border-color-DF pl-3.5 pb-10">
+                                              <p class=" -mt-2 tracking-[0.2em] text-white font-Figtree text-14">STEP 1
+                                              </p>
+                                              <p class="mt-1.5 text-22 font-semibold text-white font-Figtree">Select Use Case Template
+                                              </p>
+                                          </div>
+                                      </div>
+                                      <div class="flex">
+                                          <span class="relative">
+                                              <svg xmlns="http://www.w3.org/2000/svg" width="6" height="6" viewBox="0 0 6 6" fill="none">
+                                                  <circle cx="3" cy="3" r="3" fill="white" />
+                                              </svg>
+                                          </span>
+                                          <div class="border-l -ml-[3px] border-color-DF pl-3.5 pb-10">
+                                              <p class="-mt-2 tracking-[0.2em] text-white font-Figtree text-14">STEP 2
+                                              </p>
+                                              <p class="mt-1.5 text-22 font-semibold text-white font-Figtree">Enter specific keywords and see the magic!
+                                              </p>
+                                          </div>
+                                      </div>
+                                      <div class="flex">
+                                          <span class="relative">
+                                              <svg xmlns="http://www.w3.org/2000/svg" width="6" height="6" viewBox="0 0 6 6" fill="none">
+                                                  <circle cx="3" cy="3" r="3" fill="white" />
+                                              </svg>
+                                          </span>
+                                          <div class="-ml-[3px] pl-3.5">
+                                              <p class="-mt-2 tracking-[0.2em] text-white font-Figtree text-14">STEP 3
+                                              </p>
+                                              <p class="mt-1.5 text-22 font-semibold text-white font-Figtree">Content is ready! You can edit, save or publish now.
+                                              </p>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <span class="flex justify-end bottom-0 items-end flex-col">
+                                      <img class="mt-9 w-full h-[329px]" src="../assets/images/image-dash.png" alt="Image">
+                                  </span>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div>
+              <div class="6xl:mt-[72px] mt-10 6xl:gap-[60px] gap-12 flex flex-col md:flex-row items-center justify-center">
+                  <div class="flex lg:flex-row flex-col items-center justify-center gap-3">
+                      <img class="" src="../assets/images/pen-tool 1.svg"
+                          alt="Image">
+                      <span class="text-color-14 dark:text-white text-18 font-Figtree font-medium">
+                          No more human error
+                      </span>
+                  </div>
+                  <div class="flex lg:flex-row flex-col items-center justify-center gap-3">
+                      <img class="" src="../assets/images/pen-tool 1.svg"
+                          alt="Image">
+                      <span class="text-color-14 dark:text-white text-18 font-Figtree font-medium">
+                          Publish content 10X faster
+                      </span>
+                  </div>
+                  <div class="flex lg:flex-row flex-col items-center justify-center gap-3">
+                      <img class="" src="../assets/images/rocket1.svg"
+                          alt="Image">
+                      <span class="text-color-14 dark:text-white text-18 font-Figtree font-medium">
+                          Boost sales with better copy
+                      </span>
+                  </div>
+              </div>
+              <p class="text-color-14 dark:text-white font-bold text-center font-RedHat 6xl:text-32 text-28 mt-10"> Start your free trial today and witness the magic!</p>
+              <p class="text-color-14 dark:text-white text-center text-18 font-normal mt-4 font-Figtree">No credit card required.</p>
+              <a href="javaScript:void(0);"
+                  class="w-[247px] h-[58px] flex gap-2.5 text-center items-center mx-auto justify-center mt-9 rounded-lg free-button"><span
+                      class="text-18 font-semibold text-color-14 dark:text-white font-Figtree rounded-lg">
+                      Get Started for Free</span> <svg xmlns="http://www.w3.org/2000/svg" width="14" height="12"
+                      viewBox="0 0 14 12" fill="none">
+                      <path
+                          d="M13.707 6.70597C14.0977 6.3155 14.0977 5.68137 13.707 5.2909L8.70674 0.292854C8.31609 -0.0976181 7.68168 -0.0976181 7.29103 0.292854C6.90039 0.683327 6.90039 1.31745 7.29103 1.70793L10.5881 5.00039H1.00006C0.4469 5.00039 0 5.44709 0 6C0 6.55291 0.4469 6.99961 1.00006 6.99961H10.585L7.29416 10.2921C6.90351 10.6825 6.90351 11.3167 7.29416 11.7071C7.6848 12.0976 8.31921 12.0976 8.70986 11.7071L13.7101 6.7091L13.707 6.70597Z"
+                          fill="#E22861" />
+                  </svg>
+              </a>
+          </div>
+          
+          <div class="relative 6xl:mt-[120px] mt-[72px]">
+              <img class="absolute w-full h-full dark:hidden" src="../assets/images/bg-two.png" alt="">
+              <img class="absolute w-full h-full dark:block hidden" src="../assets/images/dark-bg-two.png" alt="">
+              <div class="flex 2xl:flex-row flex-col z-50 relative justify-between gap-11 2xl:gap-0">
+                  <div class="6xl:pt-[122px] 9xl:pl-[310px] 8xl:pl-40 7xl:pl-32 lg:pl-16 md:pl-10 pl-5 pt-12 relative">
+                      <div class="relative">
+                          <p class="uppercase heading-2 absolute tracking-[0.2em] font-Figtree text-16 font-bold">
+                              image generator
+                          </p>
+                      </div>
+                      <p class="text-white mt-[30px] 6xl:text-48 text-36 font-bold font-RedHat">
+                          Generate Digital Arts
+                          <br> 
+                          Like Never Before
+                      </p>
+                      <p class="text-white 6xl:text-18 text-16 font-Figtree font-normal mt-3 lg:pr-[117px] pr-9">
+                          Create AI art or
+                          images from text that turns your imagination into unique images in seconds. Finally, you’ll have the
+                          perfect picture to
+                          match your message.
+                      </p>
+                      <div class="6xl:mt-9 mt-8 relative">
+                          <div class="flex gap-3 mb-[26px]">
+                              <img class="" src="../assets/images/checkmark.svg"
+                                  alt="
+                                  Image">
+                              <p class="font-normal text-18 text-white font-Figtree">
+                                  High Resolution upto 4k
+                              </p>
+                          </div>
+                          <div class="flex gap-3 mb-[26px]">
+                              <img class="" src="../assets/images/checkmark.svg" alt="Image">
+                              <p class="font-normal text-18 text-white font-Figtree">
+                                  Royality-free commercial use
+                              </p>
+                          </div>
+                          <div class="flex gap-3">
+                              <img class="" src="../assets/images/checkmark.svg" alt="Image">
+                              <p class="font-normal text-18 text-white font-Figtree">
+                                  No watermark
+                              </p>
+                          </div>
+                      </div>
+                      <div class="flex gap-4 mt-12 relative">
+                          <a class="font-Figtree text-white items-center font-semibold text-18 bg-color-E6 py-3.5 px-8 rounded-lg"
+                              href="javaScript:void(0);">
+                              Watch Demo
+                          </a>
+                          <a class="font-Figtree text-white dark:text-color-14 flex justify-center items-center font-semibold text-18 gap-2.5 learn-more-button h-[54px] w-[173px] rounded-lg"
+                              href="javaScript:void(0);"> 
+                              <span>
+                                  Learn More
+                              </span> 
+                              <svg xmlns="http://www.w3.org/2000/svg"
+                                  width="14" height="12" viewBox="0 0 14 12" fill="none">
+                                  <path
+                                      d="M13.707 6.70597C14.0977 6.3155 14.0977 5.68137 13.707 5.2909L8.70674 0.292854C8.31609 -0.0976181 7.68168 -0.0976181 7.29103 0.292854C6.90039 0.683327 6.90039 1.31745 7.29103 1.70793L10.5881 5.00039H1.00006C0.4469 5.00039 0 5.44709 0 6C0 6.55291 0.4469 6.99961 1.00006 6.99961H10.585L7.29416 10.2921C6.90351 10.6825 6.90351 11.3167 7.29416 11.7071C7.6848 12.0976 8.31921 12.0976 8.70986 11.7071L13.7101 6.7091L13.707 6.70597Z"
+                                      fill="currentColor" />
+                              </svg> 
+                          </a>
+                      </div>
+                  </div>
+                  <div class="flex 2xl:flex-row flex-col gap-9">
+                      <div class="relative slider-section px-5 lg:px-0">
+                          <div
+                              class="swiper 8xl:w-[570px] 6xl:w-[500px] 2xl:h-[780px] h-[576px] 2xl:w-[428px] sm:w-[90%] rounded-[30px] slider1 absolute 2xl:-bottom-11">
+                              <div class="swiper-wrapper rounded-[30px]">
+                                  <div class="swiper-slide w-full h-full rounded-[30px]"><img class="w-full h-full rounded-[30px]"
+                                          src="../assets/images/deer.png"
+                                          alt="
+                                          Image">
+                                  </div>
+                                  <div class="swiper-slide w-full h-full rounded-[30px]"><img class="w-full h-full rounded-[30px]"
+                                          src="../assets/images/sports-car.png"
+                                          alt="
+                                          Image"></div>
+                                  <div class="swiper-slide w-full h-full rounded-[30px]"><img class="w-full h-full rounded-[30px]"
+                                          src="../assets/images/mountain.png"
+                                          alt="
+                                          Image">
+                                  </div>
+                                  <div class="swiper-slide w-full h-full rounded-[30px]"><img class="w-full h-full rounded-[30px]"
+                                          src="../assets/images/potrait.png"
+                                          alt="
+                                          Image">
+                                  </div>
+                                  <div class="swiper-slide w-full h-full rounded-[30px]"><img class="w-full h-full rounded-[30px]"
+                                          src="../assets/images/ziraffe.png"
+                                          alt="
+                                          Image">
+                                  </div>
+                              </div>
+                              <div class="swiper-pagination"></div>
+          
+                          </div>
+                      </div>
+                      <div class="main-div 2xl:pr-9 pr-0 pb-12 lg:pb-0">
+                          <div class="slider m-auto overflow-hidden relative">
+                              <div class="slider-wrap slider-wrap flex gap-6 2xl:flex-col flex-row 2xl:w-full 2xl:h-[778px]">
+                                  <div class="slide 3xl:h-[230px] 3xl:w-80 w-64 h-[184px] text-center">
+                                      <img class="slide-image 3xl:h-[230px] 3xl:w-80 w-64 h-[184px] object-cover rounded-[16px]"
+                                          src="../assets/images/human-group.png"
+                                          alt="
+                                          Image">
+                                  </div>
+                                  <div class="slide 3xl:h-[230px] 3xl:w-80 w-64 h-[184px]">
+                                      <img class="slide-image 3xl:h-[230px] 3xl:w-80 w-64 h-[184px] object-cover rounded-[16px]"
+                                          src="../assets/images/space-ship.png"
+                                          alt="
+                                          Image">
+                                  </div>
+                                  <div class="slide 3xl:h-[230px] 3xl:w-80 w-64 h-[184px]">
+                                      <img class="slide-image 3xl:h-[230px] 3xl:w-80 w-64 h-[184px] object-cover rounded-[16px]"
+                                          src="../assets/images/cloud-human.png"
+                                          alt="
+                                          Image">
+                                  </div>
+                                  <div class="slide 3xl:h-[230px] 3xl:w-80 w-64 h-[184px]">
+                                      <img class="slide-image 3xl:h-[230px] 3xl:w-80 w-64 h-[184px] object-cover rounded-[16px]"
+                                          src="../assets/images/helmet.png"
+                                          alt="
+                                          Image">
+                                  </div>
+                                  <div class="slide 3xl:h-[230px] 3xl:w-80 w-64 h-[184px]">
+                                      <img class="slide-image 3xl:h-[230px] 3xl:w-80 w-64 h-[184px] object-cover rounded-[16px]"
+                                          src="../assets/images/robotics-hand.png"
+                                          alt="
+                                          Image">
+                                  </div>
+                                  <div class="slide 3xl:h-[230px] 3xl:w-80 w-64 h-[184px]">
+                                      <img class="slide-image 3xl:h-[230px] 3xl:w-80 w-64 h-[184px] object-cover rounded-[16px]"
+                                          src="../assets/images/rainbow.png"
+                                          alt="
+                                          Image">
+                                  </div>
+                                  <div class="slide 3xl:h-[230px] 3xl:w-80 w-64 h-[184px]">
+                                      <img class="slide-image 3xl:h-[230px] 3xl:w-80 w-64 h-[184px] object-cover rounded-[16px]"
+                                          src="../assets/images/car.png"
+                                          alt="
+                                          Image">
+                                  </div>
+                                  <div class="slide 3xl:h-[230px] 3xl:w-80 w-64 h-[184px]">
+                                      <img class="slide-image 3xl:h-[230px] 3xl:w-80 w-64 h-[184px] object-cover rounded-[16px]"
+                                          src="../assets/images/Rectangle-robot.png"
+                                          alt="
+                                          Image">
+                                  </div>
+                                  <div class="slide 3xl:h-[230px] 3xl:w-80 w-64 h-[184px]">
+                                      <img class="slide-image 3xl:h-[230px] 3xl:w-80 w-64 h-[184px] object-cover rounded-[16px]"
+                                          src="../assets/images/human-brain.png"
+                                          alt="
+                                          Image">
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        
+          <div class="relative 6xl:pt-[182px] pt-[52px] bg-white dark:bg-color-14">
+              <img class="absolute -top-[28rem] w-full hidden sm:block" src="../assets/images/bg-three.png" alt="">
+                <span class="w-full">
+                  <img class="absolute w-full block sm:hidden" src="../assets/images/mobile-bg-three.svg" alt="">
+                </span>  
+                <div class="9xl:px-[310px] 8xl:px-40 lg:px-16 relative">
+                  <p class="text-color-14 dark:text-white font-bold text-center font-RedHat 6xl:text-32 text-28 md:px-10 px-5">Collaborated With Industry Leaders
+                  </p>
+                  <p class="text-color-14 dark:text-white text-center 6xl:text-18 text-16 font-normal mt-4 md:px-10 px-5 font-Figtree">Thousands of marketers,
+                      agencies, and entrepreneurs choose Artifism to automate <br> and simplify their content marketing.
+                  </p>
+                  <div class="flex flex-wrap justify-center items-center md:gap-10 gap-[26px] mt-[60px] md:px-10 px-0">
+                      <img class="w-[200px] h-[60px]" src="../assets/images/micosoft.svg" alt="Image">
+                      <img class="w-[200px] h-[60px] dark:hidden" src="../assets/images/shopify.svg" alt="Image">
+                      <img class="w-[200px] h-[60px] hidden dark:block" src="../assets/images/dark-shopify.svg" alt="Image">
+                      <img class="w-[200px] h-[60px]" src="../assets/images/samsung.svg" alt="Image">
+                      <img class="w-[200px] h-[60px] dark:hidden" src="../assets/images/amazon.svg" alt="Image">
+                      <img class="w-[200px] h-[60px] hidden dark:block" src="../assets/images/dark-amazon.svg" alt="Image">
+                      <img class="w-[200px] h-[60px]" src="../assets/images/invision.svg" alt="Image">
+                  </div>
+                  <div class="relative flex lg:justify-start justify-center items-center 6xl:mt-[172px] mt-[102px]">
+                      <p class="uppercase absolute font-Figtree text-center heading-1 tracking-[0.2em] text-base leading-6 font-bold">
+                          pricing
+                      </p>
+                  </div>
+                  <p class="mt-[18px] font-RedHat 6xl:text-48 text-36 font-bold lg:text-left text-center text-color-14 dark:text-white">Subscription Plans</p>
+                  <div class="mt-3 flex lg:flex-row flex-col gap-12 lg:gap-0 justify-between items-center lg:px-0 md:px-10 px-5">
+                      <p class="font-Figtree text-color-14 dark:text-white font-normal text-start 6xl:text-18 text-16">We offer flexible pricing plans so everyone can find one that suits their needs. <br class="hidden lg:block"> Check out our pricing table for more information about our features and services.</p>
+                      <div
+                          class="rounded-2xl px-[18px] py-3.5 bg-color-F6 dark:bg-color-29 text-color-14 dark:text-white font-semibold font-Figtree text-16 flex justify-center items-center gap-3">
+                          <p>Monthly</p>
+                          <div class="flex items-center">
+                              <input type="checkbox" id="isActive" class="hidden" checked>
+                              <label for="isActive" id="subscription-switch" class="relative w-[52px] h-7 rounded-full bg-color-FFB cursor-pointer"></label>
+                            </div>
+                          <p>Annual <span class="text-color-E2">Save 20%</span> </p>
+                      </div>
+                  </div>
+                  <div class="grid md:grid-cols-2 lg:grid-cols-3 grid-cols-1 6xl:gap-10 lg:gap-5 gap-6 6xl:mt-14 mt-8 lg:px-0 md:px-10 px-5">
+                      <div class="h-max">
+                          <div class="rounded-[30px] border border-color-89 dark:border-color-47 bg-white dark:bg-color-14 6xl:py-9 py-8 6xl:pl-11 lg:pl-5 pl-8">
+                              <p class="text-color-14 dark:text-white text-24 font-medium font-Figtree">Starter Plan</p>
+                              <p class="text-36 font-medium font-RedHat text-color-14 dark:text-white mt-1">$ 
+                                  <span class="text-48 font-bold">19.99</span> <span class="text-18">/month</span>
+                              </p>
+                              <div class="flex flex-col gap-[18px] mt-8">
+                                  <div class="flex items-center text-color-14 dark:text-white text-16 font-medium font-Figtree gap-[9px]">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="15" height="11" viewBox="0 0 15 11"
+                                          fill="none">
+                                          <path
+                                              d="M13.88 1.17017C14.2755 1.56567 14.2755 2.20798 13.88 2.60349L5.77995 10.7035C5.38444 11.099 4.74214 11.099 4.34663 10.7035L0.296631 6.65349C-0.0988769 6.25798 -0.0988769 5.61567 0.296631 5.22017C0.692139 4.82466 1.33444 4.82466 1.72995 5.22017L5.06487 8.55192L12.4498 1.17017C12.8453 0.774658 13.4876 0.774658 13.8831 1.17017H13.88Z"
+                                              fill="currentColor" />
+                                      </svg>
+                                      <span>Al Templates</span>
+                                  </div>
+                                  <div class="flex items-center text-color-14 dark:text-white text-16 font-medium font-Figtree gap-[9px]">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="15" height="11" viewBox="0 0 15 11"
+                                          fill="none">
+                                          <path
+                                              d="M13.88 1.17017C14.2755 1.56567 14.2755 2.20798 13.88 2.60349L5.77995 10.7035C5.38444 11.099 4.74214 11.099 4.34663 10.7035L0.296631 6.65349C-0.0988769 6.25798 -0.0988769 5.61567 0.296631 5.22017C0.692139 4.82466 1.33444 4.82466 1.72995 5.22017L5.06487 8.55192L12.4498 1.17017C12.8453 0.774658 13.4876 0.774658 13.8831 1.17017H13.88Z"
+                                              fill="currentColor" />
+                                      </svg>
+                                      <span>10 Languages</span>
+                                  </div>
+                                  <div class="flex items-center text-color-14 dark:text-white text-16 font-medium font-Figtree gap-[9px]">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="15" height="11" viewBox="0 0 15 11"
+                                          fill="none">
+                                          <path
+                                              d="M13.88 1.17017C14.2755 1.56567 14.2755 2.20798 13.88 2.60349L5.77995 10.7035C5.38444 11.099 4.74214 11.099 4.34663 10.7035L0.296631 6.65349C-0.0988769 6.25798 -0.0988769 5.61567 0.296631 5.22017C0.692139 4.82466 1.33444 4.82466 1.72995 5.22017L5.06487 8.55192L12.4498 1.17017C12.8453 0.774658 13.4876 0.774658 13.8831 1.17017H13.88Z"
+                                              fill="currentColor" />
+                                      </svg>
+                                      <span>Landing Page Generator</span>
+                                  </div>
+                                  <div class="flex items-center text-color-14 dark:text-white text-16 font-medium font-Figtree gap-[9px]">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="15" height="11" viewBox="0 0 15 11"
+                                          fill="none">
+                                          <path
+                                              d="M13.88 1.17017C14.2755 1.56567 14.2755 2.20798 13.88 2.60349L5.77995 10.7035C5.38444 11.099 4.74214 11.099 4.34663 10.7035L0.296631 6.65349C-0.0988769 6.25798 -0.0988769 5.61567 0.296631 5.22017C0.692139 4.82466 1.33444 4.82466 1.72995 5.22017L5.06487 8.55192L12.4498 1.17017C12.8453 0.774658 13.4876 0.774658 13.8831 1.17017H13.88Z"
+                                              fill="currentColor" />
+                                      </svg>
+                                      <span>Al Article Writer</span>
+                                  </div>
+                                  <div class="flex items-center text-color-14 dark:text-white text-16 font-medium font-Figtree gap-[9px]">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="15" height="11" viewBox="0 0 15 11"
+                                          fill="none">
+                                          <path
+                                              d="M13.88 1.17017C14.2755 1.56567 14.2755 2.20798 13.88 2.60349L5.77995 10.7035C5.38444 11.099 4.74214 11.099 4.34663 10.7035L0.296631 6.65349C-0.0988769 6.25798 -0.0988769 5.61567 0.296631 5.22017C0.692139 4.82466 1.33444 4.82466 1.72995 5.22017L5.06487 8.55192L12.4498 1.17017C12.8453 0.774658 13.4876 0.774658 13.8831 1.17017H13.88Z"
+                                              fill="currentColor" />
+                                      </svg>
+                                      <span>Bulk Processing</span>
+                                  </div>
+                                  <div class="flex items-center text-color-14 dark:text-white text-16 font-medium font-Figtree gap-[9px]">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="15" height="11" viewBox="0 0 15 11"
+                                          fill="none">
+                                          <path
+                                              d="M13.88 1.17017C14.2755 1.56567 14.2755 2.20798 13.88 2.60349L5.77995 10.7035C5.38444 11.099 4.74214 11.099 4.34663 10.7035L0.296631 6.65349C-0.0988769 6.25798 -0.0988769 5.61567 0.296631 5.22017C0.692139 4.82466 1.33444 4.82466 1.72995 5.22017L5.06487 8.55192L12.4498 1.17017C12.8453 0.774658 13.4876 0.774658 13.8831 1.17017H13.88Z"
+                                              fill="currentColor" />
+                                      </svg>
+                                      <span>Priority access to new features</span>
+                                  </div>
+                                  <div class="flex items-center text-color-14 dark:text-white text-16 font-medium font-Figtree gap-[9px]">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="15" height="11" viewBox="0 0 15 11"
+                                          fill="none">
+                                          <path
+                                              d="M13.88 1.17017C14.2755 1.56567 14.2755 2.20798 13.88 2.60349L5.77995 10.7035C5.38444 11.099 4.74214 11.099 4.34663 10.7035L0.296631 6.65349C-0.0988769 6.25798 -0.0988769 5.61567 0.296631 5.22017C0.692139 4.82466 1.33444 4.82466 1.72995 5.22017L5.06487 8.55192L12.4498 1.17017C12.8453 0.774658 13.4876 0.774658 13.8831 1.17017H13.88Z"
+                                              fill="currentColor" />
+                                      </svg>
+                                      <span>Basic support</span>
+                                  </div>
+                              </div>
+                              <a href="javaScript:void(0);" class="mt-[34px] text-white text-16 font-semibold flex w-max py-[13px] px-8 rounded-lg bg-color-76 font-Figtree">Start Free Trial</a>
+                          </div>
+                      </div>
+                      <div class="h-max">
+                          <div class="rounded-[30px] border border-color-89 dark:border-color-47 bg-white dark:bg-color-14 6xl:py-9 py-8 6xl:pl-11 lg:pl-5 pl-8">
+                              <p class="text-color-14 dark:text-white text-24 font-medium font-Figtree">Premium Plan</p>
+                              <p class="text-36 font-medium font-RedHat text-color-14 dark:text-white mt-1">$ <span
+                                      class="text-48 font-bold">49.99</span> <span class="text-18">/month</span></p>
+                              <div class="flex flex-col gap-[18px] mt-8">
+                                  <div class="flex items-center text-color-14 dark:text-white text-16 font-medium font-Figtree gap-[9px]">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="15" height="11" viewBox="0 0 15 11"
+                                          fill="none">
+                                          <path
+                                              d="M13.88 1.17017C14.2755 1.56567 14.2755 2.20798 13.88 2.60349L5.77995 10.7035C5.38444 11.099 4.74214 11.099 4.34663 10.7035L0.296631 6.65349C-0.0988769 6.25798 -0.0988769 5.61567 0.296631 5.22017C0.692139 4.82466 1.33444 4.82466 1.72995 5.22017L5.06487 8.55192L12.4498 1.17017C12.8453 0.774658 13.4876 0.774658 13.8831 1.17017H13.88Z"
+                                              fill="currentColor" />
+                                      </svg>
+                                      <span> Everything in Free-trial, plus</span>
+                                  </div>
+                                  <div class="flex items-center text-color-14 dark:text-white text-16 font-medium font-Figtree gap-[9px]">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="15" height="11" viewBox="0 0 15 11"
+                                          fill="none">
+                                          <path
+                                              d="M13.88 1.17017C14.2755 1.56567 14.2755 2.20798 13.88 2.60349L5.77995 10.7035C5.38444 11.099 4.74214 11.099 4.34663 10.7035L0.296631 6.65349C-0.0988769 6.25798 -0.0988769 5.61567 0.296631 5.22017C0.692139 4.82466 1.33444 4.82466 1.72995 5.22017L5.06487 8.55192L12.4498 1.17017C12.8453 0.774658 13.4876 0.774658 13.8831 1.17017H13.88Z"
+                                              fill="currentColor" />
+                                      </svg>
+                                      <span>Complete Article Rewriter</span>
+                                  </div>
+                                  <div class="flex items-center text-color-14 dark:text-white text-16 font-medium font-Figtree gap-[9px]">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="15" height="11" viewBox="0 0 15 11"
+                                          fill="none">
+                                          <path
+                                              d="M13.88 1.17017C14.2755 1.56567 14.2755 2.20798 13.88 2.60349L5.77995 10.7035C5.38444 11.099 4.74214 11.099 4.34663 10.7035L0.296631 6.65349C-0.0988769 6.25798 -0.0988769 5.61567 0.296631 5.22017C0.692139 4.82466 1.33444 4.82466 1.72995 5.22017L5.06487 8.55192L12.4498 1.17017C12.8453 0.774658 13.4876 0.774658 13.8831 1.17017H13.88Z"
+                                              fill="currentColor" />
+                                      </svg>
+                                      <span>Research Mode (Coming soon)</span>
+                                  </div>
+                                  <div class="flex items-center text-color-14 dark:text-white text-16 font-medium font-Figtree gap-[9px]">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="15" height="11" viewBox="0 0 15 11"
+                                          fill="none">
+                                          <path
+                                              d="M13.88 1.17017C14.2755 1.56567 14.2755 2.20798 13.88 2.60349L5.77995 10.7035C5.38444 11.099 4.74214 11.099 4.34663 10.7035L0.296631 6.65349C-0.0988769 6.25798 -0.0988769 5.61567 0.296631 5.22017C0.692139 4.82466 1.33444 4.82466 1.72995 5.22017L5.06487 8.55192L12.4498 1.17017C12.8453 0.774658 13.4876 0.774658 13.8831 1.17017H13.88Z"
+                                              fill="currentColor" />
+                                      </svg>
+                                      <span>Workflows (Coming soon)</span>
+                                      
+                                  </div>
+                                  <div class="flex items-center text-color-14 dark:text-white text-16 font-medium font-Figtree gap-[9px]">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="15" height="11" viewBox="0 0 15 11"
+                                          fill="none">
+                                          <path
+                                              d="M13.88 1.17017C14.2755 1.56567 14.2755 2.20798 13.88 2.60349L5.77995 10.7035C5.38444 11.099 4.74214 11.099 4.34663 10.7035L0.296631 6.65349C-0.0988769 6.25798 -0.0988769 5.61567 0.296631 5.22017C0.692139 4.82466 1.33444 4.82466 1.72995 5.22017L5.06487 8.55192L12.4498 1.17017C12.8453 0.774658 13.4876 0.774658 13.8831 1.17017H13.88Z"
+                                              fill="currentColor" />
+                                      </svg>
+                                      <span>API Access</span>
+                                  </div>
+                                  <div class="flex items-center text-color-14 dark:text-white text-16 font-medium font-Figtree gap-[9px]">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="15" height="11" viewBox="0 0 15 11"
+                                          fill="none">
+                                          <path
+                                              d="M13.88 1.17017C14.2755 1.56567 14.2755 2.20798 13.88 2.60349L5.77995 10.7035C5.38444 11.099 4.74214 11.099 4.34663 10.7035L0.296631 6.65349C-0.0988769 6.25798 -0.0988769 5.61567 0.296631 5.22017C0.692139 4.82466 1.33444 4.82466 1.72995 5.22017L5.06487 8.55192L12.4498 1.17017C12.8453 0.774658 13.4876 0.774658 13.8831 1.17017H13.88Z"
+                                              fill="currentColor" />
+                                      </svg>
+                                      <span>Bulk Processing</span>
+                                  </div>
+                                  <div class="flex items-center text-color-14 dark:text-white text-16 font-medium font-Figtree gap-[9px]">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="15" height="11" viewBox="0 0 15 11"
+                                          fill="none">
+                                          <path
+                                              d="M13.88 1.17017C14.2755 1.56567 14.2755 2.20798 13.88 2.60349L5.77995 10.7035C5.38444 11.099 4.74214 11.099 4.34663 10.7035L0.296631 6.65349C-0.0988769 6.25798 -0.0988769 5.61567 0.296631 5.22017C0.692139 4.82466 1.33444 4.82466 1.72995 5.22017L5.06487 8.55192L12.4498 1.17017C12.8453 0.774658 13.4876 0.774658 13.8831 1.17017H13.88Z"
+                                              fill="currentColor" />
+                                      </svg>
+                                      <span>Surfer Integration</span>
+                                  </div>
+                                  <div class="flex items-center text-color-14 dark:text-white text-16 font-medium font-Figtree gap-[9px]">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="15" height="11" viewBox="0 0 15 11"
+                                          fill="none">
+                                          <path
+                                              d="M13.88 1.17017C14.2755 1.56567 14.2755 2.20798 13.88 2.60349L5.77995 10.7035C5.38444 11.099 4.74214 11.099 4.34663 10.7035L0.296631 6.65349C-0.0988769 6.25798 -0.0988769 5.61567 0.296631 5.22017C0.692139 4.82466 1.33444 4.82466 1.72995 5.22017L5.06487 8.55192L12.4498 1.17017C12.8453 0.774658 13.4876 0.774658 13.8831 1.17017H13.88Z"
+                                              fill="currentColor" />
+                                      </svg>
+                                      <span>Priority access to new features</span>
+                                  </div>
+                                  <div class="flex items-center text-color-14 dark:text-white text-16 font-medium font-Figtree gap-[9px]">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="15" height="11" viewBox="0 0 15 11"
+                                          fill="none">
+                                          <path
+                                              d="M13.88 1.17017C14.2755 1.56567 14.2755 2.20798 13.88 2.60349L5.77995 10.7035C5.38444 11.099 4.74214 11.099 4.34663 10.7035L0.296631 6.65349C-0.0988769 6.25798 -0.0988769 5.61567 0.296631 5.22017C0.692139 4.82466 1.33444 4.82466 1.72995 5.22017L5.06487 8.55192L12.4498 1.17017C12.8453 0.774658 13.4876 0.774658 13.8831 1.17017H13.88Z"
+                                              fill="currentColor" />
+                                      </svg>
+                                      <span>Premium support</span>
+                                  </div>
+                              </div>
+                              <a href="javaScript:void(0);" class="mt-[34px] text-white text-16 font-semibold flex w-max py-[13px] px-8 rounded-lg bg-color-E2 font-Figtree">Get Started</a>
+                          </div>
+                      </div>
+                      <div class="h-max bg-white dark:bg-color-14 rounded-[30px] card-border">
+                          <div class="6xl:py-9 py-8 6xl:pl-11 lg:pl-5 pl-8">
+                              <p class="text-color-14 dark:text-white text-24 font-medium font-Figtree">Premium Plan</p>
+                              <div class="relative">
+                                  <p class="text-36 font-medium font-RedHat mt-1 absolute"> <span class=" heading-1"> $
+                                      </span> <span class="text-48 font-bold heading-1">129.00</span> <span class="text-18 text-color-14 dark:text-white">/month</span>
+                                  </p>
+                              </div>
+                              <div class="flex flex-col gap-[18px] mt-[101px]">
+                                  <div class="flex items-center text-color-14 dark:text-white text-16 font-medium font-Figtree gap-[9px]">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="15" height="11" viewBox="0 0 15 11"
+                                          fill="none">
+                                          <path
+                                              d="M13.88 1.17017C14.2755 1.56567 14.2755 2.20798 13.88 2.60349L5.77995 10.7035C5.38444 11.099 4.74214 11.099 4.34663 10.7035L0.296631 6.65349C-0.0988769 6.25798 -0.0988769 5.61567 0.296631 5.22017C0.692139 4.82466 1.33444 4.82466 1.72995 5.22017L5.06487 8.55192L12.4498 1.17017C12.8453 0.774658 13.4876 0.774658 13.8831 1.17017H13.88Z"
+                                              fill="currentColor" />
+                                      </svg>
+                                      <span>Artifism Bot (ChatGPT-like chatbot)</span>
+                                  </div>
+                                  <div class="flex items-center text-color-14 dark:text-white text-16 font-medium font-Figtree gap-[9px]">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="15" height="11" viewBox="0 0 15 11"
+                                          fill="none">
+                                          <path
+                                              d="M13.88 1.17017C14.2755 1.56567 14.2755 2.20798 13.88 2.60349L5.77995 10.7035C5.38444 11.099 4.74214 11.099 4.34663 10.7035L0.296631 6.65349C-0.0988769 6.25798 -0.0988769 5.61567 0.296631 5.22017C0.692139 4.82466 1.33444 4.82466 1.72995 5.22017L5.06487 8.55192L12.4498 1.17017C12.8453 0.774658 13.4876 0.774658 13.8831 1.17017H13.88Z"
+                                              fill="currentColor" />
+                                      </svg>
+                                      <span>100+ AI Templates</span>
+                                  </div>
+                                  <div class="flex items-center text-color-14 dark:text-white text-16 font-medium font-Figtree gap-[9px]">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="15" height="11" viewBox="0 0 15 11"
+                                          fill="none">
+                                          <path
+                                              d="M13.88 1.17017C14.2755 1.56567 14.2755 2.20798 13.88 2.60349L5.77995 10.7035C5.38444 11.099 4.74214 11.099 4.34663 10.7035L0.296631 6.65349C-0.0988769 6.25798 -0.0988769 5.61567 0.296631 5.22017C0.692139 4.82466 1.33444 4.82466 1.72995 5.22017L5.06487 8.55192L12.4498 1.17017C12.8453 0.774658 13.4876 0.774658 13.8831 1.17017H13.88Z"
+                                              fill="currentColor" />
+                                      </svg>
+                                      <span>25+ Languages</span>
+                                  </div>
+                                  <div class="flex items-center text-color-14 dark:text-white text-16 font-medium font-Figtree gap-[9px]">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="15" height="11" viewBox="0 0 15 11"
+                                          fill="none">
+                                          <path
+                                              d="M13.88 1.17017C14.2755 1.56567 14.2755 2.20798 13.88 2.60349L5.77995 10.7035C5.38444 11.099 4.74214 11.099 4.34663 10.7035L0.296631 6.65349C-0.0988769 6.25798 -0.0988769 5.61567 0.296631 5.22017C0.692139 4.82466 1.33444 4.82466 1.72995 5.22017L5.06487 8.55192L12.4498 1.17017C12.8453 0.774658 13.4876 0.774658 13.8831 1.17017H13.88Z"
+                                              fill="currentColor" />
+                                      </svg>
+                                      <span>Landing Page Generator</span>
+                                  </div>
+                                  <div class="flex items-center text-color-14 dark:text-white text-16 font-medium font-Figtree gap-[9px]">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="15" height="11" viewBox="0 0 15 11"
+                                          fill="none">
+                                          <path
+                                              d="M13.88 1.17017C14.2755 1.56567 14.2755 2.20798 13.88 2.60349L5.77995 10.7035C5.38444 11.099 4.74214 11.099 4.34663 10.7035L0.296631 6.65349C-0.0988769 6.25798 -0.0988769 5.61567 0.296631 5.22017C0.692139 4.82466 1.33444 4.82466 1.72995 5.22017L5.06487 8.55192L12.4498 1.17017C12.8453 0.774658 13.4876 0.774658 13.8831 1.17017H13.88Z"
+                                              fill="currentColor" />
+                                      </svg>
+                                      <span>1-Click WordPress Export</span>
+                                  </div>
+                                  <div class="flex items-center text-color-14 dark:text-white text-16 font-medium font-Figtree gap-[9px]">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="15" height="11" viewBox="0 0 15 11"
+                                          fill="none">
+                                          <path
+                                              d="M13.88 1.17017C14.2755 1.56567 14.2755 2.20798 13.88 2.60349L5.77995 10.7035C5.38444 11.099 4.74214 11.099 4.34663 10.7035L0.296631 6.65349C-0.0988769 6.25798 -0.0988769 5.61567 0.296631 5.22017C0.692139 4.82466 1.33444 4.82466 1.72995 5.22017L5.06487 8.55192L12.4498 1.17017C12.8453 0.774658 13.4876 0.774658 13.8831 1.17017H13.88Z"
+                                              fill="currentColor" />
+                                      </svg>
+                                      <span>Zapier Integration</span>
+                                  </div>
+                                  <div class="flex items-center text-color-14 dark:text-white text-16 font-medium font-Figtree gap-[9px]">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="15" height="11" viewBox="0 0 15 11"
+                                          fill="none">
+                                          <path
+                                              d="M13.88 1.17017C14.2755 1.56567 14.2755 2.20798 13.88 2.60349L5.77995 10.7035C5.38444 11.099 4.74214 11.099 4.34663 10.7035L0.296631 6.65349C-0.0988769 6.25798 -0.0988769 5.61567 0.296631 5.22017C0.692139 4.82466 1.33444 4.82466 1.72995 5.22017L5.06487 8.55192L12.4498 1.17017C12.8453 0.774658 13.4876 0.774658 13.8831 1.17017H13.88Z"
+                                              fill="currentColor" />
+                                      </svg>
+                                      <span>Browser extensions</span>
+                                  </div>
+                                  <div class="flex items-center text-color-14 dark:text-white text-16 font-medium font-Figtree gap-[9px]">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="15" height="11" viewBox="0 0 15 11"
+                                          fill="none">
+                                          <path
+                                              d="M13.88 1.17017C14.2755 1.56567 14.2755 2.20798 13.88 2.60349L5.77995 10.7035C5.38444 11.099 4.74214 11.099 4.34663 10.7035L0.296631 6.65349C-0.0988769 6.25798 -0.0988769 5.61567 0.296631 5.22017C0.692139 4.82466 1.33444 4.82466 1.72995 5.22017L5.06487 8.55192L12.4498 1.17017C12.8453 0.774658 13.4876 0.774658 13.8831 1.17017H13.88Z"
+                                              fill="currentColor" />
+                                      </svg>
+                                      <span>AI Article Writer</span>
+                                  </div>
+                                  <div class="flex items-center text-color-14 dark:text-white text-16 font-medium font-Figtree gap-[9px]">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="15" height="11" viewBox="0 0 15 11"
+                                          fill="none">
+                                          <path
+                                              d="M13.88 1.17017C14.2755 1.56567 14.2755 2.20798 13.88 2.60349L5.77995 10.7035C5.38444 11.099 4.74214 11.099 4.34663 10.7035L0.296631 6.65349C-0.0988769 6.25798 -0.0988769 5.61567 0.296631 5.22017C0.692139 4.82466 1.33444 4.82466 1.72995 5.22017L5.06487 8.55192L12.4498 1.17017C12.8453 0.774658 13.4876 0.774658 13.8831 1.17017H13.88Z"
+                                              fill="currentColor" />
+                                      </svg>
+                                      <span>Sonic Editor (Google Docs like Editor)</span>
+                                  </div>
+                                  <div class="flex items-center text-color-14 dark:text-white text-16 font-medium font-Figtree gap-[9px]">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="15" height="11" viewBox="0 0 15 11"
+                                          fill="none">
+                                          <path
+                                              d="M13.88 1.17017C14.2755 1.56567 14.2755 2.20798 13.88 2.60349L5.77995 10.7035C5.38444 11.099 4.74214 11.099 4.34663 10.7035L0.296631 6.65349C-0.0988769 6.25798 -0.0988769 5.61567 0.296631 5.22017C0.692139 4.82466 1.33444 4.82466 1.72995 5.22017L5.06487 8.55192L12.4498 1.17017C12.8453 0.774658 13.4876 0.774658 13.8831 1.17017H13.88Z"
+                                              fill="currentColor" />
+                                      </svg>
+                                      <span>API Access</span>
+                                  </div>
+                              </div>
+                              <a href="javaScript:void(0);" class="mt-[34px] text-white dark:text-color-14 text-16 font-semibold flex w-max py-[13px] px-8 rounded-lg bg-color-14 dark:bg-white font-Figtree">Get Started</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="9xl:px-[310px] 8xl:px-40 lg:px-16 md:px-10 px-5">
+              <div>
+                  <div class="relative flex justify-center items-center 6xl:mt-[190px] mt-[100px]">
+                      <p class="uppercase absolute heading-1 tracking-[0.2em] text-center font-bold text-16 font-Figtree">customer reviews</p>
+                  </div>
+                  <p class="mt-[18px] font-RedHat 6xl:text-48 text-36 font-bold text-center text-color-14 dark:text-white">Used By Millions Around The Globe</p>
+                  <p class="mt-3 font-Figtree text-color-14 dark:text-white font-normal text-center 6xl:text-18 text-16">See what other people are saying about Artifism and be a part of it.</p>
+                  <div class="6xl:mt-16 mt-8">
+                      <div class="grid 6xl:grid-cols-4 lg:grid-cols-3 grid-cols-1 gap-6">
+                          <div class="flex flex-col gap-6">
+                              <div class="bg-color-F6 dark:bg-color-29 p-[18px] rounded-[20px] relative h-max">
+                                  <div class="flex gap-1 items-center justify-end absolute top-[23px] right-[18px]">
+                                      <svg class="" xmlns="http://www.w3.org/2000/svg" width="18" height="19"
+                                          viewBox="0 0 18 19" fill="none">
+                                          <g clip-path="url(#clip0_76_426)">
+                                              <path
+                                                  d="M9 13.4525L13.635 16.25L12.405 10.9775L16.5 7.43L11.1075 6.9725L9 2L6.8925 6.9725L1.5 7.43L5.595 10.9775L4.365 16.25L9 13.4525Z"
+                                                  fill="#FCCA19" />
+                                          </g>
+                                          <defs>
+                                              <clipPath id="clip0_76_426">
+                                                  <rect width="18" height="18" fill="white" transform="translate(0 0.5)" />
+                                              </clipPath>
+                                          </defs>
+                                      </svg>
+                                      <span class="font-medium text-color-14 dark:text-white text-15 font-Figtree">5.0</span>
+                                  </div>
+                                  <div class="flex justify-start gap-2.5 items-center">
+                                      <img src="../assets/images/profile-image-1.png" alt="Image">
+                                      <div>
+                                          <p class="text-color-14 dark:text-white font-Figtree font-semibold text-15">Kyle Sugar</p>
+                                          <p class="font-Figtree text-color-14 dark:text-white text-12 font-normal mt-1">Student, Harvard University</p>
+                                      </div>
+                                  </div>
+                                  <p class="font-Figtree text-18 font-semibold text-color-14 dark:text-white mt-6">If you're a serious
+                                      marketer, this will be your favorite tool.
+                                  </p>
+                                  <p class="font-Figtree text-15 leading-[27px] font-normal text-color-14 dark:text-white mt-3">I think this is the
+                                      software of the year, maybe the decade... This is THE tool we're using at Lurn every
+                                      single day to write our ads.
+                                  </p>
+                              </div>
+                              <div class="bg-white dark:bg-color-14 border border-color-DF dark:border-color-47 p-[18px] rounded-[20px] relative h-max">
+                                  <div class="flex gap-1 items-center justify-end absolute top-[23px] right-[18px]">
+                                      <svg class="" xmlns="http://www.w3.org/2000/svg" width="18" height="19"
+                                          viewBox="0 0 18 19" fill="none">
+                                          <g clip-path="url(#clip0_76_426)">
+                                              <path
+                                                  d="M9 13.4525L13.635 16.25L12.405 10.9775L16.5 7.43L11.1075 6.9725L9 2L6.8925 6.9725L1.5 7.43L5.595 10.9775L4.365 16.25L9 13.4525Z"
+                                                  fill="#FCCA19" />
+                                          </g>
+                                          <defs>
+                                              <clipPath id="clip0_76_426">
+                                                  <rect width="18" height="18" fill="white" transform="translate(0 0.5)" />
+                                              </clipPath>
+                                          </defs>
+                                      </svg>
+                                      <span class="font-medium text-color-14 dark:text-white text-15 font-Figtree">5.0</span>
+                                  </div>
+                                  <div class="flex justify-start gap-2.5 items-center">
+                                      <img src="../assets/images/profile-image-3.png" alt="Image">
+                                      <div>
+                                          <p class="text-color-14 dark:text-white font-Figtree font-semibold text-15">Bobby Davidson</p>
+                                          <p class="font-Figtree text-color-14 dark:text-white text-12 font-normal mt-1">Student, Harvard
+                                              University
+                                          </p>
+                                      </div>
+                                  </div>
+                                  <p class="font-Figtree text-18 font-semibold text-color-14 dark:text-white mt-6">Freed my mind to be
+                                      more creative.
+                                  </p>
+                                  <p class="font-Figtree text-15 leading-[27px] font-normal text-color-14 dark:text-white mt-3">Delegation has always
+                                      been hard for me, but writing with Jasper has enhanced my process, letting me focus
+                                      on the message and not the minutiae. This has freed my mind to be more creative with
+                                      my content, and further raised the level of my own writing ability.
+                                  </p>
+                              </div>
+                          </div>
+                          <div class="flex flex-col gap-6">
+                              <div class="bg-white dark:bg-color-14 border border-color-DF dark:border-color-47 p-[18px] rounded-[20px] relative h-max">
+                                  <div class="flex gap-1 items-center justify-end absolute top-[23px] right-[18px]">
+                                      <svg class="" xmlns="http://www.w3.org/2000/svg" width="18" height="19"
+                                          viewBox="0 0 18 19" fill="none">
+                                          <g clip-path="url(#clip0_76_426)">
+                                              <path
+                                                  d="M9 13.4525L13.635 16.25L12.405 10.9775L16.5 7.43L11.1075 6.9725L9 2L6.8925 6.9725L1.5 7.43L5.595 10.9775L4.365 16.25L9 13.4525Z"
+                                                  fill="#FCCA19" />
+                                          </g>
+                                          <defs>
+                                              <clipPath id="clip0_76_426">
+                                                  <rect width="18" height="18" fill="white" transform="translate(0 0.5)" />
+                                              </clipPath>
+                                          </defs>
+                                      </svg>
+                                      <span class="font-medium text-color-14 dark:text-white text-15 font-Figtree">5.0</span>
+                                  </div>
+                                  <div class="flex justify-start gap-2.5 items-center">
+                                      <img src="../assets/images/profile-image-2.png" alt="Image">
+                                      <div>
+                                          <p class="text-color-14 dark:text-white font-Figtree font-semibold text-15">Michael Cougar</p>
+                                          <p class="font-Figtree text-color-14 dark:text-white text-12 font-normal mt-1">UX Designer,
+                                              Giga
+                                              Engineers
+                                          </p>
+                                      </div>
+                                  </div>
+                                  <p class="font-Figtree text-18 font-semibold text-color-14 dark:text-white mt-6">the landing page
+                                      creator is
+                                      10X outstanding.
+                                  </p>
+                                  <p class="font-Figtree text-15 leading-[27px] font-normal text-color-14 dark:text-white mt-3">For my agency,
+                                      Artifism
+                                      has been a game changer. With the click of a button, I can create a complete landing
+                                      page. I receive 5 different variations of content so that I can choose the one that
+                                      I like best. Moreover, the content rewriting feature is top-notch. And the blog
+                                      writer is outstanding, 
+                                  </p>
+                              </div>
+                              <div class="bg-color-F6 dark:bg-color-29 p-[18px] rounded-[20px] relative h-max">
+                                  <div class="flex gap-1 items-center justify-end absolute top-[23px] right-[18px]">
+                                      <svg class="" xmlns="http://www.w3.org/2000/svg" width="18" height="19"
+                                          viewBox="0 0 18 19" fill="none">
+                                          <g clip-path="url(#clip0_76_426)">
+                                              <path
+                                                  d="M9 13.4525L13.635 16.25L12.405 10.9775L16.5 7.43L11.1075 6.9725L9 2L6.8925 6.9725L1.5 7.43L5.595 10.9775L4.365 16.25L9 13.4525Z"
+                                                  fill="#FCCA19" />
+                                          </g>
+                                          <defs>
+                                              <clipPath id="clip0_76_426">
+                                                  <rect width="18" height="18" fill="white" transform="translate(0 0.5)" />
+                                              </clipPath>
+                                          </defs>
+                                      </svg>
+                                      <span class="font-medium text-color-14 dark:text-white text-15 font-Figtree">5.0</span>
+                                  </div>
+                                  <div class="flex justify-start gap-2.5 items-center">
+                                      <img src="../assets/images/profile-image-4.png" alt="Image">
+                                      <div>
+                                          <p class="text-color-14 dark:text-white font-Figtree font-semibold text-15">Bobby Davidson</p>
+                                          <p class="font-Figtree text-color-14 dark:text-white text-12 font-normal mt-1">Student, Harvard
+                                              University
+                                          </p>
+                                      </div>
+                                  </div>
+                                  <p class="font-Figtree text-18 font-semibold text-color-14 dark:text-white mt-6">So easy to use!</p>
+                                  <p class="font-Figtree text-15 leading-[27px] font-normal text-color-14 dark:text-white mt-3">
+                                      My community will flip for how easy it is and copy is a huge piece of what keeps them stuck.
+                                  </p>
+                              </div>
+                          </div>
+                          <div class="flex flex-col gap-6">
+                              <div class="bg-color-F6 dark:bg-color-29 p-[18px] rounded-[20px] relative h-max">
+                                  <div class="flex gap-1 items-center justify-end absolute top-[23px] right-[18px]">
+                                      <svg class="" xmlns="http://www.w3.org/2000/svg" width="18" height="19"
+                                          viewBox="0 0 18 19" fill="none">
+                                          <g clip-path="url(#clip0_76_426)">
+                                              <path
+                                                  d="M9 13.4525L13.635 16.25L12.405 10.9775L16.5 7.43L11.1075 6.9725L9 2L6.8925 6.9725L1.5 7.43L5.595 10.9775L4.365 16.25L9 13.4525Z"
+                                                  fill="#FCCA19" />
+                                          </g>
+                                          <defs>
+                                              <clipPath id="clip0_76_426">
+                                                  <rect width="18" height="18" fill="white"
+                                                      transform="translate(0 0.5)" />
+                                              </clipPath>
+                                          </defs>
+                                      </svg>
+                                      <span class="font-medium text-color-14 dark:text-white text-15 font-Figtree">5.0</span>
+                                  </div>
+                                  <div class="flex justify-start gap-2.5 items-center">
+                                      <img src="../assets/images/profile-image-5.png" alt="Image">
+                                      <div>
+                                          <p class="text-color-14 dark:text-white font-Figtree font-semibold text-15">Pashto Gonzalez</p>
+                                          <p class="font-Figtree text-color-14 dark:text-white text-12 font-normal mt-1">Student, Harvard University</p>
+                                      </div>
+                                  </div>
+                                  <p class="font-Figtree text-18 font-semibold text-color-14 dark:text-white mt-6">This AI is freaking incredible!</p>
+                                  <p class="font-Figtree text-15 leading-[27px] font-normal text-color-14 dark:text-white mt-3">
+                                      Writing content for my company used to take hours and my brain would be mush at the end of each day. Thank
+                                      you for developing such a time/life saving tool that removes the stress from content creation.
+                                  </p>
+                              </div>
+                              <div class="bg-white dark:bg-color-14 border border-color-DF dark:border-color-47 p-[18px] rounded-[20px] relative h-max">
+                                  <div class="flex gap-1 items-center justify-end absolute top-[23px] right-[18px]">
+                                      <svg class="" xmlns="http://www.w3.org/2000/svg" width="18" height="19"
+                                          viewBox="0 0 18 19" fill="none">
+                                          <g clip-path="url(#clip0_76_426)">
+                                              <path
+                                                  d="M9 13.4525L13.635 16.25L12.405 10.9775L16.5 7.43L11.1075 6.9725L9 2L6.8925 6.9725L1.5 7.43L5.595 10.9775L4.365 16.25L9 13.4525Z"
+                                                  fill="#FCCA19" />
+                                          </g>
+                                          <defs>
+                                              <clipPath id="clip0_76_426">
+                                                  <rect width="18" height="18" fill="white"
+                                                      transform="translate(0 0.5)" />
+                                              </clipPath>
+                                          </defs>
+                                      </svg>
+                                      <span class="font-medium text-color-14 dark:text-white text-15 font-Figtree">5.0</span>
+                                  </div>
+                                  <div class="flex justify-start gap-2.5 items-center">
+                                      <img src="../assets/images/profile-image-6.png" alt="Image">
+                                      <div>
+                                          <p class="text-color-14 dark:text-white font-Figtree font-semibold text-15">Jimmy Jim Jaguar</p>
+                                          <p class="font-Figtree text-color-14 dark:text-white text-12 font-normal mt-1">Student, Harvard University</p>
+                                      </div>
+                                  </div>
+                                  <p class="font-Figtree text-18 font-semibold text-color-14 dark:text-white mt-6">An incredible tool from a great team collaboration</p>
+                                  <p class="font-Figtree text-15 leading-[27px] font-normal text-color-14 dark:text-white mt-3">
+                                      An incredible tool from
+                                      a great team of smart entrepreneurs. It's 5 out 5 stars. BUT the team behind
+                                      Artifism, I've had the privilege of watching from a distance, as they created and
+                                      built incredible tools over the years. They do great things. And create value-based
+                                      solutions that make life better for their customers.
+                                  </p>
+                              </div>
+                          </div>
+                          <div class="flex flex-col gap-6">
+                              <div class="bg-white dark:bg-color-14 border border-color-DF dark:border-color-47 p-3.5 rounded-[20px] relative h-max">
+                                  <div class="flex justify-between">
+                                      <div class="flex justify-start gap-2 items-center">
+                                          <p class="text-48 font-RedHat font-bold text-color-14 dark:text-white">4.9</p>
+                                          <div>
+                                              <div class="flex gap-[3px]">
+                                                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                      xmlns="http://www.w3.org/2000/svg">
+                                                      <g clip-path="url(#clip0_70_355)">
+                                                          <path
+                                                              d="M7.99967 11.513L12.1197 13.9997L11.0263 9.31301L14.6663 6.15967L9.87301 5.75301L7.99967 1.33301L6.12634 5.75301L1.33301 6.15967L4.97301 9.31301L3.87967 13.9997L7.99967 11.513Z"
+                                                              fill="#FCCA19" />
+                                                      </g>
+                                                      <defs>
+                                                          <clipPath id="clip0_70_355">
+                                                              <rect width="16" height="16" fill="white" />
+                                                          </clipPath>
+                                                      </defs>
+                                                  </svg>
+                                                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                      xmlns="http://www.w3.org/2000/svg">
+                                                      <g clip-path="url(#clip0_70_355)">
+                                                          <path
+                                                              d="M7.99967 11.513L12.1197 13.9997L11.0263 9.31301L14.6663 6.15967L9.87301 5.75301L7.99967 1.33301L6.12634 5.75301L1.33301 6.15967L4.97301 9.31301L3.87967 13.9997L7.99967 11.513Z"
+                                                              fill="#FCCA19" />
+                                                      </g>
+                                                      <defs>
+                                                          <clipPath id="clip0_70_355">
+                                                              <rect width="16" height="16" fill="white" />
+                                                          </clipPath>
+                                                      </defs>
+                                                  </svg>
+                                                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                      xmlns="http://www.w3.org/2000/svg">
+                                                      <g clip-path="url(#clip0_70_355)">
+                                                          <path
+                                                              d="M7.99967 11.513L12.1197 13.9997L11.0263 9.31301L14.6663 6.15967L9.87301 5.75301L7.99967 1.33301L6.12634 5.75301L1.33301 6.15967L4.97301 9.31301L3.87967 13.9997L7.99967 11.513Z"
+                                                              fill="#FCCA19" />
+                                                      </g>
+                                                      <defs>
+                                                          <clipPath id="clip0_70_355">
+                                                              <rect width="16" height="16" fill="white" />
+                                                          </clipPath>
+                                                      </defs>
+                                                  </svg>
+                                                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                      xmlns="http://www.w3.org/2000/svg">
+                                                      <g clip-path="url(#clip0_70_355)">
+                                                          <path
+                                                              d="M7.99967 11.513L12.1197 13.9997L11.0263 9.31301L14.6663 6.15967L9.87301 5.75301L7.99967 1.33301L6.12634 5.75301L1.33301 6.15967L4.97301 9.31301L3.87967 13.9997L7.99967 11.513Z"
+                                                              fill="#FCCA19" />
+                                                      </g>
+                                                      <defs>
+                                                          <clipPath id="clip0_70_355">
+                                                              <rect width="16" height="16" fill="white" />
+                                                          </clipPath>
+                                                      </defs>
+                                                  </svg>
+                                                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                      xmlns="http://www.w3.org/2000/svg">
+                                                      <g clip-path="url(#clip0_70_355)">
+                                                          <path
+                                                              d="M7.99967 11.513L12.1197 13.9997L11.0263 9.31301L14.6663 6.15967L9.87301 5.75301L7.99967 1.33301L6.12634 5.75301L1.33301 6.15967L4.97301 9.31301L3.87967 13.9997L7.99967 11.513Z"
+                                                              fill="#FCCA19" />
+                                                      </g>
+                                                      <defs>
+                                                          <clipPath id="clip0_70_355">
+                                                              <rect width="16" height="16" fill="white" />
+                                                          </clipPath>
+                                                      </defs>
+                                                  </svg>
+
+                                              </div>
+                                              <p class="text-color-14 dark:text-white font-Figtree font-medium text-18">out of 5</p>
+                                          </div>
+                                      </div>
+                                      <svg class="mt-2.5" xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+                                          viewBox="0 0 40 40" fill="none">
+                                          <path
+                                              d="M38.4648 15.8759H24.3492L19.9891 2.5L15.6156 15.8759L1.5 15.8625L12.9316 24.1375L8.55755 37.5L19.9891 29.2384L31.4068 37.5L27.0467 24.1375L38.4648 15.8759Z"
+                                              fill="#00B67A" />
+                                          <path d="M28.0279 27.1631L27.0468 24.1377L19.9893 29.2387L28.0279 27.1631Z"
+                                              fill="#005128" />
+                                      </svg>
+                                  </div>
+                                  <p class="text-color-14 dark:text-white font-Figtree font-medium text-20 mt-1">User Rating</p>
+                                  <p class="font-medium text-color-89 text-14 font-Figtree mt-5">Based on 5000+ reviews</p>
+                              </div>
+                              <div class="bg-color-F6 dark:bg-color-29 p-[18px] rounded-[20px] relative h-max">
+                                  <div class="flex gap-1 items-center justify-end absolute top-[23px] right-[18px]">
+                                      <svg class="" xmlns="http://www.w3.org/2000/svg" width="18" height="19"
+                                          viewBox="0 0 18 19" fill="none">
+                                          <g clip-path="url(#clip0_76_426)">
+                                              <path
+                                                  d="M9 13.4525L13.635 16.25L12.405 10.9775L16.5 7.43L11.1075 6.9725L9 2L6.8925 6.9725L1.5 7.43L5.595 10.9775L4.365 16.25L9 13.4525Z"
+                                                  fill="#FCCA19" />
+                                          </g>
+                                          <defs>
+                                              <clipPath id="clip0_76_426">
+                                                  <rect width="18" height="18" fill="white"
+                                                      transform="translate(0 0.5)" />
+                                              </clipPath>
+                                          </defs>
+                                      </svg>
+                                      <span class="font-medium text-color-14 dark:text-white text-15 font-Figtree">5.0</span>
+                                  </div>
+                                  <div class="flex justify-start gap-2.5 items-center">
+                                      <img class=""
+                                          src="../assets/images/profile-image-1.png"
+                                          alt="Image">
+                                      <div>
+                                          <p class="text-color-14 dark:text-white font-Figtree font-semibold text-15">Lora Chanchoa</p>
+                                          <p class="font-Figtree text-color-14 dark:text-white text-12 font-normal mt-1">Student, Harvard University</p>
+                                      </div>
+                                  </div>
+                                  <p class="font-Figtree text-18 font-semibold text-color-14 dark:text-white mt-6">Better than competitors!</p>
+                                  <p class="font-Figtree text-15 leading-[27px] font-normal text-color-14 dark:text-white mt-3">
+                                      I really like Jasper so far, its generating much better content than any of the competitors I have tried.
+                                  </p>
+                              </div>
+                              <div class="bg-white dark:bg-color-14 border border-color-DF dark:border-color-47 p-[18px] rounded-[20px] relative h-max">
+                                  <div class="flex gap-1 items-center justify-end absolute top-[23px] right-[18px]">
+                                      <svg class="" xmlns="http://www.w3.org/2000/svg" width="18" height="19"
+                                          viewBox="0 0 18 19" fill="none">
+                                          <g clip-path="url(#clip0_76_426)">
+                                              <path
+                                                  d="M9 13.4525L13.635 16.25L12.405 10.9775L16.5 7.43L11.1075 6.9725L9 2L6.8925 6.9725L1.5 7.43L5.595 10.9775L4.365 16.25L9 13.4525Z"
+                                                  fill="#FCCA19" />
+                                          </g>
+                                          <defs>
+                                              <clipPath id="clip0_76_426">
+                                                  <rect width="18" height="18" fill="white"
+                                                      transform="translate(0 0.5)" />
+                                              </clipPath>
+                                          </defs>
+                                      </svg>
+                                      <span class="font-medium text-color-14 dark:text-white text-15 font-Figtree">5.0</span>
+                                  </div>
+                                  <div class="flex justify-start gap-2.5 items-center">
+                                      <img src="../assets/images/profile-image-1.png" alt="Image">
+                                      <div>
+                                          <p class="text-color-14 dark:text-white font-Figtree font-semibold text-15">Lora Chanchoa</p>
+                                          <p class="font-Figtree text-color-14 dark:text-white text-12 font-normal mt-1">Student, Harvard University</p>
+                                      </div>
+                                  </div>
+                                  <p class="font-Figtree text-18 font-semibold text-color-14 dark:text-white mt-6">Saves time researching.</p>
+                                  <p class="font-Figtree text-15 leading-[27px] font-normal text-color-14 dark:text-white mt-3">
+                                      a great tool for anyone
+                                      who needs help writing content for their website, social media posts, email
+                                      newsletters, blogs or the like. I love that it saves time by streamlining my
+                                      research process. 
+                                  </p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <a href="javaScript:void(0);" class="flex justify-center items-center text-14 font-Figtree text-color-14 dark:text-white font-medium mt-5 lg:hidden gap-1.5">
+                      <span>see more</span> 
+                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                          viewBox="0 0 14 14" fill="none">
+                          <g clip-path="url(#clip0_746_1737)">
+                              <path
+                                  d="M3.75594 4.375L7.4375 7.61994L11.1191 4.375L12.25 5.37399L7.4375 9.625L2.625 5.37399L3.75594 4.375Z"
+                                  fill="#141414" />
+                          </g>
+                          <defs>
+                              <clipPath id="clip0_746_1737">
+                                  <rect width="14" height="14" fill="white" transform="translate(14) rotate(90)" />
+                              </clipPath>
+                          </defs>
+                      </svg> 
+                  </a>
+              </div>
+          </div>
+          <div class="relative">
+            <div>
+              <img class="absolute -top-[28rem] w-full sm:block hidden" src="../assets/images/bg-four.png">
+              <div class="lg:mt-[172px] mt-[72px] 9xl:px-[310px] 8xl:px-40 lg:px-16 md:px-10 px-5 relative">
+                  <div class="relative flex justify-center items-center">
+                      <p class="uppercase absolute heading-1 tracking-[0.2em] text-center font-bold text-16 font-Figtree">
+                          Before you begin
+                      </p>
+                  </div>
+                  <p class="mt-[18px] font-RedHat lg:text-48 text-36 font-bold text-center text-color-14 dark:text-white">
+                      Frequently Asked Questions
+                  </p>
+                  <p class="mt-3 font-Figtree text-color-14 dark:text-white font-normal text-center lg:text-18 text-16">
+                      See what other people are saying about Artifism and be a part of it.
+                  </p>
+                  <div class="grid md:grid-cols-2 grid-cols-1 md:gap-6 gap-4 lg:mt-16 mt-8 faq-accordion">
+                      <div>
+                          <div class="accordion accordion-flush-one flex flex-col md:gap-5 gap-4" id="accordionFlushExample">
+                              <div class="accordion-item-one">
+                                  <h2 class="accordion-header mb-0" id="flush-headingOne">
+                                      <button
+                                          class="accordion-button relative flex items-center w-full py-5 md:px-[30px] px-5 text-left rounded-[14px] bg-color-F6 dark:bg-color-29 focus:outline-none text-color-14 dark:text-white font-medium collapsed font-Figtree text-20"
+                                          type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                          aria-expanded="false" aria-controls="flush-collapseOne">
+                                          <div class="flex items-center justify-center gap-3">
+                                              <p class=" accordion-menus">Are there any hidden charges?</p>
+                                          </div>
+                                      </button>
+                                  </h2>
+                                  <div id="flush-collapseOne"
+                                      class="accordion-collaps collapse bg-white dark:bg-color-14 rounded-b-2xl"
+                                      aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                      <div
+                                          class="pb-[20px] md:px-[30px] px-5 text-color-14 dark:text-white font-Figtree text-16 font-normal rounded-b-2xl">
+                                          <p>For my agency, Artifism has been a game changer. With the click of a button, I can
+                                              create a complete landing page. I receive 5 different variations of content so that
+                                              I can choose the one that I like best. Moreover, the content rewriting feature is
+                                              top-notch. And the blog writer is outstanding,
+                                          </p>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="accordion-item-two">
+                                  <h2 class="accordion-header mb-0" id="flush-headingTwo">
+                                      <button
+                                          class="accordion-button relative flex items-center w-full py-5 md:px-[30px] px-5 text-left rounded-[14px] bg-color-F6 dark:bg-color-29 focus:outline-none text-color-14 dark:text-white font-medium collapsed font-Figtree text-20"
+                                          type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
+                                          aria-expanded="false" aria-controls="flush-collapseTwo">
+                                          <div class="flex items-center justify-center gap-3">
+                                              <p class="accordion-menus">Are there any hidden charges?</p>
+                                          </div>
+                                      </button>
+                                  </h2>
+                                  <div id="flush-collapseTwo"
+                                      class="accordion-collapse collapse bg-white dark:bg-color-14 rounded-b-2xl"
+                                      aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                      <div
+                                          class="pb-[20px] md:px-[30px] px-5 text-color-14 dark:text-white font-Figtree text-16 font-normal">
+                                          <p>For my agency, Artifism has been a game changer. With the click of a button, I can
+                                              create a complete landing page. I receive 5 different variations of content so that
+                                              I can choose the one that I like best. Moreover, the content rewriting feature is
+                                              top-notch. And the blog writer is outstanding,
+                                          </p>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="accordion-item-three">
+                                  <h2 class="accordion-header mb-0" id="flush-headingThree">
+                                      <button
+                                          class="accordion-button relative flex items-center w-full py-5 md:px-[30px] px-5 text-left rounded-[14px] bg-color-F6 dark:bg-color-29 focus:outline-none text-color-14 dark:text-white font-medium collapsed font-Figtree text-20"
+                                          type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
+                                          aria-expanded="false" aria-controls="flush-collapseThree">
+                                          <div class="flex items-center justify-center gap-3">
+                                              <p class=" accordion-menus">
+                                                  Does Artifism read or write in other languages?</p>
+                                          </div>
+                                      </button>
+                                  </h2>
+                                  <div id="flush-collapseThree"
+                                      class="accordion-collapse collapse bg-white dark:bg-color-14 rounded-b-2xl"
+                                      aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                      <div
+                                          class="pb-[20px] md:px-[30px] px-5 text-color-14 dark:text-white font-Figtree text-16 font-normal">
+                                          <p>For my agency, Artifism has been a game changer. With the click of a button, I can
+                                              create a complete landing page. I receive 5 different variations of content so that
+                                              I can choose the one that I like best. Moreover, the content rewriting feature is
+                                              top-notch. And the blog writer is outstanding,
+                                          </p>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="accordion-item-four">
+                                  <h2 class="accordion-header mb-0" id="flush-headingFour">
+                                      <button
+                                          class="accordion-button relative flex items-center w-full py-5 md:px-[30px] px-5 text-left rounded-[14px] bg-color-F6 dark:bg-color-29 focus:outline-none text-color-14 dark:text-white font-medium collapsed font-Figtree text-20"
+                                          type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour"
+                                          aria-expanded="false" aria-controls="flush-collapseFour">
+                                          <div class="flex items-center justify-center gap-3">
+                                              <p class="accordion-menus">
+                                                  Does Artifism read or write in other languages?</p>
+                                          </div>
+                                      </button>
+                                  </h2>
+                                  <div id="flush-collapseFour"
+                                      class="accordion-collapse collapse bg-white dark:bg-color-14 rounded-b-2xl"
+                                      aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                                      <div
+                                          class="pb-[20px] md:px-[30px] px-5 text-color-14 dark:text-white font-Figtree text-16 font-normal rounded-b-2xl">
+                                          <p>For my agency, Artifism has been a game changer. With the click of a button, I can
+                                              create a complete landing page. I receive 5 different variations of content so that
+                                              I can choose the one that I like best. Moreover, the content rewriting feature is
+                                              top-notch. And the blog writer is outstanding,
+                                          </p>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div>
+                          <div class="accordion accordion-flush-two flex flex-col gap-5" id="accordionFlushExampletwo">
+                              <div class="accordion-item-five">
+                                  <h2 class="accordion-header mb-0" id="flush-headingFive">
+                                      <button
+                                          class="accordion-button relative flex items-center w-full py-5 md:px-[30px] px-5 text-left rounded-[14px] bg-color-F6 dark:bg-color-29 focus:outline-none text-color-14 dark:text-white font-medium collapsed font-Figtree text-20"
+                                          type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive"
+                                          aria-expanded="false" aria-controls="flush-collapseFive">
+                                          <div class="flex items-center justify-center gap-3">
+                                              <p class="accordion-menus">Are there any hidden charges?</p>
+                                          </div>
+                                      </button>
+                                  </h2>
+                                  <div id="flush-collapseFive"
+                                      class="accordion-collapse collapse bg-white dark:bg-color-14 rounded-b-2xl"
+                                      aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExampletwo">
+                                      <div
+                                          class="pb-[20px] md:px-[30px] px-5 text-color-14 dark:text-white font-Figtree text-16 font-normal rounded-b-2xl">
+                                          <p>For my agency, Artifism has been a game changer. With the click of a button, I can
+                                              create a complete landing page. I receive 5 different variations of content so that
+                                              I can choose the one that I like best. Moreover, the content rewriting feature is
+                                              top-notch. And the blog writer is outstanding,
+                                          </p>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="accordion-item-Seven">
+                                  <h2 class="accordion-header mb-0" id="flush-headingSeven">
+                                      <button
+                                          class="accordion-button relative flex items-center w-full py-5 md:px-[30px] px-5 text-left rounded-[14px] bg-color-F6 dark:bg-color-29 focus:outline-none text-color-14 dark:text-white font-medium collapsed font-Figtree text-20"
+                                          type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven"
+                                          aria-expanded="false" aria-controls="flush-collapseSeven">
+                                          <div class="flex items-center justify-center gap-3">
+                                              <p class="accordion-menus">Is the content from Artifism original?</p>
+                                          </div>
+                                      </button>
+                                  </h2>
+                                  <div id="flush-collapseSeven"
+                                      class="accordion-collapse collapse bg-white dark:bg-color-14 rounded-b-2xl"
+                                      aria-labelledby="flush-headingSeven" data-bs-parent="#accordionFlushExampletwo">
+                                      <div
+                                          class="pb-[20px] md:px-[30px] px-5 text-color-14 dark:text-white font-Figtree text-16 font-normal rounded-b-2xl">
+                                          <p>For my agency, Artifism has been a game changer. With the click of a button, I can
+                                              create a complete landing page. I receive 5 different variations of content so that
+                                              I can choose the one that I like best. Moreover, the content rewriting feature is
+                                              top-notch. And the blog writer is outstanding,
+                                          </p>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="accordion-item-Eight">
+                                  <h2 class="accordion-header mb-0" id="flush-headingEight">
+                                      <button
+                                          class="accordion-button relative flex items-center w-full py-5 md:px-[30px] px-5 text-left rounded-[14px] bg-color-F6 dark:bg-color-29 focus:outline-none text-color-14 dark:text-white font-medium collapsed font-Figtree text-20"
+                                          type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight"
+                                          aria-expanded="false" aria-controls="flush-collapseEight">
+                                          <div class="flex items-center justify-center gap-3">
+                                              <p class="accordion-menus">What are the available payment methods?</p>
+                                          </div>
+                                      </button>
+                                  </h2>
+                                  <div id="flush-collapseEight"
+                                      class="accordion-collapse collapse bg-white dark:bg-color-14 rounded-b-2xl"
+                                      aria-labelledby="flush-headingEight" data-bs-parent="#accordionFlushExampletwo">
+                                      <div
+                                          class="pb-[20px] md:px-[30px] px-5 text-color-14 dark:text-white font-Figtree text-16 font-normal rounded-b-2xl">
+                                          <p>For my agency, Artifism has been a game changer. With the click of a button, I can
+                                              create a complete landing page. I receive 5 different variations of content so that
+                                              I can choose the one that I like best. Moreover, the content rewriting feature is
+                                              top-notch. And the blog writer is outstanding,
+                                          </p>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="accordion-item-six">
+                                  <h2 class="accordion-header mb-0" id="flush-headingSix">
+                                      <button
+                                          class="accordion-button relative flex items-center w-full py-5 md:px-[30px] px-5 text-left rounded-[14px] bg-color-F6 dark:bg-color-29 focus:outline-none text-color-14 dark:text-white font-medium collapsed font-Figtree text-20"
+                                          type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix"
+                                          aria-expanded="false" aria-controls="flush-collapseSix">
+                                          <div class="flex items-center justify-center gap-3">
+                                              <p class=" accordion-menus">
+                                                  Does Artifism read or write in other languages?</p>
+                                          </div>
+                                      </button>
+                                  </h2>
+                                  <div id="flush-collapseSix" class="accordion-collapse collapse bg-white dark:bg-color-14 rounded-b-2xl"
+                                      aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExampletwo">
+                                      <div class="pb-[20px] md:px-[30px] px-5 text-color-14 dark:text-white font-Figtree text-16 font-normal rounded-b-2xl">
+                                          <p>For my agency, Artifism has been a game changer. With the click of a button, I can
+                                          create a complete landing page. I receive 5 different variations of content so that I can choose the one that I like best. Moreover, the content rewriting feature is top-notch. And the blog writer is outstanding,
+                                          </p>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <div
+                class="6xl:mt-40 mt-[60px] 9xl:pl-[310px] 8xl:pl-40 7xl:pl-32 2xl:pl-16 w-full flex 2xl:flex-row flex-col justify-between">
+                <div class="2xl:w-[34%] w-full mt-3 lg:pl-16 pl-5 mb-8 2xl:mb-0 2xl:pl-0 relative">
+                    <div class="relative flex justify-start items-center">
+                        <p class="uppercase absolute heading-1 tracking-[0.2em] text-left font-bold text-16 font-Figtree">
+                            Latest News
+                        </p>
+                    </div>
+                    <p class="mt-[18px] font-RedHat 6xl:text-48 text-36 font-bold text-left text-color-14 dark:text-white">
+                        Stay Updated With <br> Our Activities
+                    </p>
+                    <a class="mt-3 flex text-color-14 dark:text-white font-Figtree text-18 font-medium justify-start items-center gap-2.5"
+                        href="javaScript:void(0);"> <span>Head to all blogs</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="12" viewBox="0 0 14 12" fill="none">
+                            <path
+                                d="M13.707 6.70597C14.0977 6.3155 14.0977 5.68137 13.707 5.2909L8.70674 0.292854C8.31609 -0.0976181 7.68168 -0.0976181 7.29103 0.292854C6.90039 0.683327 6.90039 1.31745 7.29103 1.70793L10.5881 5.00039H1.00006C0.4469 5.00039 0 5.44709 0 6C0 6.55291 0.4469 6.99961 1.00006 6.99961H10.585L7.29416 10.2921C6.90351 10.6825 6.90351 11.3167 7.29416 11.7071C7.6848 12.0976 8.31921 12.0976 8.70986 11.7071L13.7101 6.7091L13.707 6.70597Z"
+                                fill="#E22861" />
+                        </svg> </a>
+                    <p class="mt-3 font-Figtree text-color-14 dark:text-white font-normal text-left text-18">
+                        Subscribe to our newsletters and stay updated about our
+                        <br> activities and much more. No spam, we promise.
+                    </p>
+                    <div class="flex 2xl:justify-start justify-between mt-5 gap-2.5 pr-5 md:pr-10">
+                        <div class="lg:w-max w-full">
+                            <input
+                                class="border-color-89 dark:border-color-47 rounded-xl px-4 py-3 h-[54px] leading-6 6xl:w-[278px] w-full font-normal text-base text-color-89 font-Figtree form-control border focus:border-color-89 bg-color-F6 dark:bg-color-29"
+                                type="email" placeholder="email address" id="email" name="email">
+                            <div class="flex justify-start items-center gap-1.5 mt-2.5">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="11" viewBox="0 0 15 11"
+                                    fill="none">
+                                    <path
+                                        d="M13.88 1.17017C14.2755 1.56567 14.2755 2.20798 13.88 2.60349L5.77995 10.7035C5.38444 11.099 4.74214 11.099 4.34663 10.7035L0.296631 6.65349C-0.0988769 6.25798 -0.0988769 5.61567 0.296631 5.22017C0.692139 4.82466 1.33444 4.82466 1.72995 5.22017L5.06487 8.55192L12.4498 1.17017C12.8453 0.774658 13.4876 0.774658 13.8831 1.17017H13.88Z"
+                                        fill="url(#paint0_linear_765_1114)" />
+                                    <defs>
+                                        <linearGradient id="paint0_linear_765_1114" x1="9.21721" y1="9.75373" x2="6.48678"
+                                            y2="1.12779" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#E60C84" />
+                                            <stop offset="1" stop-color="#FFCF4B" />
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                                <p class="text-color-14 dark:text-white font-Figtree font-normal text-14">
+                                    Your subscription is complete.
+                                </p>
+                            </div>
+                        </div>
+                        <a href="javaScript:void(0);"
+                            class="text-white text-16 font-semibold rounded-[10px] font-Figtree bg-color-14 dark:bg-color-76 py-[15px] px-7 h-max">Subscribe
+                        </a>
+                    </div>
+                </div>
+                <div class="latest-news 2xl:w-[66%] w-full overflow-hidden pl-0">
+                    <div class="swiper slider2">
+                        <img class="absolute top-0 lg:right-[50px] right-[316px] z-50 dark:hidden" src="../assets/images/white-overlay.png" alt="Image">
+                        <img class="absolute top-0 lg:right-[50px] right-[316px] z-50 hidden dark:block" src="../assets/images/black-overlay.png" alt="Image">
+                        <div class="swiper-wrapper w-full">
+                            <div class="swiper-slide">
+                                <div class="w-full 6xl:rounded-[30px] rounded-6 overflow-hidden latest-slider-footer">
+                                    <img class="9xl:!w-full 2xl:!w-[540px]  xs:w-full w-[360px] md:!h-[360px] h-[270px] object-cover 6xl:!rounded-[30px] !rounded-6 inner-img "
+                                        src="../assets/images/ai-brain.png"
+                                        alt="Image">
+                                    <div
+                                        class="latest-slider-footer absolute bottom-0 lg:p-8 p-5 pb-[20px] text-white 6xl:text-22 text-16 font-semibold font-Figtree w-full">
+                                        <p>Why everyone is recently so afraid of the sudden rise of Artificial Intelligence?
+                                        </p>
+                                        <div class="read-now mt-2.5">
+                                            <a class=" flex gap-2 justify-start items-center font-medium font-Figtree text-14"
+                                                href="javaScript:void(0);">
+                                                <span> read now</span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="9"
+                                                    viewBox="0 0 11 9" fill="none">
+                                                    <path
+                                                        d="M10.7698 5.02948C11.0767 4.73663 11.0767 4.26103 10.7698 3.96818L6.84101 0.219641C6.53407 -0.0732136 6.0356 -0.0732136 5.72867 0.219641C5.42173 0.512495 5.42173 0.98809 5.72867 1.28094L8.31921 3.75029H0.785758C0.351136 3.75029 0 4.08532 0 4.5C0 4.91468 0.351136 5.24971 0.785758 5.24971H8.31676L5.73112 7.71905C5.42419 8.01191 5.42419 8.4875 5.73112 8.78036C6.03806 9.07321 6.53653 9.07321 6.84346 8.78036L10.7723 5.03182L10.7698 5.02948Z"
+                                                        fill="white" />
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="w-full 6xl:rounded-[30px] rounded-6 overflow-hidden latest-slider-footer">
+                                    <img class="9xl:!w-full 2xl:!w-[540px]  xs:w-full w-[360px] md:!h-[360px] h-[270px] object-cover 6xl:!rounded-[30px] !rounded-6 inner-img"
+                                        src="../assets/images/ai-globe.png"
+                                        alt="Image">
+                                    <div
+                                        class="latest-slider-footer absolute bottom-0 lg:p-8 p-5 pb-[20px] text-white 6xl:text-22 text-16 font-semibold font-Figtree w-full">
+                                        <p>How Artifism is helping developers write better codes.</p>
+                                        <div class="read-now mt-2.5">
+                                            <a class="flex gap-2 justify-start items-center font-medium font-Figtree text-14"
+                                                href="javaScript:void(0);">
+                                                <span>read now</span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="9"
+                                                    viewBox="0 0 11 9" fill="none">
+                                                    <path
+                                                        d="M10.7698 5.02948C11.0767 4.73663 11.0767 4.26103 10.7698 3.96818L6.84101 0.219641C6.53407 -0.0732136 6.0356 -0.0732136 5.72867 0.219641C5.42173 0.512495 5.42173 0.98809 5.72867 1.28094L8.31921 3.75029H0.785758C0.351136 3.75029 0 4.08532 0 4.5C0 4.91468 0.351136 5.24971 0.785758 5.24971H8.31676L5.73112 7.71905C5.42419 8.01191 5.42419 8.4875 5.73112 8.78036C6.03806 9.07321 6.53653 9.07321 6.84346 8.78036L10.7723 5.03182L10.7698 5.02948Z"
+                                                        fill="white" />
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="w-full 6xl:rounded-[30px] rounded-6 overflow-hidden latest-slider-footer">
+                                    <img class="9xl:!w-full 2xl:!w-[540px]  xs:w-full w-[360px] md:!h-[360px] h-[270px] object-cover 6xl:!rounded-[30px] !rounded-6 inner-img "
+                                        src="../assets/images/ai-brain.png"
+                                        alt="Image">
+                                    <div
+                                        class="latest-slider-footer absolute bottom-0 lg:p-8 p-5 pb-[20px] text-white 6xl:text-22 text-16 font-semibold font-Figtree w-full">
+                                        <p>Why everyone is recently so afraid of the sudden rise of Artificial Intelligence?
+                                        </p>
+                                        <div class="read-now mt-2.5">
+                                            <a class=" flex gap-2 justify-start items-center font-medium font-Figtree text-14"
+                                                href="javaScript:void(0);">
+                                                <span>read now</span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="9"
+                                                    viewBox="0 0 11 9" fill="none">
+                                                    <path
+                                                        d="M10.7698 5.02948C11.0767 4.73663 11.0767 4.26103 10.7698 3.96818L6.84101 0.219641C6.53407 -0.0732136 6.0356 -0.0732136 5.72867 0.219641C5.42173 0.512495 5.42173 0.98809 5.72867 1.28094L8.31921 3.75029H0.785758C0.351136 3.75029 0 4.08532 0 4.5C0 4.91468 0.351136 5.24971 0.785758 5.24971H8.31676L5.73112 7.71905C5.42419 8.01191 5.42419 8.4875 5.73112 8.78036C6.03806 9.07321 6.53653 9.07321 6.84346 8.78036L10.7723 5.03182L10.7698 5.02948Z"
+                                                        fill="white" />
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="w-full 6xl:rounded-[30px] rounded-6 overflow-hidden latest-slider-footer">
+                                    <img class="9xl:!w-full 2xl:!w-[540px]  xs:w-full w-[360px] md:!h-[360px] h-[270px] object-cover 6xl:!rounded-[30px] !rounded-6 inner-img "
+                                        src="../assets/images/ai-globe.png"
+                                        alt="Image">
+                                    <div
+                                        class="latest-slider-footer absolute bottom-0 lg:p-8 p-5 pb-[20px] text-white 6xl:text-22 text-16 font-semibold font-Figtree w-full">
+                                        <p>How Artifism is helping developers write better codes.</p>
+                                        <div class="read-now mt-2.5">
+                                            <a class=" flex gap-2 justify-start items-center font-medium font-Figtree text-14"
+                                                href="javaScript:void(0);">
+                                                <span>read now</span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="9"
+                                                    viewBox="0 0 11 9" fill="none">
+                                                    <path
+                                                        d="M10.7698 5.02948C11.0767 4.73663 11.0767 4.26103 10.7698 3.96818L6.84101 0.219641C6.53407 -0.0732136 6.0356 -0.0732136 5.72867 0.219641C5.42173 0.512495 5.42173 0.98809 5.72867 1.28094L8.31921 3.75029H0.785758C0.351136 3.75029 0 4.08532 0 4.5C0 4.91468 0.351136 5.24971 0.785758 5.24971H8.31676L5.73112 7.71905C5.42419 8.01191 5.42419 8.4875 5.73112 8.78036C6.03806 9.07321 6.53653 9.07321 6.84346 8.78036L10.7723 5.03182L10.7698 5.02948Z"
+                                                        fill="white" />
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="w-full 6xl:rounded-[30px] rounded-6 overflow-hidden latest-slider-footer">
+                                    <img class="9xl:!w-full 2xl:!w-[540px]  xs:w-full w-[360px] md:!h-[360px] h-[270px] object-cover 6xl:!rounded-[30px] !rounded-6 inner-img "
+                                        src="../assets/images/ai-brain.png"
+                                        alt="Image">
+                                    <div
+                                        class="latest-slider-footer absolute bottom-0 lg:p-8 p-5 pb-[20px] text-white 6xl:text-22 text-16 font-semibold font-Figtree w-full">
+                                        <p>Why everyone is recently so afraid of the sudden rise of Artificial Intelligence?
+                                        </p>
+                                        <div class="read-now mt-2.5">
+                                            <a class=" flex gap-2 justify-start items-center font-medium font-Figtree text-14"
+                                                href="javaScript:void(0);">
+                                                <span>read now</span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="9"
+                                                    viewBox="0 0 11 9" fill="none">
+                                                    <path
+                                                        d="M10.7698 5.02948C11.0767 4.73663 11.0767 4.26103 10.7698 3.96818L6.84101 0.219641C6.53407 -0.0732136 6.0356 -0.0732136 5.72867 0.219641C5.42173 0.512495 5.42173 0.98809 5.72867 1.28094L8.31921 3.75029H0.785758C0.351136 3.75029 0 4.08532 0 4.5C0 4.91468 0.351136 5.24971 0.785758 5.24971H8.31676L5.73112 7.71905C5.42419 8.01191 5.42419 8.4875 5.73112 8.78036C6.03806 9.07321 6.53653 9.07321 6.84346 8.78036L10.7723 5.03182L10.7698 5.02948Z"
+                                                        fill="white" />
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="w-full 6xl:rounded-[30px] rounded-6 overflow-hidden latest-slider-footer">
+                                    <img class="9xl:!w-full 2xl:!w-[540px]  xs:w-full w-[360px] md:!h-[360px] h-[270px] object-cover 6xl:!rounded-[30px] !rounded-6 inner-img "
+                                        src="../assets/images/ai-globe.png"
+                                        alt="Image">
+                                    <div
+                                        class="latest-slider-footer absolute bottom-0 lg:p-8 p-5 pb-[20px] text-white 6xl:text-22 text-16 font-semibold font-Figtree w-full">
+                                        <p>How Artifism is helping developers write better codes.</p>
+                                        <div class="read-now mt-2.5">
+                                            <a class=" flex gap-2 justify-start items-center font-medium font-Figtree text-14"
+                                                href="javaScript:void(0);">
+                                                <span>read now</span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="9"
+                                                    viewBox="0 0 11 9" fill="none">
+                                                    <path
+                                                        d="M10.7698 5.02948C11.0767 4.73663 11.0767 4.26103 10.7698 3.96818L6.84101 0.219641C6.53407 -0.0732136 6.0356 -0.0732136 5.72867 0.219641C5.42173 0.512495 5.42173 0.98809 5.72867 1.28094L8.31921 3.75029H0.785758C0.351136 3.75029 0 4.08532 0 4.5C0 4.91468 0.351136 5.24971 0.785758 5.24971H8.31676L5.73112 7.71905C5.42419 8.01191 5.42419 8.4875 5.73112 8.78036C6.03806 9.07321 6.53653 9.07321 6.84346 8.78036L10.7723 5.03182L10.7698 5.02948Z"
+                                                        fill="white" />
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="w-full 6xl:rounded-[30px] rounded-6 overflow-hidden latest-slider-footer">
+                                    <img class="9xl:!w-full 2xl:!w-[540px]  xs:w-full w-[360px] md:!h-[360px] h-[270px] object-cover 6xl:!rounded-[30px] !rounded-6 inner-img "
+                                        src="../assets/images/ai-brain.png"
+                                        alt="Image">
+                                    <div
+                                        class="latest-slider-footer absolute bottom-0 lg:p-8 p-5 pb-[20px] text-white 6xl:text-22 text-16 font-semibold font-Figtree w-full">
+                                        <p>Why everyone is recently so afraid of the sudden rise of Artificial Intelligence?
+                                        </p>
+                                        <div class="read-now mt-2.5">
+                                            <a class=" flex gap-2 justify-start items-center font-medium font-Figtree text-14"
+                                                href="javaScript:void(0);">
+                                                <span>read now</span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="9"
+                                                    viewBox="0 0 11 9" fill="none">
+                                                    <path
+                                                        d="M10.7698 5.02948C11.0767 4.73663 11.0767 4.26103 10.7698 3.96818L6.84101 0.219641C6.53407 -0.0732136 6.0356 -0.0732136 5.72867 0.219641C5.42173 0.512495 5.42173 0.98809 5.72867 1.28094L8.31921 3.75029H0.785758C0.351136 3.75029 0 4.08532 0 4.5C0 4.91468 0.351136 5.24971 0.785758 5.24971H8.31676L5.73112 7.71905C5.42419 8.01191 5.42419 8.4875 5.73112 8.78036C6.03806 9.07321 6.53653 9.07321 6.84346 8.78036L10.7723 5.03182L10.7698 5.02948Z"
+                                                        fill="white" />
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="w-full 6xl:rounded-[30px] rounded-6 overflow-hidden latest-slider-footer">
+                                    <img class="9xl:!w-full 2xl:!w-[540px]  xs:w-full w-[360px] md:!h-[360px] h-[270px] object-cover 6xl:!rounded-[30px] !rounded-6 inner-img "
+                                        src="../assets/images/ai-globe.png"
+                                        alt="Image">
+                                    <div
+                                        class="latest-slider-footer absolute bottom-0 lg:p-8 p-5 pb-[20px] text-white 6xl:text-22 text-16 font-semibold font-Figtree w-full">
+                                        <p>How Artifism is helping developers write better codes.</p>
+                                        <div class="read-now mt-2.5">
+                                            <a class=" flex gap-2 justify-start items-center font-medium font-Figtree text-14"
+                                                href="javaScript:void(0);">
+                                                <span>read now</span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="9"
+                                                    viewBox="0 0 11 9" fill="none">
+                                                    <path
+                                                        d="M10.7698 5.02948C11.0767 4.73663 11.0767 4.26103 10.7698 3.96818L6.84101 0.219641C6.53407 -0.0732136 6.0356 -0.0732136 5.72867 0.219641C5.42173 0.512495 5.42173 0.98809 5.72867 1.28094L8.31921 3.75029H0.785758C0.351136 3.75029 0 4.08532 0 4.5C0 4.91468 0.351136 5.24971 0.785758 5.24971H8.31676L5.73112 7.71905C5.42419 8.01191 5.42419 8.4875 5.73112 8.78036C6.03806 9.07321 6.53653 9.07321 6.84346 8.78036L10.7723 5.03182L10.7698 5.02948Z"
+                                                        fill="white" />
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next bg-white dark:bg-color-14 text-color-14 dark:text-white rounded-full">
+                        <svg class="w-full h-full m-[9px] bg-white dark:bg-color-14 text-color-14 dark:text-white"
+                            xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                            fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M6.91009 15.5889C7.23553 15.9144 7.76317 15.9144 8.0886 15.5889L13.0886 10.5889C13.414 10.2635 13.414 9.73585 13.0886 9.41042L8.0886 4.41042C7.76317 4.08498 7.23553 4.08498 6.91009 4.41042C6.58466 4.73586 6.58466 5.26349 6.91009 5.58893L11.3208 9.99967L6.91009 14.4104C6.58466 14.7359 6.58466 15.2635 6.91009 15.5889Z"
+                                fill="currentColor" />
+                        </svg>
+                    </div>
+                    <div class="swiper-button-prev bg-white dark:bg-color-14 text-color-14 dark:text-white rounded-full">
+                        <svg class="w-full h-full m-[9px] bg-white dark:bg-color-14 text-color-14 dark:text-white"
+                            xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                            fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M13.0899 15.5889C12.7645 15.9144 12.2368 15.9144 11.9114 15.5889L6.9114 10.5889C6.58596 10.2635 6.58596 9.73585 6.9114 9.41042L11.9114 4.41042C12.2368 4.08498 12.7645 4.08498 13.0899 4.41042C13.4153 4.73586 13.4153 5.26349 13.0899 5.58893L8.67916 9.99967L13.0899 14.4104C13.4153 14.7359 13.4153 15.2635 13.0899 15.5889Z"
+                                fill="currentColor" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div>
+              <div class="relative sm:top-[111px] top-[72px] rounded-[40px] flex justify-center">
+                  <img class="absolute h-full 9xl:px-[310px] 8xl:px-40 lg:px-16 md:px-10 px-5 rounded-[54px] md:rounded-0" src="../assets/images/footer-bg.png" alt="">
+                  <div class="relative grid md:grid-cols-2 grid-cols-1 gap-5 6xl:gap-0 9xl:px-[310px] 8xl:px-40 lg:px-16 md:px-10 px-5">
+                      <div class="6xl:pl-[72px] px-[26px] 6xl:mb-[86px] md:mb-10 mb-0">
+                          <p class="text-color-14 6xl:text-48 text-36 font-RedHat font-bold 6xl:pt-[68px] pt-[26px]">Harmony with machines
+                              <br class="hidden md:block">beyond <span class="text-color-E2">imagination.</span>
+                          </p>
+                          <p class="mt-4 text-color-14 6xl:text-18 text-16 font-normal font-Figtree ">Explore Artifism for free to see the
+                              potential and how it can help to <br class="hidden md:block"> autopilot the content creation process.</p>
+                          <div class="flex mt-8 items-center gap-4 ">
+                              <a href="javaScript:void(0);"
+                                  class="text-color-14 text-16 font-semibold font-Figtree bg-white py-[13px] xs:px-7 px-3 rounded-lg">Start
+                                  Free Trial</a>
+                              <a href="javaScript:void(0);"
+                                  class="text-white text-16 font-semibold font-Figtree bg-color-14 py-[13px] xs:px-7 px-3 rounded-lg">Get
+                                  Quote</a>
+                          </div>
+                      </div>
+                      <img class="lg:-mt-[52px] lg:mb-10 -mb-[33px] lg:ml-0 sm:ml-7 xs:ml-[65px] m-auto 6xl:w-[479px] 6xl:h-[452px] lg:h-full lg:w-full md:w-[395px] md:h-[360px] w-[295px] h-[278px]"
+                          src="../assets/images/Holding_a_butterfly .png" alt="">
+                  </div>
+              </div>
+          </div>
+          <div>
+            <div class="bg-color-F6 dark:bg-color-29 w-full md:pt-[167px] pt-[237px]">
+              <footer class="9xl:px-[310px] 8xl:px-40 lg:px-16 md:px-10 px-5 m-auto relative">
+                  <div class="flex flex-wrap lg:flex-nowrap gap-7 pb-[30px] justify-start">
+                      <div class="w-full sm:w-1/3 md:w-1/5 order-1">
+                          <a href="#">
+                              <img class="w-[157px] h-[42px] dark:hidden"
+                                  src="../assets/images/artifism-logo-black.svg"
+                                  alt="Image">
+                              <img class="w-[157px] h-[42px] dark:block hidden"
+                                src="../assets/images/artifism-logo.svg"
+                                alt="Image">
+                          </a>
+                          <div class="flex gap-3 flex-wrap mt-10">
+                              <a href="javaScript:void(0);"
+                                  class="bg-color-14 dark:bg-white text-white dark:text-color-14 flex items-center justify-center w-8 h-8 bg-gray-3 rounded-full social-transition cursor-pointer">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="17" viewBox="0 0 10 17"
+                                      fill="none">
+                                      <path
+                                          d="M6.94826 4.01476H9.01028V0.96875H6.58632V0.979735C3.64928 1.08376 3.04733 2.73473 2.99427 4.46875H2.98823V5.98978H0.988281V8.97273H2.98823V16.9687H6.00228V8.97273H8.47127L8.94821 5.98978H6.00326V5.07081C6.00326 4.48479 6.39321 4.01476 6.94826 4.01476Z"
+                                          fill="currentColor" />
+                                  </svg>
+                              </a>
+                              <a href="javaScript:void(0);"
+                                  class="bg-color-14 dark:bg-white text-white dark:text-color-14 flex items-center justify-center w-8 h-8 bg-gray-3 rounded-full social-transition cursor-pointer">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="15" height="11" viewBox="0 0 15 11"
+                                      fill="none">
+                                      <path
+                                          d="M14.9703 4.1307C14.9703 3.82039 14.9186 3.45838 14.9186 3.04464C14.8669 2.6309 14.8152 2.21716 14.7634 1.85514C14.66 1.44141 14.5049 1.13111 14.1946 0.87252C13.936 0.613934 13.5739 0.458778 13.2119 0.407061C12.0224 0.251909 10.2641 0.200195 7.88506 0.200195C5.50607 0.200195 3.69596 0.251909 2.55819 0.407061C2.19617 0.458778 1.83415 0.613934 1.57556 0.87252C1.31698 1.13111 1.1101 1.44141 1.00667 1.85514C0.903236 2.21716 0.851525 2.57919 0.851525 3.04464C0.799808 3.45838 0.799805 3.82039 0.799805 4.1307C0.799805 4.441 0.799805 4.80302 0.799805 5.32019C0.799805 5.83736 0.799805 6.2511 0.799805 6.50969C0.799805 6.81999 0.851525 7.18202 0.851525 7.59575C0.903242 8.00949 0.954953 8.42322 1.00667 8.78524C1.1101 9.19898 1.26526 9.50929 1.57556 9.76787C1.83415 10.0265 2.19617 10.1816 2.55819 10.2333C3.74768 10.3885 5.50607 10.4402 7.88506 10.4402C10.2641 10.4402 12.0742 10.3885 13.2119 10.2333C13.5739 10.1816 13.936 10.0265 14.1946 9.76787C14.4531 9.50929 14.66 9.19898 14.7634 8.78524C14.8669 8.42322 14.9186 8.06121 14.9186 7.59575C14.9703 7.18202 14.9703 6.81999 14.9703 6.50969C14.9703 6.19939 14.9703 5.83736 14.9703 5.32019C14.9703 4.80302 14.9703 4.38928 14.9703 4.1307ZM10.6261 5.73393L6.54041 8.26807C6.4887 8.31979 6.38526 8.37151 6.28183 8.37151C6.17839 8.37151 6.12668 8.37151 6.02324 8.31979C5.86809 8.21636 5.76466 8.06121 5.76466 7.85434V2.73433C5.76466 2.52747 5.86809 2.37232 6.02324 2.26888C6.17839 2.16545 6.38526 2.16545 6.54041 2.26888L10.6261 4.80302C10.7812 4.90646 10.8847 5.06161 10.8847 5.21676C10.8847 5.37191 10.7812 5.6305 10.6261 5.73393Z"
+                                          fill="currentColor" />
+                                  </svg>
+                              </a>
+                              <a href="javaScript:void(0);"
+                                  class="bg-color-14 dark:bg-white text-white dark:text-color-14 flex items-center justify-center w-8 h-8 bg-gray-3 rounded-full social-transition cursor-pointer">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="17" height="13" viewBox="0 0 17 13"
+                                      fill="none">
+                                      <path
+                                          d="M16.4798 1.92039C15.9198 2.16039 15.2798 2.32039 14.6398 2.40039C15.2798 2.00039 15.8398 1.36039 16.0798 0.640393C15.4398 1.04039 14.7998 1.28039 13.9998 1.44039C13.4398 0.800393 12.5598 0.400391 11.6798 0.400391C9.9198 0.400391 8.4798 1.84039 8.4798 3.60039C8.4798 3.84039 8.4798 4.08039 8.5598 4.32039C5.9198 4.16039 3.5198 2.88039 1.9198 0.960388C1.6798 1.44039 1.5198 2.00039 1.5198 2.56039C1.5198 3.68039 2.0798 4.64039 2.9598 5.20039C2.3998 5.20039 1.9198 5.04039 1.5198 4.80039C1.5198 6.32039 2.6398 7.68039 4.0798 7.92039C3.8398 8.00039 3.5198 8.00039 3.1998 8.00039C2.9598 8.00039 2.7998 8.00039 2.5598 7.92039C2.9598 9.20039 4.1598 10.1604 5.5998 10.1604C4.4798 11.0404 3.1198 11.5204 1.5998 11.5204C1.3598 11.5204 1.1198 11.5204 0.799805 11.4404C2.2398 12.3204 3.9198 12.8804 5.7598 12.8804C11.6798 12.8804 14.8798 8.00039 14.8798 3.76039V3.36039C15.5198 3.12039 16.0798 2.56039 16.4798 1.92039Z"
+                                          fill="currentColor" />
+                                  </svg>
+                              </a>
+                              <a href="javaScript:void(0);"
+                                  class="bg-color-14 dark:bg-white text-white dark:text-color-14 flex items-center justify-center w-8 h-8 bg-gray-3 rounded-full social-transition cursor-pointer">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13"
+                                      fill="none">
+                                      <path
+                                          d="M12.4004 7.59513V12.0077H9.81743V7.86418C9.81743 6.84176 9.44075 6.14221 8.52595 6.14221C7.8264 6.14221 7.39591 6.62652 7.23447 7.05701C7.18066 7.21844 7.12685 7.43369 7.12685 7.70275V12.0077H4.54389C4.54389 12.0077 4.5977 5.01217 4.54389 4.31262H7.12685V5.38885C7.44972 4.85073 8.09546 4.09737 9.44075 4.09737C11.1089 4.09737 12.4004 5.22741 12.4004 7.59513ZM1.8533 0.599609C0.992317 0.599609 0.400391 1.19154 0.400391 1.9449C0.400391 2.69826 0.938506 3.29019 1.79949 3.29019C2.71429 3.29019 3.25241 2.69826 3.25241 1.9449C3.30622 1.13773 2.7681 0.599609 1.8533 0.599609ZM0.561825 12.0077H3.14478V4.31262H0.561825V12.0077Z"
+                                          fill="currentColor" />
+                                  </svg>
+                              </a>
+                              <a href="javaScript:void(0);"
+                                  class="bg-color-14 dark:bg-white text-white dark:text-color-14 flex items-center justify-center w-8 h-8 bg-gray-3 rounded-full social-transition cursor-pointer">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"
+                                      fill="none">
+                                      <path
+                                          d="M14.3415 2.65019C12.761 1.07519 10.6537 0.200195 8.42927 0.200195C3.80488 0.200195 0.0585357 3.93353 0.0585357 8.54186C0.0585357 10.0002 0.468293 11.4585 1.17073 12.6835L0 17.0002L4.44878 15.8335C5.67805 16.4752 7.02439 16.8252 8.42927 16.8252C13.0537 16.8252 16.8 13.0919 16.8 8.48353C16.7415 6.3252 15.9219 4.22519 14.3415 2.65019ZM12.4683 11.5169C12.2927 11.9835 11.4732 12.4502 11.0634 12.5085C10.7122 12.5669 10.2439 12.5669 9.77561 12.4502C9.48293 12.3335 9.07317 12.2169 8.60488 11.9835C6.49756 11.1085 5.15122 9.00853 5.03415 8.83353C4.91707 8.71686 4.1561 7.72519 4.1561 6.67519C4.1561 5.62519 4.68293 5.15853 4.85854 4.92519C5.03415 4.69186 5.26829 4.69186 5.4439 4.69186C5.56098 4.69186 5.73658 4.69186 5.85366 4.69186C5.97073 4.69186 6.14634 4.63353 6.32195 5.04186C6.49756 5.45019 6.90732 6.5002 6.96585 6.55853C7.02439 6.67519 7.02439 6.79186 6.96585 6.90853C6.90732 7.0252 6.84878 7.14186 6.7317 7.25853C6.61463 7.37519 6.49756 7.55019 6.43902 7.60853C6.32195 7.72519 6.20488 7.84186 6.32195 8.01686C6.43902 8.25019 6.84878 8.89186 7.49268 9.47519C8.31219 10.1752 8.9561 10.4085 9.19024 10.5252C9.42439 10.6419 9.54146 10.5835 9.65853 10.4669C9.77561 10.3502 10.1854 9.88353 10.3024 9.6502C10.4195 9.41686 10.5951 9.47519 10.7707 9.53353C10.9463 9.59186 12 10.1169 12.1756 10.2335C12.4098 10.3502 12.5268 10.4085 12.5854 10.4669C12.6439 10.6419 12.6439 11.0502 12.4683 11.5169Z"
+                                          fill="currentColor" />
+                                  </svg>
+                              </a>
+                          </div>
+                      </div>
+                      <div class="w-[45%] sm:w-1/3 md:w-1/5 grid lg:justify-center justify-start order-2">
+                          <ul class="gap-2.5 flex flex-col break-all lg:mt-5 mt-4 pb-3">
+                              <p class="font-bold mb-1.5 text-18 font-RedHat text-color-14 dark:text-white break-all">
+                                  Case Uses
+                              </p>
+                              <li>
+                                  <a href="javaScript:void(0);" class="text-14 text-color-14 dark:text-white font-normal font-Figtree cursor-pointer break-all">
+                                      Blog & Copy Writing
+                                  </a>
+                              </li>
+                              <li class="text-14 text-color-14 dark:text-white font-normal font-Figtree cursor-pointer break-all">
+                                  <a href="javaScript:void(0);">
+                                      Image Generator
+                                  </a>
+                              </li>
+                              <li class="text-14 text-color-14 dark:text-white font-normal font-Figtree cursor-pointer  break-all">
+                                  <a href="javaScript:void(0);">
+                                      Social Media Content
+                                  </a>
+                              </li>
+                              <li class="text-14 text-color-14 dark:text-white font-normal font-Figtree cursor-pointer break-all">
+                                  <a href="javaScript:void(0);">
+                                      Video Script
+                                  </a>
+                              </li>
+                              <li class="text-14 text-color-14 dark:text-white font-normal font-Figtree cursor-pointer break-all">
+                                  <a href="javaScript:void(0);">
+                                      Website Conversion
+                                  </a>
+                              </li>
+                              <li class="text-14 text-color-14 dark:text-white font-normal font-Figtree cursor-pointer break-all">
+                                  <a href="javaScript:void(0);">
+                                      Online Ads
+                                  </a>
+                              </li>
+                              <li class="text-14 text-color-14 dark:text-white font-normal font-Figtree cursor-pointer break-all">
+                                  <a href="javaScript:void(0);"> UX Copy
+          
+                                  </a>
+                              </li>
+          
+                          </ul>
+                      </div>
+                      <div class="w-[45%] sm:w-1/3 md:w-1/5 grid lg:justify-center justify-start order-3">
+                          <ul class=" gap-2.5 flex flex-col break-all lg:mt-5 mt-4 pb-3">
+                              <p class="font-bold mb-1.5 text-18 font-RedHat text-color-14 dark:text-white break-all">
+                                  Resources
+                              </p>
+                              <li class="text-14 text-color-14 dark:text-white font-normal font-Figtree cursor-pointer break-all">
+                                  <a href="javaScript:void(0);">
+                                      Blog
+                                  </a>
+                              </li>
+                              <li class="text-14 text-color-14 dark:text-white font-normal font-Figtree cursor-pointer break-all">
+                                  <a href="javaScript:void(0);">
+                                      Guides & Tutorials
+                                  </a>
+                              </li>
+                              <li class="text-14 text-color-14 dark:text-white font-normal font-Figtree cursor-pointer  break-all">
+                                  <a href="javaScript:void(0);">
+                                      API Docs
+                                  </a>
+                              </li>
+                              <li class="text-14 text-color-14 dark:text-white font-normal font-Figtree cursor-pointer break-all">
+                                  <a href="javaScript:void(0);">
+                                      Free Templates
+                                  </a>
+                              </li>
+                              <li class="text-14 text-color-14 dark:text-white font-normal font-Figtree cursor-pointer break-all">
+                                  <a href="javaScript:void(0);">
+                                      Community
+                                  </a>
+                              </li>
+          
+                          </ul>
+                      </div>
+                      <div class="w-[45%] sm:w-1/3 md:w-1/5 grid lg:justify-center justify-start order-4">
+                          <ul class=" gap-2.5 flex flex-col break-all lg:mt-5 mt-4 pb-3">
+                              <p class="font-bold mb-1.5 text-18 font-RedHat text-color-14 dark:text-white break-all">
+                                  Company
+                              </p>
+                              <li class="text-14 text-color-14 dark:text-white font-normal font-Figtree cursor-pointer break-all">
+                                  <a href="javaScript:void(0);">
+                                      About Us
+                                  </a>
+                              </li>
+                              <li class="text-14 text-color-14 dark:text-white font-normal font-Figtree cursor-pointer break-all">
+                                  <a href="javaScript:void(0);">
+                                      Contact Us
+                                  </a>
+                              </li>
+                              <li class="text-14 text-color-14 dark:text-white font-normal font-Figtree cursor-pointer  break-all">
+                                  <a href="javaScript:void(0);">
+                                      Pricing
+                                  </a>
+                              </li>
+                              <li class="text-14 text-color-14 dark:text-white font-normal font-Figtree cursor-pointer break-all">
+                                  <a href="javaScript:void(0);">
+                                      Affiliate Partners
+                                  </a>
+                              </li>
+                              <li class="text-14 text-color-14 dark:text-white font-normal font-Figtree cursor-pointer break-all">
+                                  <a href="javaScript:void(0);">
+                                      Carees
+                                  </a>
+                              </li>
+                              <li class="text-14 text-color-14 dark:text-white font-normal font-Figtree cursor-pointer break-all">
+                                  <a href="javaScript:void(0);">
+                                      Changelog
+                                  </a>
+                              </li>
+                              <li class="text-14 text-color-14 dark:text-white font-normal font-Figtree cursor-pointer break-all">
+                                  <a href="javaScript:void(0);"> UX Copy
+          
+                                  </a>
+                              </li>
+          
+                          </ul>
+                      </div>
+                      <div class="w-[45%] sm:w-1/3 md:w-1/5 grid lg:justify-center justify-start order-5">
+                          <ul class=" gap-2.5 flex flex-col break-all lg:mt-5 mt-4 pb-3">
+                              <p class="font-bold mb-1.5 text-18 font-RedHat text-color-14 dark:text-white break-all">
+                                  Support
+                              </p>
+                              <li class="text-14 text-color-14 dark:text-white font-normal font-Figtree cursor-pointer break-all">
+                                  <a href="javaScript:void(0);">
+                                      Live 101 Training
+                                  </a>
+                              </li>
+                              <li class="text-14 text-color-14 dark:text-white font-normal font-Figtree cursor-pointer break-all">
+                                  <a href="javaScript:void(0);">
+                                      Live Q&A Sessions
+                                  </a>
+                              </li>
+                              <li class="text-14 text-color-14 dark:text-white font-normal font-Figtree cursor-pointer  break-all">
+                                  <a href="javaScript:void(0);">
+                                      FAQ & Help Center
+                                  </a>
+                              </li>
+                              <li class="text-14 text-color-14 dark:text-white font-normal font-Figtree cursor-pointer break-all">
+                                  <a href="javaScript:void(0);">
+                                      App Status
+                                  </a>
+                              </li>
+                              <li class="text-14 text-color-14 dark:text-white font-normal font-Figtree cursor-pointer break-all">
+                                  <a href="javaScript:void(0);">
+                                      Report Issue
+                                  </a>
+                              </li>
+                          </ul>
+                      </div>
+                  </div>
+                  <div class="border-t border-color-DF dark:border-color-47">
+                      <div class="py-4 flex justify-between items-start sm:items-center text-14 text-color-14 dark:text-white font-normal font-Figtree">
+                          <p>2023 Artifism, Inc. All Rights Reserved.</p>
+                          <div class="flex items-center lg:gap-10 gap-6 whitespace-nowrap">
+                              <p>Terms</p>
+                              <p>Privacy Policy</p>
+                          </div>
+                      </div>
+                  </div>
+              </footer>
+          
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
+<div class="dark:bg-color-29 bg-white py-4 px-[18px] rounded-full w-max fixed bottom-5 left-5 z-50 theme-switch-box-shadow">
+    <div class="flex justify-center items-center p-[2px] w-max">
+        <div class='theme-toggle-switch'>
+            <label for="switch" class="absolute w-[18px] h-[35px] bg-color-47 rounded-full cursor-pointer">
+                <input type='checkbox' id="switch" class="hidden">
+                <span class='theme-switch-slider'></span>
+            </label>
+        </div>
+        <div>
+            <p class="text-[18px] leading-[19px] font-bold dark:text-white text-color-14 ml-[5px]">n</p>
+            <p class="text-[18px] leading-[19px] font-bold dark:text-white text-color-14 ml-[5px]">ff</p>
+        </div>
+    </div>
+</div>
+      <!-- Required Js -->
+
+  <script src="../assets/plugin/jquery-ui/jquery-3.6.3.min.js"></script>
+  <script src="../assets/plugin/jquery-ui/jquery-ui.min.js"></script>
+  <script src="../assets/plugin/tailwind-components/tailwind-component.min.js"></script>
+  <script src="../assets/plugin/tinymce 6.3.1/js/tinymce/tinymce.min.js"></script>
+  <script src="../assets/plugin/tom-select/tom-select.complete.min.js"></script>
+  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/validation.js"></script>
+  <script src="../assets/js/sweet-alert2.min.js"></script>
+  <script src="../assets/js/openai.js"></script>
+  <!-- <script src="../assets/js/login.js"></script> -->
+  <script src="../assets/plugin/wow-js-animation/animation.min.js"></script>
+<script src="../assets/plugin/swiper/swiper-bundle.min.js"></script>
+<script src="../assets/js/landing.js"></script> 
+</body>
+</html>

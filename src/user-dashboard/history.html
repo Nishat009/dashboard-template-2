@@ -1,0 +1,589 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='shortcut icon' href="../assets/images/favic.ico" type='image/x-icon' />
+    <title>Ai template</title>
+    <!-- Required Css -->
+    <link rel="stylesheet" href="../assets/plugin/jquery-ui/jquery-ui.min.css" />
+    <link rel="stylesheet" href="../assets/plugin/jquery-ui/jquery-ui-theme.min.css" />
+    <link rel="stylesheet" href="../assets/css/custom.css">
+    <link rel="stylesheet" href="../../dist/output.css">
+    <link rel="stylesheet" href="../assets/plugin/tom-select/tom-select.min.css" />
+    <link rel="stylesheet" href="../assets/css/site_custom.css">
+    <link rel="stylesheet" href="../assets/plugin/wow-js-animation/animation.min.css">
+    <link rel="stylesheet" href="../assets/plugin/swiper/swiper-bundle.min.css">
+    <script src="../assets/js/flashesh-dark.min.js"></script>
+    <!-- Don't remove from here. This script for onload flickering issues -->
+</head>
+
+<body>
+    <header>
+        <div class="fixed top-0 right-0 left-0 w-full font-Figtree z-40 xl:z-[99]">
+            <nav
+                class="flex h-[56px] items-center justify-between bg-color-2C transition-all duration-500 ease-in-out dark:bg-[#141414]">
+                <div class="w-full h-[56px] flex items-center justify-between md:mx-5">
+
+                    <div class="flex items-center justify-center">
+                        <div class="w-[66px] h-[56px] mr-4 bg-[#464444] flex items-center justify-center md:hidden">
+                            <svg class="collapse-icon pointer" width="26" height="26" viewBox="0 0 26 26" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4 13H22M4 7H22M4 19H16" stroke="white" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"></path>
+                            </svg>
+                        </div>
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="104" height="28" viewBox="0 0 104 28"
+                            fill="none">
+                            <g clip-path="url(#clip0_269_386)">
+                                <mask id="mask0_269_386" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0"
+                                    y="1" width="28" height="25">
+                                    <path
+                                        d="M18.0558 23.792L13.7089 2.89796C11.8584 8.37196 5.99219 8.06396 0.914062 4.76396L9.48594 14.278L18.0558 23.792ZM19.6056 25.944L15.2588 5.05196C19.1466 9.36796 24.4177 6.81596 27.7692 1.81396L23.6864 13.88L19.6056 25.944Z"
+                                        fill="white"></path>
+                                </mask>
+                                <g mask="url(#mask0_269_386)">
+                                    <path
+                                        d="M5.89469 28.71L32.2583 23.392L27.2777 -0.552002L0.914062 4.764L5.89469 28.71Z"
+                                        fill="url(#paint0_linear_269_386)"></path>
+                                </g>
+                                <path
+                                    d="M36.3271 25.9721H31.968L31.2043 23.254H25.7565L24.9034 25.9721H20.8002L25.468 12.024H31.7873L36.3271 25.9721ZM30.2618 20.214L28.5738 15.064H28.4641L26.7396 20.214H30.2618Z"
+                                    fill="white"></path>
+                                <path
+                                    d="M40.7756 15.244V17.228C41.0843 15.852 42.0654 15.244 43.8813 15.244H45.1346V18.284L42.6829 18.248C41.3382 18.23 40.7756 18.748 40.7756 19.946V25.972H37.3245V15.244H40.7756Z"
+                                    fill="white"></path>
+                                <path
+                                    d="M53.6699 25.972H51.4904C48.0028 25.972 47.1314 25.256 47.1314 22.36V18.104H46.0426V15.244H47.3142V12.954H50.5824V15.242H53.4892V18.104H50.5824V21.484C50.5824 22.79 50.7104 22.932 51.8357 22.932H53.6699V25.972Z"
+                                    fill="white"></path>
+                                <path
+                                    d="M55.3051 11.666H58.9369V14.17H55.3051V11.666ZM58.8455 15.244V25.972H55.3944V15.244H58.8455Z"
+                                    fill="white"></path>
+                                <path
+                                    d="M60.389 15.244H61.4777C61.4777 12.382 62.3674 11.668 65.8368 11.668H72.1926V14.172H65.9993C65.0365 14.172 64.9268 14.262 64.9268 15.138V15.246H67.2871V18.108H64.9268V25.976H61.4757V18.104H60.387V15.244H60.389ZM72.1032 15.244V25.972H68.6521V15.244H72.1032Z"
+                                    fill="white"></path>
+                                <path
+                                    d="M79.1497 23.684C80.9108 23.684 81.1119 23.594 81.1119 22.862C81.1119 22.326 80.6041 22.094 78.5322 21.718C74.8272 21.002 73.9009 20.324 73.9009 18.266C73.9009 15.674 74.9714 15.03 79.2411 15.03C83.4173 15.03 84.4716 15.764 84.4716 18.66V18.982H81.0205V18.66C81.0205 17.64 80.8397 17.534 79.2411 17.534C77.6973 17.534 77.5348 17.624 77.5348 18.374C77.5348 18.874 77.8436 19.036 79.042 19.214C83.6002 19.948 84.7438 20.734 84.7438 23.112C84.7438 25.58 83.6367 26.188 79.2411 26.188C74.7744 26.188 73.647 25.472 73.647 22.612V22.38H77.0981V22.612C77.0981 23.576 77.2972 23.684 79.1497 23.684Z"
+                                    fill="white"></path>
+                                <path
+                                    d="M89.6474 15.244V16.478C90.011 15.476 90.8458 15.03 92.2088 15.03C94.6971 15.03 95.6782 15.512 95.9686 17.23C96.2957 15.71 97.2219 15.03 98.9282 15.03C102.251 15.03 103.086 15.978 103.086 19.75V25.972H99.6351V20.196C99.6351 18.122 99.4726 17.89 98.0365 17.89C96.838 17.89 96.3302 18.552 96.3485 20.072V25.972H92.934V20.196C92.934 18.122 92.7715 17.89 91.3171 17.89C90.1552 17.89 89.6454 18.552 89.6454 20.072V25.972H86.1943V15.244H89.6474Z"
+                                    fill="white"></path>
+                            </g>
+                            <defs>
+                                <linearGradient id="paint0_linear_269_386" x1="21.2932" y1="25.1084" x2="11.6062"
+                                    y2="1.69268" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#E60C84"></stop>
+                                    <stop offset="1" stop-color="#FFCF4B"></stop>
+                                </linearGradient>
+                                <clipPath id="clip0_269_386">
+                                    <rect width="104" height="28" fill="white"></rect>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+
+                    <div>
+                        <a href="javascript: void(0)"
+                            class="flex justify-center gap-2 items-center text-white hover:text-color-FC mr-5 md:mr-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                fill="none">
+                                <g clip-path="url(#clip0_269_443)">
+                                    <path
+                                        d="M11.3334 4.66667L10.3934 5.60667L12.1134 7.33333H5.33337V8.66667H12.1134L10.3934 10.3867L11.3334 11.3333L14.6667 8L11.3334 4.66667ZM2.66671 3.33333H8.00004V2H2.66671C1.93337 2 1.33337 2.6 1.33337 3.33333V12.6667C1.33337 13.4 1.93337 14 2.66671 14H8.00004V12.6667H2.66671V3.33333Z"
+                                        fill="currentColor"></path>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_269_443">
+                                        <rect width="16" height="16" fill="white"></rect>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                            <span class="font-normal text-[15px] leading-[22px]">Logout</span>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="flex relative bg-white dark:bg-[#333332] font-Figtree overflow-hidden">
+        <div id="overlay" class="fixed z-50 top-0 left-0 bg-darken-4"></div>
+        <nav id="sidenav" class="md:pt-[56px] h-screen sidebar-scrollbar sidebar-nav md:sticky z-[100] md:z-50 top-0 left-0 w-[270px] text-color-14 flex flex-col font-Figtree md:transition-all md:duration-500 md:ease-in-out">
+            <div class="sidebar-bg-white h-full py-3.5 flex flex-col">
+                <div
+                class="sidebar-top relative items-center pl-5 dark:border-[#474746] dark:hover:bg-[#434241] hover:bg-color-F6 py-3.5">
+                <div class="flex justify-start items-center">
+                    <a href="" class="inline-flex gap-3">
+                        <svg class="dashboard-svg dark:text-white text-[#141414]" xmlns="http://www.w3.org/2000/svg"
+                            width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M7.5 14.1667H12.5V17.5H7.5V14.1667ZM2.5 16.2167L5.83333 12.8833V17.5H3.33333C2.875 17.5 2.5 17.125 2.5 16.6667V16.2167ZM12.3583 4.00001L5.83333 10.525L2.5 13.85V9.49167C2.5 9.28334 2.575 9.09167 2.70833 8.94167C2.71667 8.925 2.73333 8.91667 2.74167 8.9L9.40833 2.23334C9.43333 2.20834 9.45 2.19167 9.475 2.18334L9.53333 2.12501C9.86667 1.91667 10.3083 1.95001 10.5917 2.23334L12.3583 4.00001ZM17.5 9.49167V16.6667C17.5 17.125 17.125 17.5 16.6667 17.5H14.1667V10.525L11.1833 7.54167L13.5417 5.18334L17.2583 8.9C17.4083 9.05834 17.5 9.26667 17.5 9.49167Z" fill="currentColor" />
+                        </svg>
+                        <p class="transion-hide text-base leading-[24px] font-medium text-color-14">
+                            <span class="dark:text-white">Dashboard</span>
+                        </p>
+                    </a>
+                </div>
+                <span class="shrink-btn absolute top-[50%] opacity-1 right-3.5 cursor-pointer hidden md:block">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <rect width="24" height="24" rx="4" fill="#141414"></rect>
+                        <g clip-path="url(#clip0_344_741)">
+                            <path
+                                d="M9.95841 7.91675H12.5834L9.66674 12.0001L12.5834 16.0834H9.95841L7.04174 12.0001L9.95841 7.91675Z"
+                                fill="white"></path>
+                            <path
+                                d="M15.0417 7.91675H17.6667L14.7501 12.0001L17.6667 16.0834H15.0417L12.1251 12.0001L15.0417 7.91675Z"
+                                fill="white"></path>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_344_741">
+                                <rect width="14" height="14" fill="white" transform="matrix(-1 0 0 1 19 5)"></rect>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </span>
+
+                <div class="close shrink-btn absolute top-[50%] opacity-1 right-3.5 cursor-pointer md:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <rect width="24" height="24" rx="4" fill="#141414"></rect>
+                        <g clip-path="url(#clip0_344_741)">
+                            <path
+                                d="M9.95841 7.91675H12.5834L9.66674 12.0001L12.5834 16.0834H9.95841L7.04174 12.0001L9.95841 7.91675Z"
+                                fill="white"></path>
+                            <path
+                                d="M15.0417 7.91675H17.6667L14.7501 12.0001L17.6667 16.0834H15.0417L12.1251 12.0001L15.0417 7.91675Z"
+                                fill="white"></path>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_344_741">
+                                <rect width="14" height="14" fill="white" transform="matrix(-1 0 0 1 19 5)"></rect>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </div>
+            </div>
+                <div class="sidebar-links sidebar-accordion middle-sidebar-scroll overflow-y-scroll">
+                    <ul class="mt-3">
+                        <li
+                            class="w-[52px] div-border border dark:border-[#474746] border-t border-color-DF ml-5 my-3.5">
+                        </li>
+
+                        <li>
+                            <a href="template.html">
+                                <div class="flex items-center gap-3 w-full py-3 pl-5 pr-[15px] text-left text-color-14 text-base leading-6 font-medium">
+                                    <svg class="dashboard-svg dark:text-white text-[#141414]" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_421_1714)">
+                                        <path d="M2.5 10.8333H9.16667V2.5H2.5V10.8333ZM2.5 17.5H9.16667V12.5H2.5V17.5ZM10.8333 17.5H17.5V9.16667H10.8333V17.5ZM10.8333 2.5V7.5H17.5V2.5H10.8333Z" fill="currentColor"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip0_421_1714">
+                                        <rect width="20" height="20" fill="white"/>
+                                        </clipPath>
+                                        </defs>
+                                    </svg>
+                                        
+                                    <p class="transion-hide accordion-menus">
+                                        <span class="dark:text-white">Template Category</span>
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="image-generator.html">
+                                <div
+                                    class="flex items-center gap-3 w-full py-3 pl-5 pr-[15px] text-left text-color-14 text-base leading-6 font-medium">
+                                    <svg class="dashboard-svg dark:text-white text-[#141414]"
+                                        xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                                        fill="none">
+                                        <g clip-path="url(#clip0_269_423)">
+                                            <path
+                                                d="M17.5 15.8333V4.16667C17.5 3.25 16.75 2.5 15.8333 2.5H4.16667C3.25 2.5 2.5 3.25 2.5 4.16667V15.8333C2.5 16.75 3.25 17.5 4.16667 17.5H15.8333C16.75 17.5 17.5 16.75 17.5 15.8333ZM7.08333 11.25L9.16667 13.7583L12.0833 10L15.8333 15H4.16667L7.08333 11.25Z"
+                                                fill="currentColor"></path>
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_269_423">
+                                                <rect width="20" height="20" fill="white"></rect>
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                    <p class="transion-hide accordion-menus">
+                                        <span class="dark:text-white">Image Generator</span>
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li
+                            class="w-[52px] div-border border dark:border-[#474746] border-t border-color-DF ml-5 my-3.5">
+                        </li>
+
+                        <li>
+                            <a href="documents.html">
+                                <div
+                                    class="flex items-center gap-3 w-full py-3 pl-5 pr-[15px] text-left text-color-14 text-base leading-6 font-medium">
+                                    <svg class="dashboard-svg dark:text-white text-[#141414]"
+                                        xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                                        fill="none">
+                                        <g clip-path="url(#clip0_380_803)">
+                                            <path
+                                                d="M11.1641 1H5.375C4.16688 1 3.1875 1.97938 3.1875 3.1875V16.3125C3.1875 17.5206 4.16688 18.5 5.375 18.5H14.125C15.3331 18.5 16.3125 17.5206 16.3125 16.3125V6.1484C16.3125 5.85832 16.1973 5.58012 15.9921 5.375L11.9375 1.32035C11.7324 1.11523 11.4542 1 11.1641 1ZM11.3906 4.82812V2.64062L14.6719 5.92188H12.4844C11.8803 5.92188 11.3906 5.43219 11.3906 4.82812ZM5.92188 10.8438C5.61984 10.8438 5.375 10.5989 5.375 10.2969C5.375 9.99484 5.61984 9.75 5.92188 9.75H13.5781C13.8802 9.75 14.125 9.99484 14.125 10.2969C14.125 10.5989 13.8802 10.8438 13.5781 10.8438H5.92188ZM5.375 12.4844C5.375 12.1823 5.61984 11.9375 5.92188 11.9375H13.5781C13.8802 11.9375 14.125 12.1823 14.125 12.4844C14.125 12.7864 13.8802 13.0312 13.5781 13.0312H5.92188C5.61984 13.0312 5.375 12.7864 5.375 12.4844ZM5.92188 15.2188C5.61984 15.2188 5.375 14.9739 5.375 14.6719C5.375 14.3698 5.61984 14.125 5.92188 14.125H10.2969C10.5989 14.125 10.8438 14.3698 10.8438 14.6719C10.8438 14.9739 10.5989 15.2188 10.2969 15.2188H5.92188Z"
+                                                fill="currentColor"></path>
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_380_803">
+                                                <rect width="20" height="20" fill="white"></rect>
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                    <p class="transion-hide accordion-menus"><span
+                                            class="dark:text-white">Documents</span>
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="history.html">
+                                <div class="flex items-center gap-3 bg-color-F6 dark:bg-[#434241] w-full border-design-1 py-3 pl-5 pr-[15px] text-left text-color-14 text-base leading-6 font-medium">
+                                    <svg class="h-5 w-5 dashboard-svg dark:text-white text-[#141414]" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M18.75 10C18.75 12.3206 17.8281 14.5462 16.1872 16.1872C14.5462 17.8281 12.3206 18.75 10 18.75C7.67936 18.75 5.45376 17.8281 3.81282 16.1872C2.17187 14.5462 1.25 12.3206 1.25 10C1.25 9.83424 1.31585 9.67527 1.43306 9.55806C1.55027 9.44085 1.70924 9.375 1.875 9.375C2.04076 9.375 2.19973 9.44085 2.31694 9.55806C2.43415 9.67527 2.5 9.83424 2.5 10C2.4975 11.6738 3.05413 13.3005 4.08154 14.6218C5.10895 15.9432 6.54827 16.8835 8.17105 17.2936C9.79383 17.7036 11.5071 17.5599 13.0389 16.8853C14.5707 16.2106 15.8332 15.0436 16.6262 13.5696C17.4191 12.0955 17.697 10.3989 17.4157 8.74888C17.1344 7.0989 16.31 5.59015 15.0734 4.4621C13.8369 3.33405 12.259 2.65134 10.5902 2.52233C8.92137 2.39332 7.25728 2.82541 5.86204 3.75H6.25C6.41576 3.75 6.57473 3.81585 6.69194 3.93306C6.80915 4.05027 6.875 4.20924 6.875 4.375C6.875 4.54076 6.80915 4.69974 6.69194 4.81695C6.57473 4.93416 6.41576 5 6.25 5H4.375C4.29291 5.00005 4.21162 4.98392 4.13577 4.95252C4.05992 4.92113 3.991 4.8751 3.93295 4.81705C3.87491 4.759 3.82887 4.69009 3.79748 4.61424C3.76609 4.53839 3.74995 4.45709 3.75 4.375V2.5C3.75 2.33424 3.81585 2.17527 3.93306 2.05806C4.05027 1.94085 4.20924 1.875 4.375 1.875C4.54076 1.875 4.69973 1.94085 4.81694 2.05806C4.93415 2.17527 5 2.33424 5 2.5V2.8212C6.31174 1.90694 7.84896 1.36967 9.44463 1.26778C11.0403 1.16589 12.6334 1.50328 14.0507 2.24328C15.4681 2.98328 16.6556 4.09759 17.484 5.46512C18.3125 6.83265 18.7504 8.40109 18.75 10ZM15.625 10C15.625 11.1125 15.2951 12.2001 14.677 13.1251C14.0589 14.0501 13.1804 14.7711 12.1526 15.1968C11.1248 15.6226 9.99376 15.734 8.90262 15.5169C7.81147 15.2999 6.80919 14.7641 6.02252 13.9775C5.23585 13.1908 4.70012 12.1885 4.48308 11.0974C4.26604 10.0062 4.37743 8.87524 4.80318 7.84741C5.22892 6.81958 5.94989 5.94107 6.87492 5.32299C7.79994 4.7049 8.88748 4.375 10 4.375C11.4913 4.37663 12.9211 4.96979 13.9757 6.02433C15.0302 7.07887 15.6234 8.50866 15.625 10ZM12.2217 10.73L10.625 9.66553V6.875C10.625 6.70924 10.5592 6.55027 10.4419 6.43306C10.3247 6.31585 10.1658 6.25 10 6.25C9.83424 6.25 9.67527 6.31585 9.55806 6.43306C9.44085 6.55027 9.375 6.70924 9.375 6.875V10C9.37502 10.1029 9.40043 10.2042 9.44898 10.2949C9.49753 10.3856 9.56772 10.4629 9.65332 10.52L11.5283 11.77C11.6662 11.86 11.8341 11.892 11.9955 11.8589C12.1568 11.8258 12.2986 11.7304 12.39 11.5933C12.4813 11.4563 12.5149 11.2887 12.4834 11.1271C12.4519 10.9654 12.3578 10.8227 12.2217 10.73Z" fill="url(#paint0_linear_421_1726)"/>
+                                        <defs>
+                                        <linearGradient id="paint0_linear_421_1726" x1="12.628" y1="16.5961" x2="6.55335" y2="2.88766" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#E60C84"/>
+                                        <stop offset="1" stop-color="#FFCF4B"/>
+                                        </linearGradient>
+                                        </defs>
+                                    </svg>
+                                    <p class="transion-hide accordion-menus"><span class="dark:text-white">History</span></p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="image-list.html">
+                                <div
+                                    class="flex items-center gap-3 w-full py-3 pl-5 pr-[15px] text-left text-color-14 text-base leading-6 font-medium">
+                                    <svg class="dashboard-svg dark:text-white text-[#141414]"
+                                        xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                                        fill="none">
+                                        <path
+                                            d="M18.75 10C18.75 12.3206 17.8281 14.5462 16.1872 16.1872C14.5462 17.8281 12.3206 18.75 10 18.75C7.67936 18.75 5.45376 17.8281 3.81282 16.1872C2.17187 14.5462 1.25 12.3206 1.25 10C1.25 9.83424 1.31585 9.67527 1.43306 9.55806C1.55027 9.44085 1.70924 9.375 1.875 9.375C2.04076 9.375 2.19973 9.44085 2.31694 9.55806C2.43415 9.67527 2.5 9.83424 2.5 10C2.4975 11.6738 3.05413 13.3005 4.08154 14.6218C5.10895 15.9432 6.54827 16.8835 8.17105 17.2936C9.79383 17.7036 11.5071 17.5599 13.0389 16.8853C14.5707 16.2106 15.8332 15.0436 16.6262 13.5696C17.4191 12.0955 17.697 10.3989 17.4157 8.74888C17.1344 7.0989 16.31 5.59015 15.0735 4.4621C13.8369 3.33405 12.259 2.65134 10.5902 2.52233C8.92137 2.39332 7.25728 2.82541 5.86204 3.75H6.25C6.41576 3.75 6.57473 3.81585 6.69194 3.93306C6.80915 4.05027 6.875 4.20924 6.875 4.375C6.875 4.54076 6.80915 4.69974 6.69194 4.81695C6.57473 4.93416 6.41576 5 6.25 5H4.375C4.29291 5.00005 4.21162 4.98392 4.13577 4.95252C4.05992 4.92113 3.991 4.8751 3.93295 4.81705C3.87491 4.759 3.82887 4.69009 3.79748 4.61424C3.76609 4.53839 3.74995 4.45709 3.75 4.375V2.5C3.75 2.33424 3.81585 2.17527 3.93306 2.05806C4.05027 1.94085 4.20924 1.875 4.375 1.875C4.54076 1.875 4.69973 1.94085 4.81694 2.05806C4.93415 2.17527 5 2.33424 5 2.5V2.8212C6.31174 1.90694 7.84896 1.36967 9.44463 1.26778C11.0403 1.16589 12.6334 1.50328 14.0507 2.24328C15.4681 2.98328 16.6556 4.09759 17.484 5.46512C18.3125 6.83265 18.7504 8.40109 18.75 10ZM15.625 10C15.625 11.1125 15.2951 12.2001 14.677 13.1251C14.0589 14.0501 13.1804 14.7711 12.1526 15.1968C11.1248 15.6226 9.99376 15.734 8.90262 15.5169C7.81147 15.2999 6.80919 14.7641 6.02252 13.9775C5.23585 13.1908 4.70012 12.1885 4.48308 11.0974C4.26604 10.0062 4.37743 8.87524 4.80318 7.84741C5.22892 6.81958 5.94989 5.94107 6.87492 5.32299C7.79994 4.7049 8.88748 4.375 10 4.375C11.4913 4.37663 12.9211 4.96979 13.9757 6.02433C15.0302 7.07887 15.6234 8.50866 15.625 10ZM12.2217 10.73L10.625 9.66553V6.875C10.625 6.70924 10.5592 6.55027 10.4419 6.43306C10.3247 6.31585 10.1658 6.25 10 6.25C9.83424 6.25 9.67527 6.31585 9.55806 6.43306C9.44085 6.55027 9.375 6.70924 9.375 6.875V10C9.37502 10.1029 9.40043 10.2042 9.44898 10.2949C9.49753 10.3856 9.56772 10.4629 9.65332 10.52L11.5283 11.77C11.6662 11.86 11.8341 11.892 11.9955 11.8589C12.1568 11.8258 12.2986 11.7304 12.39 11.5933C12.4813 11.4563 12.5149 11.2887 12.4834 11.1271C12.4519 10.9654 12.3578 10.8227 12.2217 10.73Z"
+                                            fill="currentColor"></path>
+                                    </svg>
+                                    <p class="transion-hide accordion-menus"><span class="dark:text-white">Image
+                                            History</span>
+                                    </p>
+                                </div>
+                            </a>
+
+                        </li>
+                        <li
+                            class="w-[52px] div-border border dark:border-[#474746] border-t border-color-DF ml-5 my-3.5">
+                        </li>
+                        <li>
+                            <a href="profile.html">
+                                <div
+                                    class="flex items-center gap-3 w-full py-3 pl-5 pr-[15px] text-left text-color-14 text-base leading-6 font-medium">
+                                    <svg class="dashboard-svg dark:text-white text-[#141414]"
+                                        xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                                        fill="none">
+                                        <g clip-path="url(#clip0_380_813)">
+                                            <path
+                                                d="M10.0001 1.66666C5.40008 1.66666 1.66675 5.4 1.66675 10C1.66675 14.6 5.40008 18.3333 10.0001 18.3333C14.6001 18.3333 18.3334 14.6 18.3334 10C18.3334 5.4 14.6001 1.66666 10.0001 1.66666ZM10.0001 4.16666C11.3834 4.16666 12.5001 5.28333 12.5001 6.66666C12.5001 8.05 11.3834 9.16666 10.0001 9.16666C8.61675 9.16666 7.50008 8.05 7.50008 6.66666C7.50008 5.28333 8.61675 4.16666 10.0001 4.16666ZM10.0001 16C7.91675 16 6.07508 14.9333 5.00008 13.3167C5.02508 11.6583 8.33341 10.75 10.0001 10.75C11.6584 10.75 14.9751 11.6583 15.0001 13.3167C13.9251 14.9333 12.0834 16 10.0001 16Z"
+                                                fill="currentColor"></path>
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_380_813">
+                                                <rect width="20" height="20" fill="white"></rect>
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                    <p class="transion-hide accordion-menus"><span
+                                            class="dark:text-white">Account</span>
+                                    </p>
+                                </div>
+                            </a>
+
+                        </li>
+                    </ul>
+                </div>
+                <div class="sidebar-footer relative mt-auto">
+                    <div class="w-[52px] div-border border dark:border-[#474746] border-t border-color-DF ml-5 my-3.5">
+                    </div>
+                    <div class="flex items-center h-[52px] justify-start pl-5 w-full bottom-7">
+                        <label for="switch" class="flex items-center cursor-pointer">
+                            <div class="relative">
+                                <input type="checkbox" id="switch" class="sr-only">
+                                <div
+                                    class="block bg-color-DF dark:bg-[#FF774B] border border-color-89 dark:border-[#FF774B] w-9 h-5 rounded-full">
+                                </div>
+                                <div class="dot absolute left-[2px] top-[2px] bg-white w-4 h-4 rounded-full transition">
+                                </div>
+                            </div>
+                            <div class="ml-3 transion-hide text-color-14 font-normal text-base leading-6">
+                                <span class="dark:text-[#333332] dark:hidden">Dark Mode</span>
+                                <span class="dark:text-white text-white dark:flex hidden">Light Mode</span>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <main class="w-[68.9%] 5xl:w-[85.9%] pt-[56px] sidebar-scrollbar overflow-auto h-screen  xl:overflow-hidden dark:bg-[#292929] flex flex-col flex-1 font-Figtree border-l dark:border-[#474746] border-color-DF">
+            <div class="xl:flex h-full subscription-main">
+               
+                <div class="bg-[#F6F3F2] sidebar-scrollbar xl:overflow-auto xl:h-[calc(100vh-56px)] dark:bg-[#3A3A39] xl:w-[401px] 5xl:w-[474px] sidebar-scrollbar flex flex-col gap-4 p-6">
+                    <div class="border border-design-3 border-design-3 border-color-DF dark:border-[#474746] rounded-xl cursor-pointer bg-white dark:bg-[#474746]">
+                        <div class="p-4">
+                            <p class="text-16 font-semibold text-color-2C dark:text-white">Landing Page &amp; website copies</p>
+                            <p class="text-14 font-light text-color-2C dark:text-white py-2">a place to hire the best freelance
+                                software developers</p>
+                            <p class="text-14 font-light text-color-2C dark:text-white">- Web development - Mobile app developmet
+                                - UI Design - Bug fixing - Quality Assurance</p>
+                            <p class="leading-[18px] text-xs font-semibold text-color-2C dark:text-color-89 pt-4">20 hours ago</p>
+                        </div>
+                    </div>
+                    <div class="border border-design-3 border-color-DF dark:border-[#474746] rounded-xl cursor-pointer bg-white dark:bg-[#474746]">
+                        <div class="p-4">
+                            <p class="text-16 font-semibold text-color-2C dark:text-white">Landing Page & website copies</p>
+                            <p class="text-14 font-light text-color-2C dark:text-white py-2">a place to hire the best freelance
+                                software developers</p>
+                            <p class="text-14 font-light text-color-2C dark:text-white">- Web development - Mobile app developmet
+                                - UI Design - Bug fixing - Quality Assurance</p>
+                            <p class="leading-[18px] text-xs font-semibold text-color-2C dark:text-color-89 pt-4">20 hours ago</p>
+                        </div>
+                    </div>
+                    <div class="border border-design-3 border-color-DF dark:border-[#474746] rounded-xl cursor-pointer bg-white dark:bg-[#474746]">
+                        <div class="p-4">
+                            <p class="text-16 font-semibold text-color-2C dark:text-white">Landing Page & website copies</p>
+                            <p class="text-14 font-light text-color-2C dark:text-white py-2">a place to hire the best freelance
+                                software developers</p>
+                            <p class="text-14 font-light text-color-2C dark:text-white">- Web development - Mobile app developmet
+                                - UI Design - Bug fixing - Quality Assurance</p>
+                            <p class="leading-[18px] text-xs font-semibold text-color-2C dark:text-color-89 pt-4">20 hours ago</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="xl:w-[76%] 5xl:w-[75.3%] xl:px-0 px-5 bg-white dark:bg-[#292929] sidebar-scrollbar xl:overflow-auto xl:h-[calc(100vh-56px)] 3xl:overflow-hidden 3xl:h-auto ">
+                    <div class="4xl:flex">
+                        <div class="4xl:w-[401px] 5xl:w-[540px] sidebar-scrollbar 3xl:overflow-auto 3xl:h-[calc(100vh-56px)]">
+                            <div class="xl:px-12 pt-6 4xl:pb-[56px] 4xl:h-[calc(100vh-56px)]">
+                                <div class="grid grid-cols-2 gap-6 justify-between items-center">
+                                    <div>
+                                        <div>
+                                            <div
+                                                class="mb-3 font-normal dashboardThree text-14 dark:text-white text-color-2C">
+                                                <label class="mb-1.5" for="">Select language</label>
+                                                <select
+                                                    class="form-select select w-full text-base leading-6 font-medium text-color-2C dark:text-white bg-color-E4 rounded-xl m-0 focus:text-color-2C focus:bg-color-E4 focus:border-color-89 focus:outline-none">
+                                                    <option selected>English (US)</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="">
+                                            <div
+                                                class="mb-3 font-normal dashboardThree text-14 text-color-2C dark:text-white">
+                                                <label class="mb-1.5" for="">Select tone</label>
+                                                <select
+                                                    class="form-select select block w-full text-base leading-6 font-medium text-color-2C dark:text-white bg-color-E4 bg-clip-padding bg-no-repeat rounded-xl m-0 focus:text-color-2C focus:bg-color-E4 focus:border-color-89 focus:outline-none">
+                                                    <option selected>Casual</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mt-6">
+                                    <div class="">
+                                        <div class="mb-3 dashboardThree font-normal text-14 text-color-2C dark:text-white">
+                                            <label class="mb-1.5" for="">Use case</label>
+                                            <select
+                                                class="form-select select block w-full text-base leading-6 font-medium text-color-2C dark:text-white bg-color-E4 bg-clip-padding bg-no-repeat rounded-xl m-0 focus:text-color-2C focus:bg-color-E4 focus:border-color-89 focus:outline-none">
+                                                <option selected>Blog ideas & outline</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                            <p class="text-[13px] font-medium text-color-89 leading-5 mt-1.5">Write sections
+                                                of
+                                                website based on its features
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mt-6">
+                                    <div class="mb-3 dashboardThree font-normal text-14 text-color-2C dark:text-white">
+                                        <label class="mb-1.5" for="">Website name</label>
+                                        <select
+                                            class="form-select select block w-full text-base leading-6 font-medium text-color-2C bg-color-E4 bg-clip-padding bg-no-repeat rounded-xl m-0 focus:text-color-2C focus:bg-color-E4 focus:border-color-89 focus:outline-none">
+                                            <option selected>Techvillage</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="mt-6">
+                                    <div class="mb-3 dashboardThree font-normal text-14 text-color-2C dark:text-white">
+                                        <label class="mb-1.5" for="">About website</label>
+                                        <select
+                                            class="form-select select block w-full text-base leading-6 font-medium text-color-2C dark:text-white bg-color-E4 bg-clip-padding bg-no-repeat rounded-xl m-0 focus:text-color-2C focus:bg-color-F3 focus:border-color-89 focus:outline-none">
+                                            <option selected>Techvillage is a creative development studio</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="mt-6">
+                                    <div class="mb-3 dashboardThree font-normal text-14 text-color-2C dark:text-white">
+                                        <label class="mb-1.5" for="">Features</label>
+                                        <div
+                                            class=" w-full text-base leading-6 pl-4 py-3 font-medium text-color-2C dark:text-white dark:bg-[#3A3A39] bg-color-F3 rounded-xl m-0">
+                                            <p>- Web development</p>
+                                            <p>- Mobile app developmet</p>
+                                            <p>- UI Design</p>
+                                            <p>- Bug fixing</p>
+                                            <p>- Quality Assurance</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mt-6">
+                                    <div class="mb-3 dashboardThree font-normal text-14 text-color-2C dark:text-white">
+                                        <label class="mb-1.5" for="">Creativity level</label>
+                                        <select
+                                            class="form-select select block w-full text-base leading-6 font-medium text-color-2C bg-color-E4 bg-clip-padding bg-no-repeat rounded-xl m-0 focus:text-color-2C focus:bg-color-E4 focus:border-color-89 focus:outline-none">
+                                            <option selected>Optimal</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="my-6 flex justify-between items-center">
+                                    <a href="javascript: void(0)" class="flex items-center gap-1.5">
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                            viewBox="0 0 14 14" fill="none">
+                                            <path
+                                                d="M2.1875 0.875C1.70425 0.875 1.3125 1.26675 1.3125 1.75V2.625C1.3125 3.10825 1.70425 3.5 2.1875 3.5H2.625V11.375C2.625 12.3415 3.4085 13.125 4.375 13.125H9.625C10.5915 13.125 11.375 12.3415 11.375 11.375V3.5H11.8125C12.2957 3.5 12.6875 3.10825 12.6875 2.625V1.75C12.6875 1.26675 12.2957 0.875 11.8125 0.875H8.75C8.75 0.391751 8.35825 0 7.875 0H6.125C5.64175 0 5.25 0.391751 5.25 0.875H2.1875ZM4.8125 4.375C5.05412 4.375 5.25 4.57088 5.25 4.8125V10.9375C5.25 11.1791 5.05412 11.375 4.8125 11.375C4.57088 11.375 4.375 11.1791 4.375 10.9375L4.375 4.8125C4.375 4.57088 4.57088 4.375 4.8125 4.375ZM7 4.375C7.24162 4.375 7.4375 4.57088 7.4375 4.8125V10.9375C7.4375 11.1791 7.24162 11.375 7 11.375C6.75838 11.375 6.5625 11.1791 6.5625 10.9375V4.8125C6.5625 4.57088 6.75838 4.375 7 4.375ZM9.625 4.8125V10.9375C9.625 11.1791 9.42912 11.375 9.1875 11.375C8.94588 11.375 8.75 11.1791 8.75 10.9375V4.8125C8.75 4.57088 8.94588 4.375 9.1875 4.375C9.42912 4.375 9.625 4.57088 9.625 4.8125Z"
+                                                fill="#898989" />
+                                        </svg>
+                                        <span class="text-[15px] text-color-2C dark:text-white leading-[22px]">Delete</span>
+                                    </a>
+                                    <a href="javascript: void(0)" class="flex items-center gap-1.5">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14"
+                                            viewBox="0 0 15 14" fill="none">
+                                            <path
+                                                d="M7.85882 1.37062C7.47043 0.709794 6.53227 0.709794 6.14388 1.37062L0.144048 11.579C-0.255856 12.2594 0.224244 13.125 1.00152 13.125H13.0012C13.7785 13.125 14.2586 12.2594 13.8587 11.579L7.85882 1.37062ZM7 4.375C7.46848 4.375 7.83455 4.7795 7.78793 5.24566L7.48103 8.31467C7.45632 8.5618 7.24836 8.75 7 8.75C6.75164 8.75 6.54368 8.5618 6.51897 8.31467L6.21207 5.24566C6.16545 4.7795 6.53152 4.375 7 4.375ZM7.00135 9.625C7.4846 9.625 7.87635 10.0168 7.87635 10.5C7.87635 10.9832 7.4846 11.375 7.00135 11.375C6.5181 11.375 6.12635 10.9832 6.12635 10.5C6.12635 10.0168 6.5181 9.625 7.00135 9.625Z"
+                                                fill="#898989" />
+                                        </svg>
+                                        <span class="text-[15px] text-color-2C dark:text-white leading-[22px]">Report poor output quality</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="4xl:w-[61%] 4xl:border-l dark:border-[#474746] pb-8 sidebar-scrollbar 3xl:overflow-auto 3xl:h-[calc(100vh-56px)]">
+                            <div class="mt-6 flex justify-between items-center xl:px-12 border-color-DF">
+                                <p class="text-color-2C text-14 dark:text-color-89">Document</p>
+                                <p class="text-color-89 text-14 font-medium">Credits used <span
+                                        class="text-color-2C dark:text-white">3562</span> </p>
+                            </div>
+                            <div class="mt-1 flex justify-between items-center xl:px-12 border-color-DF">
+                                <a href="document-edit.html" class="flex items-center gap-2">
+                                    <span class="text-color-2C leading-[28px] text-xl font-semibold dark:text-white">Techvillage
+                                        content
+                                    </span>
+                                    <svg class="mt-1" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                        <circle cx="10" cy="10" r="9" fill="white"></circle>
+                                        <path d="M10 0C15.5228 0 20 4.47715 20 10C20 15.5228 15.5228 20 10 20C4.47715 20 0 15.5228 0 10C0 4.47715 4.47715 0 10 0ZM5.625 9.375C5.27982 9.375 5 9.65482 5 10C5 10.3452 5.27982 10.625 5.625 10.625H12.8661L10.1831 13.3081C9.93898 13.5521 9.93898 13.9479 10.1831 14.1919C10.4271 14.436 10.8229 14.436 11.0669 14.1919L14.8169 10.4419C15.061 10.1979 15.061 9.80214 14.8169 9.55806L11.0669 5.80806C10.8229 5.56398 10.4271 5.56398 10.1831 5.80806C9.93898 6.05214 9.93898 6.44786 10.1831 6.69194L12.8661 9.375H5.625Z" fill="url(#paint0_linear_425_1759)"></path>
+                                        <defs>
+                                            <linearGradient id="paint0_linear_425_1759" x1="13.0034" y1="17.5384" x2="6.06098" y2="1.87161" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#E60C84"></stop>
+                                                <stop offset="1" stop-color="#FFCF4B"></stop>
+                                            </linearGradient>
+                                        </defs>
+                                    </svg>
+                                </a>
+                                <p class="text-color-89 text-14 font-medium">Date <span
+                                        class="text-color-22 dark:text-white"> Mon, February 6, 2023, 04:39 pm</span> </p>
+                            </div>
+                            <div class="mt-4 xl:px-12 flex flex-col gap-3">
+                                <p class="text-14 font-normal text-color-2C dark:text-white">Generated variants</p>
+
+                                <div class="p-5 bg-color-F3 dark:bg-[#333332] rounded-xl font-normal text-color-2C dark:text-white text-16">
+                                    <p>
+                                        Hire the best software developers
+                                        <br>
+                                        At Techvillage, you can hire the best freelance software developers to get your
+                                        project done on time and within budget. We offer a wide range of services like web
+                                        development, mobile app development, UI design, bug fixing and quality assurance.
+                                        <br>
+                                        Features section:
+                                        <br>
+                                        Stay in control with our dashboard
+                                        <br>
+                                        We offer a secure and easy-to-use dashboard for our clients to stay informed about
+                                        their project's status. Our dashboard also allows you to communicate with your team,
+                                        get updates & reports and manage payments.
+
+                                    </p>
+                                </div>
+                                <div class="p-5 bg-color-F3 dark:bg-[#333332] rounded-xl font-normal text-color-2C dark:text-white text-16">
+                                    <p>
+                                        Hire the best software developers
+                                        <br>
+                                        At Techvillage, you can hire the best freelance software developers to get your
+                                        project done on time and within budget. We offer a wide range of services like web
+                                        development, mobile app development, UI design, bug fixing and quality assurance.
+                                        <br>
+                                        Features section:
+                                        <br>
+                                        Stay in control with our dashboard
+                                        <br>
+                                        We offer a secure and easy-to-use dashboard for our clients to stay informed about
+                                        their project's status. Our dashboard also allows you to communicate with your team,
+                                        get updates & reports and manage payments.
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+
+
+
+
+
+
+
+    <!-- Required Js -->
+    <script src="../assets/plugin/jquery-ui/jquery-3.6.3.min.js"></script>
+    <script src="../assets/plugin/jquery-ui/jquery-ui.min.js"></script>
+    <script src="../assets/plugin/tailwind-components/tailwind-component.min.js"></script>
+    <script src="../assets/plugin/tinymce 6.3.1/js/tinymce/tinymce.min.js"></script>
+    <script src="../assets/plugin/tom-select/tom-select.complete.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/validation.js"></script>
+    <script src="../assets/js/sweet-alert2.min.js"></script>
+    <script src="../assets/js/openai.js"></script>
+    <!-- <script src="../assets/js/login.js"></script> -->
+    <script src="../assets/plugin/wow-js-animation/animation.min.js"></script>
+    <script src="../assets/plugin/swiper/swiper-bundle.min.js"></script>
+    <script src="../assets/js/landing.js"></script>
+</body>
+
+</html>

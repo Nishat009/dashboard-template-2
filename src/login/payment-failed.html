@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/plugin/jquery-ui/jquery-ui.min.css" />
+  <link rel="stylesheet" href="../assets/plugin/jquery-ui/jquery-ui-theme.min.css" />
+  <link rel="stylesheet" href="../assets/css/custom.css">
+  <link rel="stylesheet" href="../../dist/output.css">
+  <link rel="stylesheet" href="../assets/plugin/tom-select/tom-select.min.css" />
+  <link rel="stylesheet" href="../assets/css/site_custom.css">
+  <link rel="stylesheet" href="../assets/plugin/wow-js-animation/animation.min.css">
+  <link rel="stylesheet" href="../assets/plugin/swiper/swiper-bundle.min.css">
+  <script src="../assets/js/flashesh-dark.min.js"></script> <!-- Don't remove from here. This script for onload flickering issues -->
+</head>
+<body>
+    <div class="relative h-screen log-bg flex flex-col items-center pb-11 login-bg overflow-auto font-Figtree">
+        <img class="mt-5 dark:hidden" src="../assets/images/arifism-light.png" alt="">
+        <img class="mt-5 hidden dark:block" src="../assets/images/artifism-dark.png" alt="">
+        <div class="relative bg-white dark:bg-[#3A3A39] rounded-3xl w-[350px] xs:w-[388px] sm:w-[506px] h-[310px] px-4 sm:px-10 py-8 z-[2] mt-11">
+            <div class="flex justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none">
+                    <g clip-path="url(#clip0_2455_1682)">
+                    <path d="M0.860291 65.5908L34.8281 8.18232C37.1647 4.23325 42.8355 4.23325 45.172 8.18232L79.1398 65.5908C81.5358 69.6401 78.6433 74.7792 73.9679 74.7792H6.03217C1.35685 74.7794 -1.53565 69.6403 0.860291 65.5908Z" fill="url(#paint0_linear_2455_1682)"/>
+                    <path d="M28.2656 74.7793H73.9687C78.6441 74.7793 81.5367 69.6403 79.1406 65.5909L54.3225 23.6458C55.3055 27.8389 55.7795 32.5833 55.2644 37.7581C52.827 62.2414 30.5283 73.6567 29.0836 74.3656C28.8061 74.5093 28.5344 74.6461 28.2656 74.7793Z" fill="url(#paint1_linear_2455_1682)"/>
+                    <path d="M6.03168 69.9609C5.04293 69.9269 4.49324 69.01 5.01574 68.0605L38.9834 10.652C39.5082 9.82936 40.505 9.84014 41.0154 10.652L74.9831 68.0603C75.5078 69.0134 74.9626 69.9262 73.9671 69.9608H6.03168V69.9609Z" fill="#FCCA19"/>
+                    <path d="M55.4451 35.0408C55.4134 35.9328 55.3545 36.8383 55.2629 37.7581C53.6418 54.0426 43.2354 64.5439 36.0215 69.9609H73.9663C74.9618 69.9264 75.5069 69.0136 74.9823 68.0605L55.4451 35.0408Z" fill="#FCCA19"/>
+                    <path d="M40.0006 52.3343C39.14 52.3343 38.4239 51.6731 38.3555 50.8153L36.7683 30.9218C36.6178 29.0353 38.1081 27.4212 40.0006 27.4212C41.8931 27.4212 43.3836 29.0353 43.233 30.9218L41.6458 50.8153C41.5773 51.6731 40.8613 52.3343 40.0006 52.3343Z" fill="#141414"/>
+                    <path d="M40.0001 62.2367C41.4315 62.2367 42.592 61.0762 42.592 59.6448C42.592 58.2133 41.4315 57.0529 40.0001 57.0529C38.5686 57.0529 37.4082 58.2133 37.4082 59.6448C37.4082 61.0762 38.5686 62.2367 40.0001 62.2367Z" fill="#141414"/>
+                    </g>
+                    <defs>
+                    <linearGradient id="paint0_linear_2455_1682" x1="52.0138" y1="66.2179" x2="30.1439" y2="9.45661" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#E60C84"/>
+                    <stop offset="1" stop-color="#FFCF4B"/>
+                    </linearGradient>
+                    <linearGradient id="paint1_linear_2455_1682" x1="61.9025" y1="68.4858" x2="44.2925" y2="28.2782" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#E60C84"/>
+                    <stop offset="1" stop-color="#FFCF4B"/>
+                    </linearGradient>
+                    <clipPath id="clip0_2455_1682">
+                    <rect width="80" height="80" fill="white"/>
+                    </clipPath>
+                    </defs>
+                    </svg>
+            </div>
+            <p class="text-center text-24 font-bold text-color-14 dark:text-white mt-6">Payment Failed</p>
+            <p class="text-center text-14 font-normal text-color-14 dark:text-white mt-4">Oops! Looks like your payment was unsuccessful. Please try again or contact our support team to assist you.</p>
+            <a class="block w-full bg-color-14 dark:bg-white dark:text-color-14 text-white text-16 font-semibold py-3 rounded-xl text-center mt-6" href="javascript: void(0)">Try Again</a>
+        </div>
+    </div>
+    <div class="dark:bg-color-29 bg-white py-4 px-[18px] rounded-full w-max fixed bottom-5 left-5 z-50 theme-switch-box-shadow">
+        <div class="flex justify-center items-center p-[2px] w-max">
+            <div class='theme-toggle-switch'>
+                <label for="switch" class="absolute w-[18px] h-[35px] bg-color-47 rounded-full cursor-pointer">
+                    <input type='checkbox' id="switch" class="hidden">
+                    <span class='theme-switch-slider'></span>
+                </label>
+            </div>
+            <div>
+                <p class="text-[18px] leading-[19px] font-bold dark:text-white text-color-14 ml-[5px]">n</p>
+                <p class="text-[18px] leading-[19px] font-bold dark:text-white text-color-14 ml-[5px]">ff</p>
+            </div>
+        </div>
+    </div>
+    <script src="../assets/plugin/jquery-ui/jquery-3.6.3.min.js"></script>
+    <script src="../assets/plugin/jquery-ui/jquery-ui.min.js"></script>
+    <script src="../assets/plugin/tailwind-components/tailwind-component.min.js"></script>
+    <script src="../assets/plugin/tinymce 6.3.1/js/tinymce/tinymce.min.js"></script>
+    <script src="../assets/plugin/tom-select/tom-select.complete.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/validation.js"></script>
+    <script src="../assets/js/sweet-alert2.min.js"></script>
+    <script src="../assets/js/openai.js"></script>
+    <script src="../assets/plugin/wow-js-animation/animation.min.js"></script>
+  <script src="../assets/plugin/swiper/swiper-bundle.min.js"></script>
+  <script src="../assets/js/landing.js"></script> 
+</body>
+</html>

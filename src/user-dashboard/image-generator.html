@@ -1,0 +1,705 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='shortcut icon' href="../assets/images/favic.ico" type='image/x-icon' />
+    <title>Ai template</title>
+    <!-- Required Css -->
+    <link rel="stylesheet" href="../assets/plugin/jquery-ui/jquery-ui.min.css" />
+    <link rel="stylesheet" href="../assets/plugin/jquery-ui/jquery-ui-theme.min.css" />
+    <link rel="stylesheet" href="../assets/css/custom.css">
+    <link rel="stylesheet" href="../../dist/output.css">
+    <link rel="stylesheet" href="../assets/plugin/tom-select/tom-select.min.css" />
+    <link rel="stylesheet" href="../assets/css/site_custom.css">
+    <link rel="stylesheet" href="../assets/plugin/wow-js-animation/animation.min.css">
+    <link rel="stylesheet" href="../assets/plugin/swiper/swiper-bundle.min.css">
+    <script src="../assets/js/flashesh-dark.min.js"></script>
+    <!-- Don't remove from here. This script for onload flickering issues -->
+</head>
+
+<body>
+    <header>
+        <div class="fixed top-0 right-0 left-0 w-full font-Figtree z-40 xl:z-[99]">
+            <nav
+                class="flex h-[56px] items-center justify-between bg-color-2C transition-all duration-500 ease-in-out dark:bg-[#141414]">
+                <div class="w-full h-[56px] flex items-center justify-between md:mx-5">
+
+                    <div class="flex items-center justify-center">
+                        <div class="w-[66px] h-[56px] mr-4 bg-[#464444] flex items-center justify-center md:hidden">
+                            <svg class="collapse-icon pointer" width="26" height="26" viewBox="0 0 26 26" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4 13H22M4 7H22M4 19H16" stroke="white" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"></path>
+                            </svg>
+                        </div>
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="104" height="28" viewBox="0 0 104 28"
+                            fill="none">
+                            <g clip-path="url(#clip0_269_386)">
+                                <mask id="mask0_269_386" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0"
+                                    y="1" width="28" height="25">
+                                    <path
+                                        d="M18.0558 23.792L13.7089 2.89796C11.8584 8.37196 5.99219 8.06396 0.914062 4.76396L9.48594 14.278L18.0558 23.792ZM19.6056 25.944L15.2588 5.05196C19.1466 9.36796 24.4177 6.81596 27.7692 1.81396L23.6864 13.88L19.6056 25.944Z"
+                                        fill="white"></path>
+                                </mask>
+                                <g mask="url(#mask0_269_386)">
+                                    <path
+                                        d="M5.89469 28.71L32.2583 23.392L27.2777 -0.552002L0.914062 4.764L5.89469 28.71Z"
+                                        fill="url(#paint0_linear_269_386)"></path>
+                                </g>
+                                <path
+                                    d="M36.3271 25.9721H31.968L31.2043 23.254H25.7565L24.9034 25.9721H20.8002L25.468 12.024H31.7873L36.3271 25.9721ZM30.2618 20.214L28.5738 15.064H28.4641L26.7396 20.214H30.2618Z"
+                                    fill="white"></path>
+                                <path
+                                    d="M40.7756 15.244V17.228C41.0843 15.852 42.0654 15.244 43.8813 15.244H45.1346V18.284L42.6829 18.248C41.3382 18.23 40.7756 18.748 40.7756 19.946V25.972H37.3245V15.244H40.7756Z"
+                                    fill="white"></path>
+                                <path
+                                    d="M53.6699 25.972H51.4904C48.0028 25.972 47.1314 25.256 47.1314 22.36V18.104H46.0426V15.244H47.3142V12.954H50.5824V15.242H53.4892V18.104H50.5824V21.484C50.5824 22.79 50.7104 22.932 51.8357 22.932H53.6699V25.972Z"
+                                    fill="white"></path>
+                                <path
+                                    d="M55.3051 11.666H58.9369V14.17H55.3051V11.666ZM58.8455 15.244V25.972H55.3944V15.244H58.8455Z"
+                                    fill="white"></path>
+                                <path
+                                    d="M60.389 15.244H61.4777C61.4777 12.382 62.3674 11.668 65.8368 11.668H72.1926V14.172H65.9993C65.0365 14.172 64.9268 14.262 64.9268 15.138V15.246H67.2871V18.108H64.9268V25.976H61.4757V18.104H60.387V15.244H60.389ZM72.1032 15.244V25.972H68.6521V15.244H72.1032Z"
+                                    fill="white"></path>
+                                <path
+                                    d="M79.1497 23.684C80.9108 23.684 81.1119 23.594 81.1119 22.862C81.1119 22.326 80.6041 22.094 78.5322 21.718C74.8272 21.002 73.9009 20.324 73.9009 18.266C73.9009 15.674 74.9714 15.03 79.2411 15.03C83.4173 15.03 84.4716 15.764 84.4716 18.66V18.982H81.0205V18.66C81.0205 17.64 80.8397 17.534 79.2411 17.534C77.6973 17.534 77.5348 17.624 77.5348 18.374C77.5348 18.874 77.8436 19.036 79.042 19.214C83.6002 19.948 84.7438 20.734 84.7438 23.112C84.7438 25.58 83.6367 26.188 79.2411 26.188C74.7744 26.188 73.647 25.472 73.647 22.612V22.38H77.0981V22.612C77.0981 23.576 77.2972 23.684 79.1497 23.684Z"
+                                    fill="white"></path>
+                                <path
+                                    d="M89.6474 15.244V16.478C90.011 15.476 90.8458 15.03 92.2088 15.03C94.6971 15.03 95.6782 15.512 95.9686 17.23C96.2957 15.71 97.2219 15.03 98.9282 15.03C102.251 15.03 103.086 15.978 103.086 19.75V25.972H99.6351V20.196C99.6351 18.122 99.4726 17.89 98.0365 17.89C96.838 17.89 96.3302 18.552 96.3485 20.072V25.972H92.934V20.196C92.934 18.122 92.7715 17.89 91.3171 17.89C90.1552 17.89 89.6454 18.552 89.6454 20.072V25.972H86.1943V15.244H89.6474Z"
+                                    fill="white"></path>
+                            </g>
+                            <defs>
+                                <linearGradient id="paint0_linear_269_386" x1="21.2932" y1="25.1084" x2="11.6062"
+                                    y2="1.69268" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#E60C84"></stop>
+                                    <stop offset="1" stop-color="#FFCF4B"></stop>
+                                </linearGradient>
+                                <clipPath id="clip0_269_386">
+                                    <rect width="104" height="28" fill="white"></rect>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+
+                    <div>
+                        <a href="javascript: void(0)"
+                            class="flex justify-center gap-2 items-center text-white hover:text-color-FC mr-5 md:mr-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                fill="none">
+                                <g clip-path="url(#clip0_269_443)">
+                                    <path
+                                        d="M11.3334 4.66667L10.3934 5.60667L12.1134 7.33333H5.33337V8.66667H12.1134L10.3934 10.3867L11.3334 11.3333L14.6667 8L11.3334 4.66667ZM2.66671 3.33333H8.00004V2H2.66671C1.93337 2 1.33337 2.6 1.33337 3.33333V12.6667C1.33337 13.4 1.93337 14 2.66671 14H8.00004V12.6667H2.66671V3.33333Z"
+                                        fill="currentColor"></path>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_269_443">
+                                        <rect width="16" height="16" fill="white"></rect>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                            <span class="font-normal text-[15px] leading-[22px]">Logout</span>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="flex relative bg-white dark:bg-[#333332] font-Figtree">
+        <div id="overlay" class="fixed z-50 top-0 left-0 bg-darken-4"></div>
+        <nav id="sidenav" class="md:pt-[56px] h-screen sidebar-scrollbar sidebar-nav md:sticky z-[100] md:z-50 top-0 left-0 w-[270px] text-color-14 flex flex-col font-Figtree md:transition-all md:duration-500 md:ease-in-out">
+            <div class="sidebar-bg-white h-full py-3.5 flex flex-col">
+                <div
+                class="sidebar-top relative items-center pl-5 dark:border-[#474746] dark:hover:bg-[#434241] hover:bg-color-F6 py-3.5">
+                <div class="flex justify-start items-center">
+                    <a href="" class="inline-flex gap-3">
+                        <svg class="dashboard-svg dark:text-white text-[#141414]" xmlns="http://www.w3.org/2000/svg"
+                            width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M7.5 14.1667H12.5V17.5H7.5V14.1667ZM2.5 16.2167L5.83333 12.8833V17.5H3.33333C2.875 17.5 2.5 17.125 2.5 16.6667V16.2167ZM12.3583 4.00001L5.83333 10.525L2.5 13.85V9.49167C2.5 9.28334 2.575 9.09167 2.70833 8.94167C2.71667 8.925 2.73333 8.91667 2.74167 8.9L9.40833 2.23334C9.43333 2.20834 9.45 2.19167 9.475 2.18334L9.53333 2.12501C9.86667 1.91667 10.3083 1.95001 10.5917 2.23334L12.3583 4.00001ZM17.5 9.49167V16.6667C17.5 17.125 17.125 17.5 16.6667 17.5H14.1667V10.525L11.1833 7.54167L13.5417 5.18334L17.2583 8.9C17.4083 9.05834 17.5 9.26667 17.5 9.49167Z" fill="currentColor" />
+                        </svg>
+                        <p class="transion-hide text-base leading-[24px] font-medium text-color-14">
+                            <span class="dark:text-white">Dashboard</span>
+                        </p>
+                    </a>
+                </div>
+                <span class="shrink-btn absolute top-[50%] opacity-1 right-3.5 cursor-pointer hidden md:block">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <rect width="24" height="24" rx="4" fill="#141414"></rect>
+                        <g clip-path="url(#clip0_344_741)">
+                            <path
+                                d="M9.95841 7.91675H12.5834L9.66674 12.0001L12.5834 16.0834H9.95841L7.04174 12.0001L9.95841 7.91675Z"
+                                fill="white"></path>
+                            <path
+                                d="M15.0417 7.91675H17.6667L14.7501 12.0001L17.6667 16.0834H15.0417L12.1251 12.0001L15.0417 7.91675Z"
+                                fill="white"></path>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_344_741">
+                                <rect width="14" height="14" fill="white" transform="matrix(-1 0 0 1 19 5)"></rect>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </span>
+
+                <div class="close shrink-btn absolute top-[50%] opacity-1 right-3.5 cursor-pointer md:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <rect width="24" height="24" rx="4" fill="#141414"></rect>
+                        <g clip-path="url(#clip0_344_741)">
+                            <path
+                                d="M9.95841 7.91675H12.5834L9.66674 12.0001L12.5834 16.0834H9.95841L7.04174 12.0001L9.95841 7.91675Z"
+                                fill="white"></path>
+                            <path
+                                d="M15.0417 7.91675H17.6667L14.7501 12.0001L17.6667 16.0834H15.0417L12.1251 12.0001L15.0417 7.91675Z"
+                                fill="white"></path>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_344_741">
+                                <rect width="14" height="14" fill="white" transform="matrix(-1 0 0 1 19 5)"></rect>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </div>
+            </div>
+                <div class="sidebar-links sidebar-accordion middle-sidebar-scroll overflow-y-scroll">
+                    <ul class="mt-3">
+                        <li
+                            class="w-[52px] div-border border dark:border-[#474746] border-t border-color-DF ml-5 my-3.5">
+                        </li>
+
+                        <li>
+                            <a href="template.html">
+                                <div class="flex items-center gap-3 w-full py-3 pl-5 pr-[15px] text-left text-color-14 text-base leading-6 font-medium">
+                                    <svg class="dashboard-svg dark:text-white text-[#141414]" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_421_1714)">
+                                        <path d="M2.5 10.8333H9.16667V2.5H2.5V10.8333ZM2.5 17.5H9.16667V12.5H2.5V17.5ZM10.8333 17.5H17.5V9.16667H10.8333V17.5ZM10.8333 2.5V7.5H17.5V2.5H10.8333Z" fill="currentColor"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip0_421_1714">
+                                        <rect width="20" height="20" fill="white"/>
+                                        </clipPath>
+                                        </defs>
+                                    </svg>
+                                        
+                                    <p class="transion-hide accordion-menus">
+                                        <span class="dark:text-white">Template Category</span>
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="documents.html">
+                                <div class="flex items-center gap-3 bg-color-F6 dark:bg-[#434241] w-full border-design-1 py-3 pl-5 pr-[15px] text-left text-color-14 text-base leading-6 font-medium">
+                                    <svg class="h-5 w-5 dashboard-svg dark:text-white text-[#141414]" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_1997_1547)">
+                                        <path d="M17.5 15.8333V4.16667C17.5 3.25 16.75 2.5 15.8333 2.5H4.16667C3.25 2.5 2.5 3.25 2.5 4.16667V15.8333C2.5 16.75 3.25 17.5 4.16667 17.5H15.8333C16.75 17.5 17.5 16.75 17.5 15.8333ZM7.08333 11.25L9.16667 13.7583L12.0833 10L15.8333 15H4.16667L7.08333 11.25Z" fill="url(#paint0_linear_1997_1547)"/>
+                                        </g>
+                                        <defs>
+                                        <linearGradient id="paint0_linear_1997_1547" x1="12.2526" y1="15.6538" x2="7.04573" y2="3.90371" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#E60C84"/>
+                                        <stop offset="1" stop-color="#FFCF4B"/>
+                                        </linearGradient>
+                                        <clipPath id="clip0_1997_1547">
+                                        <rect width="20" height="20" fill="white"/>
+                                        </clipPath>
+                                        </defs>
+                                    </svg>
+                                        
+                                    <p class="transion-hide accordion-menus">
+                                        <span class="dark:text-white">Image
+                                            Generator
+                                        </span>
+                                    </p>
+                                </div>
+                            </a>
+
+                        </li>
+                        <li
+                            class="w-[52px] div-border border dark:border-[#474746] border-t border-color-DF ml-5 my-3.5">
+                        </li>
+
+                        <li>
+                            <a href="documents.html">
+                                <div
+                                    class="flex items-center gap-3 w-full py-3 pl-5 pr-[15px] text-left text-color-14 text-base leading-6 font-medium">
+                                    <svg class="dashboard-svg dark:text-white text-[#141414]"
+                                        xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                                        fill="none">
+                                        <g clip-path="url(#clip0_380_803)">
+                                            <path
+                                                d="M11.1641 1H5.375C4.16688 1 3.1875 1.97938 3.1875 3.1875V16.3125C3.1875 17.5206 4.16688 18.5 5.375 18.5H14.125C15.3331 18.5 16.3125 17.5206 16.3125 16.3125V6.1484C16.3125 5.85832 16.1973 5.58012 15.9921 5.375L11.9375 1.32035C11.7324 1.11523 11.4542 1 11.1641 1ZM11.3906 4.82812V2.64062L14.6719 5.92188H12.4844C11.8803 5.92188 11.3906 5.43219 11.3906 4.82812ZM5.92188 10.8438C5.61984 10.8438 5.375 10.5989 5.375 10.2969C5.375 9.99484 5.61984 9.75 5.92188 9.75H13.5781C13.8802 9.75 14.125 9.99484 14.125 10.2969C14.125 10.5989 13.8802 10.8438 13.5781 10.8438H5.92188ZM5.375 12.4844C5.375 12.1823 5.61984 11.9375 5.92188 11.9375H13.5781C13.8802 11.9375 14.125 12.1823 14.125 12.4844C14.125 12.7864 13.8802 13.0312 13.5781 13.0312H5.92188C5.61984 13.0312 5.375 12.7864 5.375 12.4844ZM5.92188 15.2188C5.61984 15.2188 5.375 14.9739 5.375 14.6719C5.375 14.3698 5.61984 14.125 5.92188 14.125H10.2969C10.5989 14.125 10.8438 14.3698 10.8438 14.6719C10.8438 14.9739 10.5989 15.2188 10.2969 15.2188H5.92188Z"
+                                                fill="currentColor"></path>
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_380_803">
+                                                <rect width="20" height="20" fill="white"></rect>
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                    <p class="transion-hide accordion-menus"><span class="dark:text-white">Documents</span>
+                                    </p>
+                                </div>
+                            </a>
+
+                        </li>
+                        <li>
+                            <a href="history.html">
+                                <div
+                                    class="flex items-center gap-3 w-full py-3 pl-5 pr-[15px] text-left text-color-14 text-base leading-6 font-medium">
+                                    <svg class="dashboard-svg dark:text-white text-[#141414]"
+                                        xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                                        fill="none">
+                                        <path
+                                            d="M18.75 10C18.75 12.3206 17.8281 14.5462 16.1872 16.1872C14.5462 17.8281 12.3206 18.75 10 18.75C7.67936 18.75 5.45376 17.8281 3.81282 16.1872C2.17187 14.5462 1.25 12.3206 1.25 10C1.25 9.83424 1.31585 9.67527 1.43306 9.55806C1.55027 9.44085 1.70924 9.375 1.875 9.375C2.04076 9.375 2.19973 9.44085 2.31694 9.55806C2.43415 9.67527 2.5 9.83424 2.5 10C2.4975 11.6738 3.05413 13.3005 4.08154 14.6218C5.10895 15.9432 6.54827 16.8835 8.17105 17.2936C9.79383 17.7036 11.5071 17.5599 13.0389 16.8853C14.5707 16.2106 15.8332 15.0436 16.6262 13.5696C17.4191 12.0955 17.697 10.3989 17.4157 8.74888C17.1344 7.0989 16.31 5.59015 15.0735 4.4621C13.8369 3.33405 12.259 2.65134 10.5902 2.52233C8.92137 2.39332 7.25728 2.82541 5.86204 3.75H6.25C6.41576 3.75 6.57473 3.81585 6.69194 3.93306C6.80915 4.05027 6.875 4.20924 6.875 4.375C6.875 4.54076 6.80915 4.69974 6.69194 4.81695C6.57473 4.93416 6.41576 5 6.25 5H4.375C4.29291 5.00005 4.21162 4.98392 4.13577 4.95252C4.05992 4.92113 3.991 4.8751 3.93295 4.81705C3.87491 4.759 3.82887 4.69009 3.79748 4.61424C3.76609 4.53839 3.74995 4.45709 3.75 4.375V2.5C3.75 2.33424 3.81585 2.17527 3.93306 2.05806C4.05027 1.94085 4.20924 1.875 4.375 1.875C4.54076 1.875 4.69973 1.94085 4.81694 2.05806C4.93415 2.17527 5 2.33424 5 2.5V2.8212C6.31174 1.90694 7.84896 1.36967 9.44463 1.26778C11.0403 1.16589 12.6334 1.50328 14.0507 2.24328C15.4681 2.98328 16.6556 4.09759 17.484 5.46512C18.3125 6.83265 18.7504 8.40109 18.75 10ZM15.625 10C15.625 11.1125 15.2951 12.2001 14.677 13.1251C14.0589 14.0501 13.1804 14.7711 12.1526 15.1968C11.1248 15.6226 9.99376 15.734 8.90262 15.5169C7.81147 15.2999 6.80919 14.7641 6.02252 13.9775C5.23585 13.1908 4.70012 12.1885 4.48308 11.0974C4.26604 10.0062 4.37743 8.87524 4.80318 7.84741C5.22892 6.81958 5.94989 5.94107 6.87492 5.32299C7.79994 4.7049 8.88748 4.375 10 4.375C11.4913 4.37663 12.9211 4.96979 13.9757 6.02433C15.0302 7.07887 15.6234 8.50866 15.625 10ZM12.2217 10.73L10.625 9.66553V6.875C10.625 6.70924 10.5592 6.55027 10.4419 6.43306C10.3247 6.31585 10.1658 6.25 10 6.25C9.83424 6.25 9.67527 6.31585 9.55806 6.43306C9.44085 6.55027 9.375 6.70924 9.375 6.875V10C9.37502 10.1029 9.40043 10.2042 9.44898 10.2949C9.49753 10.3856 9.56772 10.4629 9.65332 10.52L11.5283 11.77C11.6662 11.86 11.8341 11.892 11.9955 11.8589C12.1568 11.8258 12.2986 11.7304 12.39 11.5933C12.4813 11.4563 12.5149 11.2887 12.4834 11.1271C12.4519 10.9654 12.3578 10.8227 12.2217 10.73Z"
+                                            fill="currentColor"></path>
+                                    </svg>
+                                    <p class="transion-hide accordion-menus"><span
+                                            class="dark:text-white">History</span>
+                                    </p>
+                                </div>
+                            </a>
+
+                        </li>
+                        <li>
+                            <a href="image-list.html">
+                                <div
+                                    class="flex items-center gap-3 w-full py-3 pl-5 pr-[15px] text-left text-color-14 text-base leading-6 font-medium">
+                                    <svg class="dashboard-svg dark:text-white text-[#141414]"
+                                        xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                                        fill="none">
+                                        <path
+                                            d="M18.75 10C18.75 12.3206 17.8281 14.5462 16.1872 16.1872C14.5462 17.8281 12.3206 18.75 10 18.75C7.67936 18.75 5.45376 17.8281 3.81282 16.1872C2.17187 14.5462 1.25 12.3206 1.25 10C1.25 9.83424 1.31585 9.67527 1.43306 9.55806C1.55027 9.44085 1.70924 9.375 1.875 9.375C2.04076 9.375 2.19973 9.44085 2.31694 9.55806C2.43415 9.67527 2.5 9.83424 2.5 10C2.4975 11.6738 3.05413 13.3005 4.08154 14.6218C5.10895 15.9432 6.54827 16.8835 8.17105 17.2936C9.79383 17.7036 11.5071 17.5599 13.0389 16.8853C14.5707 16.2106 15.8332 15.0436 16.6262 13.5696C17.4191 12.0955 17.697 10.3989 17.4157 8.74888C17.1344 7.0989 16.31 5.59015 15.0735 4.4621C13.8369 3.33405 12.259 2.65134 10.5902 2.52233C8.92137 2.39332 7.25728 2.82541 5.86204 3.75H6.25C6.41576 3.75 6.57473 3.81585 6.69194 3.93306C6.80915 4.05027 6.875 4.20924 6.875 4.375C6.875 4.54076 6.80915 4.69974 6.69194 4.81695C6.57473 4.93416 6.41576 5 6.25 5H4.375C4.29291 5.00005 4.21162 4.98392 4.13577 4.95252C4.05992 4.92113 3.991 4.8751 3.93295 4.81705C3.87491 4.759 3.82887 4.69009 3.79748 4.61424C3.76609 4.53839 3.74995 4.45709 3.75 4.375V2.5C3.75 2.33424 3.81585 2.17527 3.93306 2.05806C4.05027 1.94085 4.20924 1.875 4.375 1.875C4.54076 1.875 4.69973 1.94085 4.81694 2.05806C4.93415 2.17527 5 2.33424 5 2.5V2.8212C6.31174 1.90694 7.84896 1.36967 9.44463 1.26778C11.0403 1.16589 12.6334 1.50328 14.0507 2.24328C15.4681 2.98328 16.6556 4.09759 17.484 5.46512C18.3125 6.83265 18.7504 8.40109 18.75 10ZM15.625 10C15.625 11.1125 15.2951 12.2001 14.677 13.1251C14.0589 14.0501 13.1804 14.7711 12.1526 15.1968C11.1248 15.6226 9.99376 15.734 8.90262 15.5169C7.81147 15.2999 6.80919 14.7641 6.02252 13.9775C5.23585 13.1908 4.70012 12.1885 4.48308 11.0974C4.26604 10.0062 4.37743 8.87524 4.80318 7.84741C5.22892 6.81958 5.94989 5.94107 6.87492 5.32299C7.79994 4.7049 8.88748 4.375 10 4.375C11.4913 4.37663 12.9211 4.96979 13.9757 6.02433C15.0302 7.07887 15.6234 8.50866 15.625 10ZM12.2217 10.73L10.625 9.66553V6.875C10.625 6.70924 10.5592 6.55027 10.4419 6.43306C10.3247 6.31585 10.1658 6.25 10 6.25C9.83424 6.25 9.67527 6.31585 9.55806 6.43306C9.44085 6.55027 9.375 6.70924 9.375 6.875V10C9.37502 10.1029 9.40043 10.2042 9.44898 10.2949C9.49753 10.3856 9.56772 10.4629 9.65332 10.52L11.5283 11.77C11.6662 11.86 11.8341 11.892 11.9955 11.8589C12.1568 11.8258 12.2986 11.7304 12.39 11.5933C12.4813 11.4563 12.5149 11.2887 12.4834 11.1271C12.4519 10.9654 12.3578 10.8227 12.2217 10.73Z"
+                                            fill="currentColor"></path>
+                                    </svg>
+                                    <p class="transion-hide accordion-menus"><span class="dark:text-white">Image
+                                            History</span>
+                                    </p>
+                                </div>
+                            </a>
+
+                        </li>
+                        <li
+                            class="w-[52px] div-border border dark:border-[#474746] border-t border-color-DF ml-5 my-3.5">
+                        </li>
+                        <li>
+                            <a href="profile.html">
+                                <div
+                                    class="flex items-center gap-3 w-full py-3 pl-5 pr-[15px] text-left text-color-14 text-base leading-6 font-medium">
+                                    <svg class="dashboard-svg dark:text-white text-[#141414]"
+                                        xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                                        fill="none">
+                                        <g clip-path="url(#clip0_380_813)">
+                                            <path
+                                                d="M10.0001 1.66666C5.40008 1.66666 1.66675 5.4 1.66675 10C1.66675 14.6 5.40008 18.3333 10.0001 18.3333C14.6001 18.3333 18.3334 14.6 18.3334 10C18.3334 5.4 14.6001 1.66666 10.0001 1.66666ZM10.0001 4.16666C11.3834 4.16666 12.5001 5.28333 12.5001 6.66666C12.5001 8.05 11.3834 9.16666 10.0001 9.16666C8.61675 9.16666 7.50008 8.05 7.50008 6.66666C7.50008 5.28333 8.61675 4.16666 10.0001 4.16666ZM10.0001 16C7.91675 16 6.07508 14.9333 5.00008 13.3167C5.02508 11.6583 8.33341 10.75 10.0001 10.75C11.6584 10.75 14.9751 11.6583 15.0001 13.3167C13.9251 14.9333 12.0834 16 10.0001 16Z"
+                                                fill="currentColor"></path>
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_380_813">
+                                                <rect width="20" height="20" fill="white"></rect>
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                    <p class="transion-hide accordion-menus"><span
+                                            class="dark:text-white">Account</span>
+                                    </p>
+                                </div>
+                            </a>
+
+                        </li>
+                    </ul>
+                </div>
+                <div class="sidebar-footer relative mt-auto">
+                    <div class="w-[52px] div-border border dark:border-[#474746] border-t border-color-DF ml-5 my-3.5">
+                    </div>
+                    <div class="flex items-center h-[52px] justify-start pl-5 w-full bottom-7">
+                        <label for="switch" class="flex items-center cursor-pointer">
+                            <div class="relative">
+                                <input type="checkbox" id="switch" class="sr-only">
+                                <div
+                                    class="block bg-color-DF dark:bg-[#FF774B] border border-color-89 dark:border-[#FF774B] w-9 h-5 rounded-full">
+                                </div>
+                                <div class="dot absolute left-[2px] top-[2px] bg-white w-4 h-4 rounded-full transition">
+                                </div>
+                            </div>
+                            <div class="ml-3 transion-hide text-color-14 font-normal text-base leading-6">
+                                <span class="dark:text-[#333332] dark:hidden">Dark Mode</span>
+                                <span class="dark:text-white text-white dark:flex hidden">Light Mode</span>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <main class="w-[68.9%] 5xl:w-[85.9%] pt-[56px] dark:bg-[#292929] flex flex-col flex-1 font-Figtree border-l dark:border-[#474746] border-color-DF">
+            <div class="xl:flex h-full subscription-main">
+                <div class="bg-[#F6F3F2] dark:bg-[#3A3A39] xl:w-[407px] 5xl:w-[474px] sidebar-scrollbar xl:overflow-auto xl:h-[calc(100vh-56px)]">
+                    <form id="openai-form">
+                        <div class="px-5 py-[22px] sm:py-8 xl:p-6 xl:pb-[56px] font-Figtree">
+                            <p class="text-color-14 text-24 font-semibold font-RedHat dark:text-white">Create images like never before!</p>
+                            <p class="text-color-89 text-13 font-medium font-Figtree mt-2">
+                                Generate your imagination to real images with help of AI.
+                                <span class="text-color-14 dark:text-white">Note:</span>Generated images are free for both personal &amp; commercial use.
+                            </p>
+                            <div class="flex flex-col mt-6">
+                                <label class="require font-normal text-14 text-color-2C dark:text-white" for="">Image Description</label>
+                                <textarea class="questions dynamic-input peer py-1.5 text-base leading-6 font-light dark:text-white bg-white dark:bg-[#333332] bg-clip-padding bg-no-repeat border border-solid border-color-89 rounded-xl m-0 mt-1 focus:text-color-89 focus:bg-white focus:border-color-89 focus:outline-none min-h-[auto] w-full px-4 outline-none dark:!border-color-47 form-control image-textarea" id="image-description" placeholder="Briefly write down the description of the image you have in mind.." maxlength="" required="" oninvalid="" rows="3" name="image_description" spellcheck="false"></textarea>
+                            </div>
+
+                            <div class="grid grid-cols-2 gap-6 justify-between items-center mt-6">
+                                <div>
+                                    <div>
+                                        <div class="custom-dropdown-arrow font-normal text-14 text-color-2C dark:text-white">
+                                            <label class="require">Image Style</label>
+                                            <select
+                                                class="select block w-full text-base leading-6 font-medium text-color-FFR bg-white bg-clip-padding bg-no-repeat rounded-xl dark:rounded-2xl m-0 focus:text-color-2C focus:bg-white focus:border-color-89 focus:outline-none form-control"
+                                                id="language" required="required">
+                                                <option value="Cartoon_art" selected>Normal</option>
+                                                <option value="Cartoon_art">Cartoon art</option>
+                                                <option value="3D_Render">3D Render</option>
+                                                <option value="Pixel_art">Pixel art</option>
+                                                <option value="Isometric">Isometric</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div>
+                                        <div class="font-normal custom-dropdown-arrow text-14 text-color-2C dark:text-white">
+                                            <label class="require">Select tone</label>
+                                            <select
+                                                class="select block w-full text-base leading-6 font-medium text-color-FFR bg-white bg-clip-padding bg-no-repeat rounded-xl dark:rounded-2xl m-0 focus:text-color-2C focus:bg-white focus:border-color-89 focus:outline-none form-control"
+                                                id="tone" required="required">
+                                                <option value="Cartoon_art" selected>Normal</option>
+                                                <option value="Studio">Studio</option>
+                                                <option value="Warm">Warm</option>
+                                                <option value="Cold">Cold</option>
+                                                <option value="Ambient">Ambient</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div>
+                                <div class="grid grid-cols-2 gap-6 justify-between items-center mt-6">
+                                    <div>
+                                        <div>
+                                            <div class="font-normal custom-dropdown-arrow text-14 text-color-2C dark:text-white">
+                                                <label class="require">Number of variants</label>
+                                                <select
+                                                    class="select block w-full text-base leading-6 font-medium text-color-FFR bg-white bg-clip-padding bg-no-repeat rounded-xl dark:rounded-2xl m-0 focus:text-color-2C focus:bg-white focus:border-color-89 focus:outline-none form-control"
+                                                    required="required" id="variant">
+                                                    <option value="1" selected>1 variant</option>
+                                                    <option value="2">2 variant</option>
+                                                    <option value="3">3 variant</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div>
+                                            <div class="font-normal custom-dropdown-arrow text-14 text-color-2C dark:text-white">
+                                                <label class="require">Creativity level</label>
+                                                <select
+                                                    class="select block w-full text-base leading-6 font-medium text-red-100 bg-white bg-clip-padding bg-no-repeat rounded-xl dark:rounded-2xl m-0 focus:text-color-FFR focus:bg-white focus:border-color-89 focus:outline-none form-control"
+                                                    required="required" id="temperature">
+                                                    <option value="512x512">512*512</option>
+                                                    <option value="1024x1024">10424*1024</option>
+                                                    <option value="256x256" selected="">256*256</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                    
+                                <div class="mt-6 xl:my-6">
+                                    <button
+                                        class="magic-bg w-full rounded-xl text-16 text-white font-semibold py-3 flex justify-center items-center gap-3"
+                                        id="magic-submit-button">
+                                        <span>
+                                            Create Image
+                                        </span>
+                                        <svg class="loader animate-spin h-5 w-5 hidden" xmlns="http://www.w3.org/2000/svg" width="72"
+                                            height="72" viewBox="0 0 72 72" fill="none">
+                                            <mask id="path-1-inside-1_1032_3036" fill="white">
+                                                <path
+                                                    d="M67 36C69.7614 36 72.0357 38.2493 71.6534 40.9841C70.685 47.9121 67.7119 54.4473 63.048 59.7573C57.2779 66.3265 49.3144 70.5713 40.644 71.6992C31.9736 72.8271 23.1891 70.761 15.9304 65.8866C8.67173 61.0123 3.4351 53.6628 1.19814 45.2104C-1.03881 36.7579 -0.123172 27.7803 3.77411 19.9534C7.67139 12.1266 14.2839 5.98568 22.3772 2.67706C30.4704 -0.631565 39.4912 -0.881694 47.7554 1.97337C54.4353 4.28114 60.2519 8.49021 64.5205 14.0322C66.2056 16.2199 65.3417 19.2997 62.9417 20.6656L60.8567 21.8524C58.4567 23.2183 55.4379 22.3325 53.5977 20.2735C50.9338 17.2927 47.5367 15.0161 43.7066 13.6929C38.2888 11.8211 32.3749 11.9851 27.0692 14.1542C21.7634 16.3232 17.4284 20.3491 14.8734 25.4802C12.3184 30.6113 11.7181 36.4969 13.1846 42.0381C14.6511 47.5794 18.0842 52.3975 22.8428 55.5931C27.6014 58.7886 33.3604 60.1431 39.0445 59.4037C44.7286 58.6642 49.9494 55.8814 53.7321 51.5748C56.4062 48.5302 58.2325 44.8712 59.0732 40.9628C59.6539 38.2632 61.8394 36 64.6008 36H67Z" />
+                                            </mask>
+                                            <path
+                                                d="M67 36C69.7614 36 72.0357 38.2493 71.6534 40.9841C70.685 47.9121 67.7119 54.4473 63.048 59.7573C57.2779 66.3265 49.3144 70.5713 40.644 71.6992C31.9736 72.8271 23.1891 70.761 15.9304 65.8866C8.67173 61.0123 3.4351 53.6628 1.19814 45.2104C-1.03881 36.7579 -0.123172 27.7803 3.77411 19.9534C7.67139 12.1266 14.2839 5.98568 22.3772 2.67706C30.4704 -0.631565 39.4912 -0.881694 47.7554 1.97337C54.4353 4.28114 60.2519 8.49021 64.5205 14.0322C66.2056 16.2199 65.3417 19.2997 62.9417 20.6656L60.8567 21.8524C58.4567 23.2183 55.4379 22.3325 53.5977 20.2735C50.9338 17.2927 47.5367 15.0161 43.7066 13.6929C38.2888 11.8211 32.3749 11.9851 27.0692 14.1542C21.7634 16.3232 17.4284 20.3491 14.8734 25.4802C12.3184 30.6113 11.7181 36.4969 13.1846 42.0381C14.6511 47.5794 18.0842 52.3975 22.8428 55.5931C27.6014 58.7886 33.3604 60.1431 39.0445 59.4037C44.7286 58.6642 49.9494 55.8814 53.7321 51.5748C56.4062 48.5302 58.2325 44.8712 59.0732 40.9628C59.6539 38.2632 61.8394 36 64.6008 36H67Z"
+                                                stroke="url(#paint0_linear_1032_3036)" stroke-width="24"
+                                                mask="url(#path-1-inside-1_1032_3036)" />
+                                            <defs>
+                                                <linearGradient id="paint0_linear_1032_3036" x1="46.8123" y1="63.1382" x2="21.8195"
+                                                    y2="6.73779" gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="#E60C84" />
+                                                    <stop offset="1" stop-color="#FFCF4B" />
+                                                </linearGradient>
+                                            </defs>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                
+                <div class="xl:w-[76%] details-body xl:px-0 px-5 sidebar-scrollbar xl:h-[calc(100vh-56px)] xl:overflow-auto pt-[21px] sm:pt-6 pb-[56px]">
+                    <div class="flex sm:flex-row flex-col gap-6 justify-between items-center lg:px-6 pb-3 border-b border-color-DF dark:border-color-47">
+                        <p class="text-color-14 text-15 font-Figtree font-medium dark:text-white">Image Generator
+                        </p>
+                        <div class="flex justify-end items-center gap-7">
+                            <div class="flex items-center gap-2 text-color-14 dark:text-white text-15 font-Figtree font-medium">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                    <path d="M16.875 9C16.875 11.0886 16.0453 13.0916 14.5685 14.5685C13.0916 16.0453 11.0886 16.875 9 16.875C6.91142 16.875 4.90838 16.0453 3.43153 14.5685C1.95469 13.0916 1.125 11.0886 1.125 9C1.125 8.85082 1.18426 8.70775 1.28975 8.60226C1.39524 8.49677 1.53832 8.4375 1.6875 8.4375C1.83668 8.4375 1.97976 8.49677 2.08525 8.60226C2.19074 8.70775 2.25 8.85082 2.25 9C2.24775 10.5064 2.74871 11.9704 3.67338 13.1596C4.59805 14.3489 5.89344 15.1952 7.35394 15.5642C8.81444 15.9333 10.3564 15.8039 11.735 15.1967C13.1136 14.5895 14.2499 13.5393 14.9635 12.2126C15.6772 10.886 15.9273 9.35898 15.6741 7.87399C15.4209 6.38901 14.679 5.03113 13.5661 4.01589C12.4532 3.00065 11.0331 2.38621 9.53116 2.2701C8.02923 2.15399 6.53155 2.54287 5.27584 3.375H5.625C5.77418 3.375 5.91726 3.43427 6.02275 3.53976C6.12824 3.64525 6.1875 3.78832 6.1875 3.9375C6.1875 4.08669 6.12824 4.22976 6.02275 4.33525C5.91726 4.44074 5.77418 4.5 5.625 4.5H3.9375C3.86362 4.50005 3.79046 4.48553 3.72219 4.45727C3.65393 4.42902 3.5919 4.38759 3.53966 4.33535C3.48742 4.2831 3.44599 4.22108 3.41773 4.15281C3.38948 4.08455 3.37496 4.01138 3.375 3.9375V2.25C3.375 2.10082 3.43426 1.95775 3.53975 1.85226C3.64524 1.74677 3.78832 1.6875 3.9375 1.6875C4.08668 1.6875 4.22976 1.74677 4.33525 1.85226C4.44074 1.95775 4.5 2.10082 4.5 2.25V2.53908C5.68056 1.71625 7.06407 1.2327 8.50017 1.141C9.93627 1.0493 11.37 1.35295 12.6457 2.01895C13.9213 2.68495 14.99 3.68783 15.7356 4.91861C16.4813 6.14938 16.8753 7.56098 16.875 9ZM14.0625 9C14.0625 10.0013 13.7656 10.9801 13.2093 11.8126C12.653 12.6451 11.8624 13.294 10.9373 13.6771C10.0123 14.0603 8.99438 14.1606 8.01236 13.9652C7.03033 13.7699 6.12827 13.2877 5.42027 12.5797C4.71227 11.8717 4.23011 10.9697 4.03477 9.98765C3.83944 9.00562 3.93969 7.98772 4.32286 7.06267C4.70603 6.13762 5.3549 5.34696 6.18743 4.79069C7.01995 4.23441 7.99873 3.9375 9 3.9375C10.3422 3.93897 11.629 4.47281 12.5781 5.42189C13.5272 6.37098 14.061 7.6578 14.0625 9ZM10.9995 9.657L9.5625 8.69898V6.1875C9.5625 6.03832 9.50324 5.89525 9.39775 5.78976C9.29226 5.68427 9.14918 5.625 9 5.625C8.85082 5.625 8.70774 5.68427 8.60225 5.78976C8.49676 5.89525 8.4375 6.03832 8.4375 6.1875V9C8.43752 9.0926 8.46039 9.18376 8.50409 9.2654C8.54778 9.34704 8.61095 9.41663 8.68799 9.468L10.3755 10.593C10.4996 10.674 10.6507 10.7028 10.7959 10.673C10.9411 10.6432 11.0687 10.5573 11.151 10.434C11.2332 10.3107 11.2634 10.1598 11.235 10.0143C11.2067 9.86885 11.122 9.74043 10.9995 9.657Z" fill="currentColor"></path>
+                                </svg>
+                                <p>Image History</p>
+                            </div>
+                            <div class="flex items-center gap-2 text-color-14 dark:text-white text-15 font-Figtree font-medium">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
+                                    <path d="M0.00158691 3C0.00158691 1.89543 0.897017 1 2.00159 1H14.0016C15.1062 1 16.0016 1.89543 16.0016 3V13C16.0016 14.1046 15.1062 15 14.0016 15H2.00159C0.897017 15 0.00158691 14.1046 0.00158691 13V3ZM1.00159 12V13C1.00159 13.5523 1.4493 14 2.00159 14H14.0016C14.5539 14 15.0016 13.5523 15.0016 13V9.5L11.2252 7.55279C11.0327 7.45654 10.8002 7.49427 10.648 7.64645L6.93788 11.3566L4.27894 9.58397C4.08063 9.45177 3.81657 9.47791 3.64803 9.64645L1.00159 12ZM6.00159 5.5C6.00159 4.67157 5.33001 4 4.50159 4C3.67316 4 3.00159 4.67157 3.00159 5.5C3.00159 6.32843 3.67316 7 4.50159 7C5.33001 7 6.00159 6.32843 6.00159 5.5Z" fill="currentColor"></path>
+                                </svg>
+                                <p>Your Gallery</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <p class="text-14 font-medium font-Figtree text-color-14 mt-8 text-center dark:text-white">
+                            Image Prompt</p>
+                        <p class="text-16 font-normal font-Figtree text-color-89 mt-2 text-center">
+                            A dreamy yellow vintage van with a surfboard in a minimal tropical
+                            <br class="sm:block hidden">environment with coconut trees and clouds
+                        </p>
+                        <div id="image-content" class="image-content1 grid 2xl:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6 mt-5 9xl:mx-44 3xl:mx-16 2xl:mx-5">
+                            <div class="relative 7xl:w-64 7xl:h-64 2xl:w-44 2xl:h-44 download-image-container m-auto">
+                                <img class="m-auto 7xl:w-64 7xl:h-64 2xl:w-44 2xl:h-44 cursor-pointer" src="../assets/images/ai-flower.jpg" alt="">
+                                <div class="image-hover-overlay"></div>
+                                <div class="image-download-button">
+                                    <a class="relative tooltips w-9 h-9 flex items-center m-auto justify-center" href="../assets/images/ai-flower.jpg" download="../assets/images/ai-flower.jpg" downlaod="">
+                                        <img class="w-[18px] h-[18px]" src="../assets/images/file-download.svg" alt="">
+                                        <span class="image-download-tooltip-text w-max text-white items-center font-medium text-12 rounded-lg px-2.5 py-[7px] absolute z-1 top-[138%] left-[50%] ml-[-57px]">Download Image</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="relative 7xl:w-64 7xl:h-64 2xl:w-44 2xl:h-44 download-image-container m-auto">
+                                <img class="m-auto 7xl:w-64 7xl:h-64 2xl:w-44 2xl:h-44 cursor-pointer" src="../assets/images/ai-cat.jpg" alt="">
+                                <div class="image-hover-overlay"></div>
+                                <div class="image-download-button">
+                                    <a class="relative tooltips w-9 h-9 flex items-center m-auto justify-center" href="../assets/images/ai-cat.jpg" download="../assets/images/ai-cat.jpg" downlaod="">
+                                        <img class="w-[18px] h-[18px]" src="../assets/images/file-download.svg" alt="">
+                                        <span class="image-download-tooltip-text w-max text-white items-center font-medium text-12 rounded-lg px-2.5 py-[7px] absolute z-1 top-[138%] left-[50%] ml-[-57px]">Download Image</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="relative 7xl:w-64 7xl:h-64 2xl:w-44 2xl:h-44 download-image-container m-auto">
+                                <img class="m-auto 7xl:w-64 7xl:h-64 2xl:w-44 2xl:h-44 cursor-pointer" src="../assets/images/ai-animal.jpg" alt="">
+                                <div class="image-hover-overlay"></div>
+                                <div class="image-download-button">
+                                    <a class="relative tooltips w-9 h-9 flex items-center m-auto justify-center" href="../assets/images/ai-animal.jpg" download="../assets/images/ai-animal.jpg" downlaod="">
+                                        <img class="w-[18px] h-[18px]" src="../assets/images/file-download.svg" alt="">
+                                        <span class="image-download-tooltip-text w-max text-white items-center font-medium text-12 rounded-lg px-2.5 py-[7px] absolute z-1 top-[138%] left-[50%] ml-[-57px]">Download Image</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-9">
+                        <p class="text-14 font-medium font-Figtree text-color-14 mt-8 text-center dark:text-white">
+                            Image Prompt</p>
+                        <p class="text-16 font-normal font-Figtree text-color-89 mt-2 text-center">
+                            A dreamy yellow vintage van with a surfboard in a minimal tropical
+                            <br class="sm:block hidden">environment with coconut trees and clouds
+                        </p>
+                        <div id="image-content" class="image-content2 grid lg:grid-cols-2 grid-cols-1 gap-6 mt-5 9xl:mx-14 3xl:mx-16 2xl:mx-5">
+                            <div class="relative 9xl:w-[512px] 9xl:h-[512px] 7xl:w-[400px] 7xl:h-[400px] 2xl:w-[280px] 2xl:h-[280px] lg:w-[220px] lg:h-[220px] download-image-container m-auto">
+                                <img class="m-auto 9xl:w-[512px] 9xl:h-[512px] 7xl:w-[400px] 7xl:h-[400px] 2xl:w-[280px] 2xl:h-[280px] lg:w-[220px] lg:h-[220px] cursor-pointer" src="../assets/images/yellow-car.png" alt="">
+                                <div class="image-hover-overlay">
+                                </div>
+                                <div class="image-download-button">
+                                    <a class="relative tooltips w-9 h-9 flex items-center m-auto justify-center" href="">
+                                        <img class="w-[18px] h-[18px]" src="../assets/images/file-download.svg" alt="">
+                                        <span class="image-download-tooltip-text w-max text-white items-center font-medium text-12 rounded-lg px-2.5 py-[7px] absolute z-1 top-[138%] left-[50%] ml-[-57px]">Download  Image</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="relative 9xl:w-[512px] 9xl:h-[512px] 7xl:w-[400px] 7xl:h-[400px] 2xl:w-[280px] 2xl:h-[280px] lg:w-[220px] lg:h-[220px] download-image-container m-auto">
+                                <img class="m-auto 9xl:w-[512px] 9xl:h-[512px] 7xl:w-[400px] 7xl:h-[400px] 2xl:w-[280px] 2xl:h-[280px] lg:w-[220px] lg:h-[220px] cursor-pointer" src="../assets/images/carton-car.png" alt="">
+                                <div class="image-hover-overlay">
+                                </div>
+                                <div class="image-download-button">
+                                    <a class="relative tooltips w-9 h-9 flex items-center m-auto justify-center" href="">
+                                        <img class="w-[18px] h-[18px]" src="../assets/images/file-download.svg" alt="">
+                                        <span class="image-download-tooltip-text w-max text-white items-center font-medium text-12 rounded-lg px-2.5 py-[7px] absolute z-1 top-[138%] left-[50%] ml-[-57px]">Download Image</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-9 mb-14">
+                        <p class="text-14 font-medium font-Figtree text-color-14 mt-8 text-center dark:text-white">
+                            Image Prompt</p>
+                        <p class="text-16 font-normal font-Figtree text-color-89 mt-2 text-center">
+                            A dreamy yellow vintage van with a surfboard in a minimal tropical
+                            <br class="sm:block hidden">environment with coconut trees and clouds
+                        </p>
+                        <div id="image-content" class="flex flex-col gap-6 mt-5 9xl:mx-[76px] 3xl:mx-10 2xl:mx-5">
+                            <div class="relative 9xl:w-[1024px] 9xl:h-[1024px] 3xl:w-[610px] 3xl:h-[610px] sm:w-[400px] sm:h-[400px] w-72 h-72 download-image-container m-auto">
+                                <img class="m-auto 9xl:w-[1024px] 9xl:h-[1024px] 3xl:w-[610px] 3xl:h-[610px] sm:w-[400px] sm:h-[400px] w-72 h-72 cursor-pointer" src="../assets/images/blue-car.png" alt="">
+                                <div class="image-hover-overlay">
+                                </div>
+                                <div class="image-download-button">
+                                    <a class="relative tooltips w-9 h-9 flex items-center m-auto justify-center" href="">
+                                        <img class="w-[18px] h-[18px]" src="../assets/images/file-download.svg" alt="">
+                                        <span class="image-download-tooltip-text w-max text-white items-center font-medium text-12 rounded-lg px-2.5 z-50 py-[7px] absolute z-1 top-[138%] left-[50%] ml-[-57px]">Download Image</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="relative 9xl:w-[1024px] 9xl:h-[1024px] 3xl:w-[610px] 3xl:h-[610px] sm:w-[400px] sm:h-[400px] w-72 h-72 download-image-container m-auto">
+                                <img class="m-auto 9xl:w-[1024px] 9xl:h-[1024px] 3xl:w-[610px] 3xl:h-[610px] sm:w-[400px] sm:h-[400px]  w-72 h-72 cursor-pointer" src="../assets/images/big-animal.png" alt="">
+                                <div class="image-hover-overlay">
+                                </div>
+                                <div class="image-download-button">
+                                    <a class="relative tooltips w-9 h-9 flex items-center m-auto justify-center" href="">
+                                        <img class="w-[18px] h-[18px]" src="../assets/images/file-download.svg" alt="">
+                                        <span class="image-download-tooltip-text w-max text-white items-center font-medium text-12 rounded-lg px-2.5 py-[7px] absolute z-50 top-[138%] left-[50%] ml-[-57px]">Download Image
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="xl:w-[76%] 9xl:w-full 5xl:w-[71%] xl:px-0 px-5 xl:overflow-auto pt-[21px] sm:pt-6 h-screen dark:bg-[#292929] sidebar-scrollbar details-body relative pb-[56px]">
+                    <div class="flex sm:flex-row flex-col gap-6 justify-between items-center lg:px-6 pb-3 border-b border-color-DF dark:border-color-47">
+                        <p class="text-color-14 text-15 font-Figtree font-medium dark:text-white">Image Generator
+                        </p>
+                        <div class="flex justify-end items-center gap-7">
+                            <div class="flex items-center gap-2 text-color-14 dark:text-white text-15 font-Figtree font-medium">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                    <path d="M16.875 9C16.875 11.0886 16.0453 13.0916 14.5685 14.5685C13.0916 16.0453 11.0886 16.875 9 16.875C6.91142 16.875 4.90838 16.0453 3.43153 14.5685C1.95469 13.0916 1.125 11.0886 1.125 9C1.125 8.85082 1.18426 8.70775 1.28975 8.60226C1.39524 8.49677 1.53832 8.4375 1.6875 8.4375C1.83668 8.4375 1.97976 8.49677 2.08525 8.60226C2.19074 8.70775 2.25 8.85082 2.25 9C2.24775 10.5064 2.74871 11.9704 3.67338 13.1596C4.59805 14.3489 5.89344 15.1952 7.35394 15.5642C8.81444 15.9333 10.3564 15.8039 11.735 15.1967C13.1136 14.5895 14.2499 13.5393 14.9635 12.2126C15.6772 10.886 15.9273 9.35898 15.6741 7.87399C15.4209 6.38901 14.679 5.03113 13.5661 4.01589C12.4532 3.00065 11.0331 2.38621 9.53116 2.2701C8.02923 2.15399 6.53155 2.54287 5.27584 3.375H5.625C5.77418 3.375 5.91726 3.43427 6.02275 3.53976C6.12824 3.64525 6.1875 3.78832 6.1875 3.9375C6.1875 4.08669 6.12824 4.22976 6.02275 4.33525C5.91726 4.44074 5.77418 4.5 5.625 4.5H3.9375C3.86362 4.50005 3.79046 4.48553 3.72219 4.45727C3.65393 4.42902 3.5919 4.38759 3.53966 4.33535C3.48742 4.2831 3.44599 4.22108 3.41773 4.15281C3.38948 4.08455 3.37496 4.01138 3.375 3.9375V2.25C3.375 2.10082 3.43426 1.95775 3.53975 1.85226C3.64524 1.74677 3.78832 1.6875 3.9375 1.6875C4.08668 1.6875 4.22976 1.74677 4.33525 1.85226C4.44074 1.95775 4.5 2.10082 4.5 2.25V2.53908C5.68056 1.71625 7.06407 1.2327 8.50017 1.141C9.93627 1.0493 11.37 1.35295 12.6457 2.01895C13.9213 2.68495 14.99 3.68783 15.7356 4.91861C16.4813 6.14938 16.8753 7.56098 16.875 9ZM14.0625 9C14.0625 10.0013 13.7656 10.9801 13.2093 11.8126C12.653 12.6451 11.8624 13.294 10.9373 13.6771C10.0123 14.0603 8.99438 14.1606 8.01236 13.9652C7.03033 13.7699 6.12827 13.2877 5.42027 12.5797C4.71227 11.8717 4.23011 10.9697 4.03477 9.98765C3.83944 9.00562 3.93969 7.98772 4.32286 7.06267C4.70603 6.13762 5.3549 5.34696 6.18743 4.79069C7.01995 4.23441 7.99873 3.9375 9 3.9375C10.3422 3.93897 11.629 4.47281 12.5781 5.42189C13.5272 6.37098 14.061 7.6578 14.0625 9ZM10.9995 9.657L9.5625 8.69898V6.1875C9.5625 6.03832 9.50324 5.89525 9.39775 5.78976C9.29226 5.68427 9.14918 5.625 9 5.625C8.85082 5.625 8.70774 5.68427 8.60225 5.78976C8.49676 5.89525 8.4375 6.03832 8.4375 6.1875V9C8.43752 9.0926 8.46039 9.18376 8.50409 9.2654C8.54778 9.34704 8.61095 9.41663 8.68799 9.468L10.3755 10.593C10.4996 10.674 10.6507 10.7028 10.7959 10.673C10.9411 10.6432 11.0687 10.5573 11.151 10.434C11.2332 10.3107 11.2634 10.1598 11.235 10.0143C11.2067 9.86885 11.122 9.74043 10.9995 9.657Z" fill="currentColor"></path>
+                                </svg>
+                                <p>Image History</p>
+                            </div>
+                            <div class="flex items-center gap-2 text-color-14 dark:text-white text-15 font-Figtree font-medium">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
+                                    <path d="M0.00158691 3C0.00158691 1.89543 0.897017 1 2.00159 1H14.0016C15.1062 1 16.0016 1.89543 16.0016 3V13C16.0016 14.1046 15.1062 15 14.0016 15H2.00159C0.897017 15 0.00158691 14.1046 0.00158691 13V3ZM1.00159 12V13C1.00159 13.5523 1.4493 14 2.00159 14H14.0016C14.5539 14 15.0016 13.5523 15.0016 13V9.5L11.2252 7.55279C11.0327 7.45654 10.8002 7.49427 10.648 7.64645L6.93788 11.3566L4.27894 9.58397C4.08063 9.45177 3.81657 9.47791 3.64803 9.64645L1.00159 12ZM6.00159 5.5C6.00159 4.67157 5.33001 4 4.50159 4C3.67316 4 3.00159 4.67157 3.00159 5.5C3.00159 6.32843 3.67316 7 4.50159 7C5.33001 7 6.00159 6.32843 6.00159 5.5Z" fill="currentColor"></path>
+                                </svg>
+                                <p>Your Gallery</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <p class="text-14 font-medium font-Figtree text-color-14 mt-8 text-center dark:text-white">
+                            Image Prompt</p>
+                        <p class="text-16 font-normal font-Figtree text-color-89 mt-2 text-center">
+                            A dreamy yellow vintage van with a surfboard in a minimal tropical
+                            <br class="sm:block hidden">environment with coconut trees and clouds
+                        </p>
+                        <div id="image-content" class="image-content1 grid 2xl:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6 mt-5 9xl:mx-44 3xl:mx-16 2xl:mx-5">
+                        </div>
+                    </div>
+                    
+                    <div class="mt-9">
+                        <p class="text-14 font-medium font-Figtree text-color-14 mt-8 text-center dark:text-white">
+                            Image Prompt</p>
+                        <p class="text-16 font-normal font-Figtree text-color-89 mt-2 text-center">
+                            A dreamy yellow vintage van with a surfboard in a minimal tropical
+                            <br class="sm:block hidden">environment with coconut trees and clouds
+                        </p>
+                        <div id="image-content" class="image-content2 grid lg:grid-cols-2 grid-cols-1 gap-6 mt-5 9xl:mx-14 3xl:mx-16 2xl:mx-5">
+                            <div class="relative 9xl:w-[512px] 9xl:h-[512px] 7xl:w-[400px] 7xl:h-[400px] 2xl:w-[280px] 2xl:h-[280px] lg:w-[220px] lg:h-[220px] download-image-container m-auto">
+                                <img class="m-auto 9xl:w-[512px] 9xl:h-[512px] 7xl:w-[400px] 7xl:h-[400px] 2xl:w-[280px] 2xl:h-[280px] lg:w-[220px] lg:h-[220px] cursor-pointer" src="../assets/images/dog-one.jpg" alt="">
+                                <div class="image-hover-overlay">
+                                </div>
+                                <div class="image-download-button">
+                                    <a class="relative tooltips w-9 h-9 flex items-center m-auto justify-center" href="">
+                                        <img class="w-[18px] h-[18px]" src="../assets/images/file-download.svg" alt="">
+                                        <span class="image-download-tooltip-text w-max text-white items-center font-medium text-12 rounded-lg px-2.5 py-[7px] absolute z-1 top-[138%] left-[50%] ml-[-57px]">Download  Image</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="relative 9xl:w-[512px] 9xl:h-[512px] 7xl:w-[400px] 7xl:h-[400px] 2xl:w-[280px] 2xl:h-[280px] lg:w-[220px] lg:h-[220px] download-image-container m-auto">
+                                <img class="m-auto 9xl:w-[512px] 9xl:h-[512px] 7xl:w-[400px] 7xl:h-[400px] 2xl:w-[280px] 2xl:h-[280px] lg:w-[220px] lg:h-[220px] cursor-pointer" src="../assets/images/dog-two.jpg" alt="">
+                                <div class="image-hover-overlay">
+                                </div>
+                                <div class="image-download-button">
+                                    <a class="relative tooltips w-9 h-9 flex items-center m-auto justify-center" href="">
+                                        <img class="w-[18px] h-[18px]" src="../assets/images/file-download.svg" alt="">
+                                        <span class="image-download-tooltip-text w-max text-white items-center font-medium text-12 rounded-lg px-2.5 py-[7px] absolute z-1 top-[138%] left-[50%] ml-[-57px]">Download Image</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-9 mb-14">
+                        <p class="text-14 font-medium font-Figtree text-color-14 mt-8 text-center dark:text-white">
+                            Image Prompt</p>
+                        <p class="text-16 font-normal font-Figtree text-color-89 mt-2 text-center">
+                            A dreamy yellow vintage van with a surfboard in a minimal tropical
+                            <br class="sm:block hidden">environment with coconut trees and clouds
+                        </p>
+                        <div id="image-content" class="flex flex-col gap-6 mt-5 9xl:mx-[76px] 3xl:mx-10 2xl:mx-5">
+                            <div class="relative 9xl:w-[1024px] 9xl:h-[1024px] 3xl:w-[610px] 3xl:h-[610px] sm:w-[400px] sm:h-[400px] w-72 h-72 download-image-container m-auto">
+                                <img class="m-auto 9xl:w-[1024px] 9xl:h-[1024px] 3xl:w-[610px] 3xl:h-[610px] sm:w-[400px] sm:h-[400px] w-72 h-72 cursor-pointer" src="../assets/images/dog-one.jpg" alt="">
+                                <div class="image-hover-overlay">
+                                </div>
+                                <div class="image-download-button">
+                                    <a class="relative tooltips w-9 h-9 flex items-center m-auto justify-center" href="">
+                                        <img class="w-[18px] h-[18px]" src="../assets/images/file-download.svg" alt="">
+                                        <span class="image-download-tooltip-text w-max text-white items-center font-medium text-12 rounded-lg px-2.5 z-50 py-[7px] absolute z-1 top-[138%] left-[50%] ml-[-57px]">Download Image</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="relative 9xl:w-[1024px] 9xl:h-[1024px] 3xl:w-[610px] 3xl:h-[610px] sm:w-[400px] sm:h-[400px] w-72 h-72 download-image-container m-auto">
+                                <img class="m-auto 9xl:w-[1024px] 9xl:h-[1024px] 3xl:w-[610px] 3xl:h-[610px] sm:w-[400px] sm:h-[400px]  w-72 h-72 cursor-pointer" src="../assets/images/dog-two.jpg" alt="">
+                                <div class="image-hover-overlay">
+                                </div>
+                                <div class="image-download-button">
+                                    <a class="relative tooltips w-9 h-9 flex items-center m-auto justify-center" href="">
+                                        <img class="w-[18px] h-[18px]" src="../assets/images/file-download.svg" alt="">
+                                        <span class="image-download-tooltip-text w-max text-white items-center font-medium text-12 rounded-lg px-2.5 py-[7px] absolute z-50 top-[138%] left-[50%] ml-[-57px]">Download Image
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </main>
+    </div>
+
+
+
+
+
+
+
+
+    <!-- Required Js -->
+    <script src="../assets/plugin/jquery-ui/jquery-3.6.3.min.js"></script>
+    <script src="../assets/plugin/jquery-ui/jquery-ui.min.js"></script>
+    <script src="../assets/plugin/tailwind-components/tailwind-component.min.js"></script>
+    <script src="../assets/plugin/tinymce 6.3.1/js/tinymce/tinymce.min.js"></script>
+    <script src="../assets/plugin/tom-select/tom-select.complete.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/validation.js"></script>
+    <script src="../assets/js/sweet-alert2.min.js"></script>
+    <script src="../assets/js/openai.js"></script>
+    <!-- <script src="../assets/js/login.js"></script> -->
+    <script src="../assets/plugin/wow-js-animation/animation.min.js"></script>
+    <script src="../assets/plugin/swiper/swiper-bundle.min.js"></script>
+    <script src="../assets/js/landing.js"></script>
+</body>
+
+</html>
